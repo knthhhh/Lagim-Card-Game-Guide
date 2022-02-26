@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lagimcardgameguideapp2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LagimCardGameGuideApp2">
+        <activity
+            android:name=".ForestCardDetails"
+            android:exported="false" />
+        <activity
+            android:name=".BaryoCardDetails"
+            android:exported="false" />
+        <activity
+            android:name=".GameBoard"
+            android:exported="false" />
+        <activity
+            android:name=".Cards"
+            android:exported="false" />
+        <activity
+            android:name=".CardAnatomy"
+            android:exported="false" />
+        <activity
+            android:name=".FAQs"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".Gallery"
+            android:exported="false" />
+        <activity
+            android:name=".Mechanics"
+            android:exported="false" />
+        <activity
+            android:name=".Components"
+            android:exported="false" />
+        <activity
+            android:name=".TypesOfDefense"
+            android:exported="false" />
+        <activity
+            android:name=".TypesOfRaid"
+            android:exported="false" />
+        <activity
+            android:name=".Defending"
+            android:exported="false" />
+        <activity
+            android:name=".Raiding"
+            android:exported="false" />
+        <activity
+            android:name=".Dwellers"
+            android:exported="false" />
+        <activity
+            android:name=".LagimLimit"
+            android:exported="false" />
+        <activity
+            android:name=".BoardingScreen2"
+            android:exported="false" />
+        <activity
+            android:name=".BoardingScreen1"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

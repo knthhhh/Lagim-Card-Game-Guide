@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForestCardDetails"
+    android:background="@color/black">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_boardgame" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_component_title" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/oldstyle"
+                android:text="31 FOREST CARDS"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txt1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Baryo cards consist of Lakas and Kontra cards that fall under 3 main archetypes: Medium, Mortal, and Warrior.\n\nIn addition, Kontra cards include Special cards that have unique capabilities. These cards represent the villagers and equipment that Baryos can use to build their defenses."
+                android:textAlignment="textStart"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textview"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/img_forestcard"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/board"
+                android:layout_marginTop="400dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_forestcards_text" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/board"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="580dp"
+                android:fontFamily="@font/oldstyle"
+                android:text="19 Lagim Cards"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/title1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="105dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Lagim cards represent the evil creatures of the Forest and consist of:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lusitana"
+                android:text="4 Witch cards "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="(2 Mambabarang; 2 Mangkukulam)"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/witch"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignTop="@id/txt3"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginEnd="80dp"-->
+<!--                android:src="@drawable/archetype_witch" />-->
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/lusitana"
+                android:text="4 Ghoul cards"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="(2 Aswang; 2 Manananggal)"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt5"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"
+                android:src="@drawable/archetype_ghoul" />
+
+            <TextView
+                android:id="@+id/txt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/lusitana"
+                android:text="6 Giant cards"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt7"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="(2 Kapre; 2 Bungisngis; 2 Tikbalang)"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/giant"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignTop="@id/txt7"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginEnd="80dp"-->
+<!--                android:src="@drawable/archetype_giant" />-->
+
+            <TextView
+                android:id="@+id/txt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt8"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/lusitana"
+                android:text="5 Dwarf cards"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt9"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="(3 Duwende; 2 Nuno sa Punso)"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/dwarf"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignTop="@id/txt9"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginEnd="80dp"-->
+<!--                android:src="@drawable/archetype_dwarf" />-->
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt10"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="145dp"
+                android:fontFamily="@font/oldstyle"
+                android:text="13 Kontra Cards"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txt11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/title2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="115dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Hiwaga cards represent the cursed items found in the Forest and consist of:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt11"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lusitana"
+                android:text="4 Witch support cards"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt12"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="(1 Alakdan at Alupihan; 1 Sumpa\nng Manika; 2 Altar ng Kulam)"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/witch1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignTop="@id/txt12"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginEnd="80dp"-->
+<!--                android:src="@drawable/archetype_witch" />-->
+
+            <TextView
+                android:id="@+id/txt14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt13"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="65dp"
+                android:fontFamily="@font/lusitana"
+                android:text="4 Ghoul support cards"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt14"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="(2 Tiktik at Buwan; 2 Dugo\nat Langis)"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt14"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"
+                android:src="@drawable/archetype_ghoul" />
+
+            <TextView
+                android:id="@+id/txt16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt15"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="65dp"
+                android:fontFamily="@font/lusitana"
+                android:text="2 Giant support cards"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt16"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="((2 Puno ng Acacia)"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/giant1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignTop="@id/txt16"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginEnd="80dp"-->
+<!--                android:src="@drawable/archetype_giant" />-->
+
+            <TextView
+                android:id="@+id/txt18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt17"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/lusitana"
+                android:text="2 Dwarf support cards"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt18"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="(2 Bungo at Tungkod)"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/dwarf1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignTop="@id/txt18"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginEnd="80dp"-->
+<!--                android:src="@drawable/archetype_dwarf" />-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:onClick="BackToComponents"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_lagim_white" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

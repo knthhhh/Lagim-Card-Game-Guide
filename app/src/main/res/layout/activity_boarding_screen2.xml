@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardingScreen2"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_boardingscreen2"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_boardingscreen2"
+        />
+
+    <ImageView
+        android:id="@+id/fictionmind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/ic_fictionminds_gray" />
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fictionmind"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:src="@drawable/ic_boardinscreen2_indicator" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/indicator"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/lusitana"
+        android:text="LagimTM was created by a group of illustrators and designers that share a great interest and passion for storytelling and artistry. The group seeks to create platforms using local narratives and evocative illus-trations that encourage human connection and reinforce relationships."
+        android:textColor="@color/TextColor"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_boardingscreen2_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/text"
+        android:layout_marginTop="170dp"
+        />
+
+    <TextView
+        android:id="@+id/GetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Game Guide"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/lusitana"
+        android:textColor="@color/black"
+        />
+
+
+</RelativeLayout>
