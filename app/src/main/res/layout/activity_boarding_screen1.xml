@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,14 +9,17 @@
     android:background="@color/black">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/bg_boardingscreen1"
-        android:scaleType="fitXY"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        />
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_boardingscreen1"
+        app:layout_constraintEnd_toEndOf="@+id/indicator"
+        app:layout_constraintStart_toStartOf="@+id/indicator"
+        app:layout_constraintTop_toTopOf="@+id/img" />
 
     <ImageView
         android:id="@+id/img"
@@ -23,10 +27,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
         android:scaleType="fitXY"
-        android:src="@drawable/img_boardingscreen1" />
+        android:src="@drawable/img_boardingscreen1"
+        app:layout_constraintEnd_toEndOf="@+id/indicator"
+        app:layout_constraintStart_toStartOf="@+id/indicator"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/indicator"
@@ -34,23 +39,35 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/img"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="480dp"
-        android:src="@drawable/ic_boardingscreen1_indicator" />
+        android:src="@drawable/ic_boardingscreen1_indicator"
+        app:layout_constraintBottom_toBottomOf="@+id/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.263" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/indicator"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/lusitana"
+        android:lineSpacingExtra="10sp"
         android:text="LagimTM is an original collectible card game based on Filipino folklore and myths. Inspired by the traditional beliefs and customs of our Filipino ancestors, LagimTM aims to bolster original Filipino content and storytelling. Players are introduced to en-chanting worlds and mystical characters as  they traverse and unravel this thrilling game of strategy and luck."
         android:textAlignment="textStart"
         android:textColor="@color/TextColor"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Next"
+        app:layout_constraintEnd_toEndOf="@+id/indicator"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/indicator"
+        app:layout_constraintTop_toBottomOf="@+id/indicator"
+        app:layout_constraintVertical_bias="0.225" />
 
     <TextView
         android:id="@+id/Skip"
@@ -58,12 +75,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="25dp"
-        android:text="Skip"
-        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
         android:fontFamily="@font/lusitana"
-        android:textColor="@color/black"/>
+        android:text="Skip"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/Next"
@@ -71,11 +90,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/lusitana"
         android:text="Next"
-        android:textSize="20sp"
         android:textColor="@color/white"
-        android:fontFamily="@font/lusitana"/>
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

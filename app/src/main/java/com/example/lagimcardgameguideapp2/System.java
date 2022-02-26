@@ -24,6 +24,7 @@ public class System extends AppCompatActivity {
         );
         // Hide both the status bar and the navigation bar
         windowInsetsController.hide(WindowInsetsCompat.Type.systemBars());
+        getSupportActionBar().hide();
     }
 
     //Global
