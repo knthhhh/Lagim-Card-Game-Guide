@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_boardgame" />
+                android:src="@drawable/bg_cardanatomy" />
 
             <TextView
                 android:id="@+id/ComponentText"
@@ -53,6 +53,7 @@
                 tools:ignore="UsingOnClickInXml" />
 
             <TextView
+                android:id="@+id/cardana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/text"
@@ -67,13 +68,15 @@
                 android:textSize="15sp"
                 tools:ignore="UsingOnClickInXml" />
 
-            <View
-                android:layout_width="110dp"
-                android:layout_height="2dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="15dp"
-                android:layout_marginTop="123dp"
-                android:background="@color/cream" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/indicator"
+                android:layout_alignBottom="@+id/cardana"
+                android:layout_alignStart="@+id/cardana"
+                android:layout_alignEnd="@+id/cardana"
+                android:layout_marginBottom="-5dp"
+                />
 
             <ImageView
                 android:id="@+id/img1"
@@ -93,29 +96,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="75dp"
                 android:fontFamily="@font/oldstyle"
-                android:text="Forest Card |"
+                android:text="Forest Card | Lakas Cards"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/title1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="135dp"
-                android:fontFamily="@font/oldstyle"
-                android:text="Lakas Cards"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="135dp"
-                android:layout_marginTop="3dp"
-                android:src="@drawable/ic_redbrush" />
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/text1"
@@ -124,11 +107,21 @@
                 android:layout_alignTop="@id/title1"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="Accent color: Red"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_toRightOf="@id/text1"
+                android:src="@drawable/ic_redbrush" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -139,22 +132,24 @@
                 android:src="@drawable/bg_cardanatomy_text1" />
 
             <ImageView
+                android:id="@+id/onebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/one"
+                android:layout_alignTop="@+id/text1"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="590dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/text1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="590dp"
+                android:layout_alignTop="@id/onebg"
+                android:layout_alignEnd="@id/onebg"
+                android:layout_alignStart="@id/onebg"
+                android:layout_alignBottom="@+id/onebg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="1"
                 android:textColor="@color/TextColor"
@@ -188,22 +183,24 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/twobg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/two"
+                android:layout_alignTop="@+id/onebg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="150dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/one"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="150dp"
+                android:layout_alignTop="@id/twobg"
+                android:layout_alignBottom="@id/twobg"
+                android:layout_alignStart="@id/twobg"
+                android:layout_alignEnd="@id/twobg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="2"
                 android:textColor="@color/TextColor"
@@ -260,22 +257,24 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/threebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/three"
+                android:layout_alignTop="@+id/twobg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="280dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/two"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="280dp"
+                android:layout_alignTop="@id/threebg"
+                android:layout_alignEnd="@id/threebg"
+                android:layout_alignStart="@id/threebg"
+                android:layout_alignBottom="@id/threebg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="3"
                 android:textColor="@color/TextColor"
@@ -317,29 +316,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="200dp"
                 android:fontFamily="@font/oldstyle"
-                android:text="Baryo Card |"
+                android:text="Baryo Card | Lakas Card"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/title2"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="135dp"
-                android:fontFamily="@font/oldstyle"
-                android:text="Lakas Cards"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text2"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="145dp"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/ic_silverbrush" />
 
             <TextView
                 android:id="@+id/text2"
@@ -348,11 +327,20 @@
                 android:layout_alignTop="@id/title2"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="Accent color: Silver"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_toRightOf="@id/text2"
+                android:src="@drawable/ic_silverbrush" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -371,22 +359,24 @@
                 android:src="@drawable/bg_cardanatomy_text2"/>
 
             <ImageView
+                android:id="@+id/fourbg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/four"
+                android:layout_alignTop="@+id/title2"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="645dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/four"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/title2"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="645dp"
+                android:layout_alignTop="@id/fourbg"
+                android:layout_alignBottom="@id/fourbg"
+                android:layout_alignStart="@id/fourbg"
+                android:layout_alignEnd="@id/fourbg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="4"
                 android:textColor="@color/TextColor"
@@ -405,22 +395,24 @@
                 android:textSize="25sp" />
 
             <ImageView
+                android:id="@+id/fivebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/five"
+                android:layout_alignTop="@+id/fourbg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="70dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/five"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/four"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="70dp"
+                android:layout_alignTop="@id/fivebg"
+                android:layout_alignEnd="@id/fivebg"
+                android:layout_alignStart="@id/fivebg"
+                android:layout_alignBottom="@id/fivebg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="5"
                 android:textColor="@color/TextColor"
@@ -454,22 +446,24 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/sixbg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/six"
+                android:layout_alignTop="@+id/fivebg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="130dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/six"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/five"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="130dp"
+                android:layout_alignTop="@id/sixbg"
+                android:layout_alignBottom="@id/sixbg"
+                android:layout_alignStart="@id/sixbg"
+                android:layout_alignEnd="@id/sixbg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="6"
                 android:textColor="@color/TextColor"
@@ -550,7 +544,7 @@
                 android:layout_alignTop="@id/title3"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="Accent color: Magenta"
                 android:textColor="@color/white"
@@ -559,11 +553,13 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text4"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="165dp"
-                android:layout_marginTop="2dp"
+                android:layout_below="@id/title3"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_toRightOf="@id/text4"
                 android:src="@drawable/ic_magentabrush" />
+
 
             <ImageView
                 android:layout_width="match_parent"
@@ -583,7 +579,6 @@
                 android:layout_marginTop="80dp"
                 android:layout_marginEnd="-165dp"
                 android:src="@drawable/img_hiwagacards2" />
-
 
             <TextView
                 android:id="@+id/title4"
@@ -605,7 +600,7 @@
                 android:layout_alignTop="@id/title4"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="Accent color: Yellow Orange"
                 android:textColor="@color/white"
@@ -614,10 +609,11 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text5"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="205dp"
-                android:layout_marginTop="2dp"
+                android:layout_below="@id/title4"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_toRightOf="@id/text5"
                 android:src="@drawable/ic_yelloworangebrush" />
 
             <ImageView

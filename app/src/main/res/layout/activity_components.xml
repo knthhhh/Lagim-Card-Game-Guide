@@ -24,7 +24,6 @@
                 android:src="@drawable/bg_boardgame" />
 
             <TextView
-                android:onClick="ClickComponents"
                 android:id="@+id/ComponentText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -35,6 +34,7 @@
                 android:layout_marginEnd="50dp"
                 android:layout_marginBottom="50dp"
                 android:fontFamily="@font/opensans"
+                android:onClick="ClickComponents"
                 android:text="Components"
                 android:textColor="@color/TextColor"
                 android:textSize="15sp" />
@@ -68,17 +68,18 @@
                 android:textSize="15sp"
                 tools:ignore="UsingOnClickInXml" />
 
-            <View
-                android:layout_width="100dp"
-                android:layout_height="2dp"
-                android:background="@color/cream"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="123dp"
-                android:layout_marginStart="15dp"
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/indicator"
+                android:layout_alignBottom="@+id/ComponentText"
+                android:layout_alignStart="@+id/ComponentText"
+                android:layout_alignEnd="@+id/ComponentText"
+                android:layout_marginBottom="-5dp"
                 />
 
             <ImageView
-
+                android:id="@+id/gameboardbg"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/ComponentText"
@@ -88,11 +89,14 @@
 
             <TextView
                 android:id="@+id/text1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/ComponentText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/gameboardbg"
+                android:layout_alignTop="@id/gameboardbg"
+                android:layout_alignEnd="@id/gameboardbg"
+                android:layout_alignBottom="@+id/gameboardbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="75dp"
+                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="GAME BOARD"
                 android:textColor="@color/cream"
@@ -118,14 +122,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/textview"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="10dp"
+                android:layout_centerInParent="true"
                 android:layout_marginTop="80dp"
-                android:layout_marginEnd="20dp"
+                android:paddingEnd="10dp"
                 android:src="@drawable/img_gameboard" />
 
             <ImageView
+                android:id="@+id/detailsbg1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/board"
@@ -138,18 +141,21 @@
                 android:id="@+id/Details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/board"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="282dp"
+                android:layout_alignStart="@id/detailsbg1"
+                android:layout_alignTop="@+id/detailsbg1"
+                android:layout_alignEnd="@id/detailsbg1"
+                android:layout_alignBottom="@id/detailsbg1"
                 android:fontFamily="@font/lusitana"
+                android:gravity="center"
                 android:onClick="ComponentsToBoardDetails"
                 android:text="Details"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
 
             <ImageView
-                android:layout_width="150dp"
+                android:id="@+id/silabbg"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/Details"
                 android:layout_marginTop="50dp"
@@ -158,13 +164,15 @@
 
             <TextView
                 android:id="@+id/Silab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/Details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/silabbg"
+                android:layout_alignTop="@+id/silabbg"
+                android:layout_alignEnd="@id/silabbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
-                android:text="Silab"
+                android:text="SILAB"
                 android:textColor="@color/cream"
                 android:textSize="25sp" />
 
@@ -193,6 +201,7 @@
                 android:src="@drawable/img_silab" />
 
             <ImageView
+                android:id="@+id/gamesheetbg"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/silabImage"
@@ -202,11 +211,13 @@
 
             <TextView
                 android:id="@+id/text4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/silabImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/gamesheetbg"
+                android:layout_alignTop="@+id/gamesheetbg"
+                android:layout_alignEnd="@id/gamesheetbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="450dp"
+                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="GAME SHEET"
                 android:textColor="@color/cream"
@@ -232,12 +243,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/text5"
-                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
                 android:layout_marginTop="120dp"
+                android:paddingEnd="15dp"
                 android:src="@drawable/img_gamesheet" />
 
             <ImageView
-                android:layout_width="250dp"
+                android:id="@+id/soulcoinsbg"
+                android:layout_width="230dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/gameSheetImage"
                 android:layout_marginTop="200dp"
@@ -246,14 +259,13 @@
 
             <TextView
                 android:id="@+id/text6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/gameSheetImage"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/soulcoinsbg"
+                android:layout_alignStart="@id/soulcoinsbg"
+                android:layout_alignEnd="@id/soulcoinsbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="250dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="SOUL COINS"
                 android:textColor="@color/cream"
@@ -279,11 +291,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/text7"
-                android:layout_marginStart="17dp"
+                android:layout_centerInParent="true"
+                android:paddingStart="5dp"
                 android:layout_marginTop="50dp"
                 android:src="@drawable/img_soulcoins" />
 
             <ImageView
+                android:id="@+id/darksoulcoinsbg"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/CoinImage"
@@ -295,9 +309,11 @@
                 android:id="@+id/text8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/CoinImage"
+                android:layout_alignTop="@+id/darksoulcoinsbg"
+                android:layout_alignStart="@id/darksoulcoinsbg"
+                android:layout_alignEnd="@id/darksoulcoinsbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="450dp"
+                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="DARK SOUL COINS"
                 android:textColor="@color/cream"
@@ -324,12 +340,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/text9"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="15dp"
+                android:layout_centerInParent="true"
                 android:layout_marginTop="100dp"
+                android:paddingEnd="55dp"
                 android:src="@drawable/img_darksoulcoins" />
 
             <ImageView
+                android:id="@+id/agimatbg"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/DarkCoinImage"
@@ -339,11 +356,13 @@
 
             <TextView
                 android:id="@+id/text10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/DarkCoinImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/agimatbg"
+                android:layout_alignStart="@id/agimatbg"
+                android:layout_alignEnd="@+id/agimatbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="420dp"
+                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="AGIMAT"
                 android:textColor="@color/cream"
@@ -371,12 +390,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/text11"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="40dp"
+                android:layout_centerInParent="true"
                 android:layout_marginTop="150dp"
+                android:paddingEnd="20dp"
                 android:src="@drawable/img_agimat" />
 
             <ImageView
+                android:id="@+id/baryocardsbg"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/AgimatImage"
@@ -386,11 +406,13 @@
 
             <TextView
                 android:id="@+id/text12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/AgimatImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/baryocardsbg"
+                android:layout_alignTop="@+id/baryocardsbg"
+                android:layout_alignEnd="@id/baryocardsbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="450dp"
+                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="31 BARYO CARDS"
                 android:textColor="@color/cream"
@@ -412,18 +434,18 @@
                 android:textColor="@color/TextColor"
                 android:textSize="16sp" />
 
-
             <ImageView
                 android:id="@+id/BaryoImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/text13"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="67dp"
+                android:layout_centerInParent="true"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/img_baryocard" />
+                android:src="@drawable/img_baryocard"
+                android:paddingStart="22dp"/>
 
             <ImageView
+                android:id="@+id/detialsbg2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/BaryoImage"
@@ -435,31 +457,36 @@
                 android:id="@+id/Details2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/BaryoImage"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="408dp"
+                android:layout_alignStart="@id/detialsbg2"
+                android:layout_alignTop="@+id/detialsbg2"
+                android:layout_alignEnd="@id/detialsbg2"
+                android:layout_alignBottom="@id/detialsbg2"
                 android:fontFamily="@font/lusitana"
+                android:gravity="center"
                 android:onClick="ComponentsToBaryoDetails"
                 android:text="Details"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
 
             <ImageView
+                android:id="@+id/forestcardbg"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/Details2"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="100dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_component_title" />
 
             <TextView
                 android:id="@+id/text16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/Details2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/forestcardbg"
+                android:layout_alignTop="@+id/forestcardbg"
+                android:layout_alignEnd="@+id/fore"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="31 FOREST CARDS"
                 android:textColor="@color/cream"
@@ -486,12 +513,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/text17"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="67dp"
+                android:layout_centerInParent="true"
+                android:paddingStart="25dp"
                 android:layout_marginTop="150dp"
                 android:src="@drawable/img_forestcard" />
 
             <ImageView
+                android:id="@+id/detailsbg3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/bg_detail_btn"
@@ -504,13 +532,15 @@
                 android:id="@+id/Details3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/ForestImage"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="408dp"
+                android:layout_alignStart="@id/detailsbg3"
+                android:layout_alignTop="@+id/detailsbg3"
+                android:layout_alignEnd="@id/detailsbg3"
+                android:layout_alignBottom="@id/detailsbg3"
                 android:fontFamily="@font/lusitana"
+                android:gravity="center"
                 android:onClick="ComponentsToForestDetails"
                 android:text="Details"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
 
@@ -522,48 +552,47 @@
                 android:layout_marginTop="100dp"
                 />
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_lagim_white" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="ClickMenu"
+                    android:src="@drawable/ic_menu" />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black"
+                    app:itemIconTint="@drawable/selector"
+                    app:itemTextColor="@drawable/selector"
+                    app:menu="@menu/bottom_navigation" />
+
+
+            </RelativeLayout>
+
+
         </RelativeLayout>
 
     </ScrollView>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_lagim_white" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@android:color/transparent"
-            android:onClick="ClickMenu"
-            android:src="@drawable/ic_menu" />
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            app:itemIconTint="@drawable/selector"
-            app:itemTextColor="@drawable/selector"
-            app:menu="@menu/bottom_navigation"
-            android:layout_alignParentBottom="true"
-            />
-
-
-    </RelativeLayout>
-
 
 
     <RelativeLayout

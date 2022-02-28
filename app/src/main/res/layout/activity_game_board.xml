@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dwellers"
+    tools:context=".GameBoard"
     android:background="@color/black">
 
     <ScrollView
@@ -78,22 +78,24 @@
                 android:src="@drawable/bg_gameboard" />
 
             <ImageView
+                android:id="@+id/onebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/one"
+                android:layout_alignTop="@+id/board"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="440dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/board"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="440dp"
+                android:layout_alignTop="@+id/onebg"
+                android:layout_alignBottom="@+id/onebg"
+                android:layout_alignStart="@id/onebg"
+                android:layout_alignEnd="@id/onebg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="1"
                 android:textColor="@color/TextColor"
@@ -127,27 +129,28 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/twobg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/two"
+                android:layout_alignTop="@+id/onebg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="200dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/one"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="200dp"
+                android:layout_alignTop="@+id/twobg"
+                android:layout_alignBottom="@id/twobg"
+                android:layout_alignStart="@id/twobg"
+                android:layout_alignEnd="@id/twobg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="2"
                 android:textColor="@color/TextColor"
                 android:textSize="30sp" />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -176,22 +179,24 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/threebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/three"
+                android:layout_alignTop="@+id/twobg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="160dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/two"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="155dp"
+                android:layout_alignTop="@+id/threebg"
+                android:layout_alignBottom="@+id/threebg"
+                android:layout_alignStart="@id/threebg"
+                android:layout_alignEnd="@id/threebg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="3"
                 android:textColor="@color/TextColor"
@@ -213,10 +218,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/three"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Situated in the dark side of the Forest, this deck contains its creatures and cursed items: Lagim and Hiwaga."
@@ -224,22 +229,24 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/fourbg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/four"
+                android:layout_alignTop="@+id/threebg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="160dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/four"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/three"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="158dp"
+                android:layout_alignTop="@+id/fourbg"
+                android:layout_alignBottom="@id/fourbg"
+                android:layout_alignEnd="@id/fourbg"
+                android:layout_alignStart="@id/fourbg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="4"
                 android:textColor="@color/TextColor"
@@ -273,22 +280,24 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/fivebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/five"
+                android:layout_alignTop="@+id/fourbg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="140dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/five"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/four"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="137dp"
+                android:layout_alignTop="@+id/fivebg"
+                android:layout_alignBottom="@id/fivebg"
+                android:layout_alignStart="@id/fivebg"
+                android:layout_alignEnd="@id/fivebg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="5"
                 android:textColor="@color/TextColor"
@@ -310,33 +319,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/five"
-                android:layout_marginStart="20dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Situated beside the Baryo Deck, this area is where players discard Baryo cards."
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/sixbg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/six"
+                android:layout_alignTop="@+id/fivebg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="140dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/six"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/five"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="138dp"
+                android:layout_alignTop="@+id/sixbg"
+                android:layout_alignBottom="@id/sixbg"
+                android:layout_alignStart="@id/sixbg"
+                android:layout_alignEnd="@id/sixbg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="6"
                 android:textColor="@color/TextColor"
@@ -369,22 +380,24 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/sevenbg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/seven"
+                android:layout_alignTop="@+id/sixbg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="160dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/seven"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/six"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="156dp"
+                android:layout_alignTop="@+id/sevenbg"
+                android:layout_alignEnd="@id/sevenbg"
+                android:layout_alignStart="@id/sevenbg"
+                android:layout_alignBottom="@id/sevenbg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="7"
                 android:textColor="@color/TextColor"
@@ -417,22 +430,24 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/eightbg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/eight"
+                android:layout_alignTop="@+id/sevenbg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="175dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/eight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/seven"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="175dp"
+                android:layout_alignTop="@+id/eightbg"
+                android:layout_alignBottom="@id/eightbg"
+                android:layout_alignStart="@id/eightbg"
+                android:layout_alignEnd="@id/eightbg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="8"
                 android:textColor="@color/TextColor"
@@ -454,33 +469,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/eight"
-                android:layout_marginStart="20dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="A mysterious path that leads to the center of the Forest. Each Baryo is connected to an empty Spirit Path. In order to complete it, players must steal 3 Soul Coins from other Baryos and place them on their Spirit Path."
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/ninebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/nine"
+                android:layout_alignTop="@+id/eightbg"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="200dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/nine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/eight"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="200dp"
+                android:layout_alignTop="@+id/ninebg"
+                android:layout_alignEnd="@id/ninebg"
+                android:layout_alignStart="@id/ninebg"
+                android:layout_alignBottom="@id/ninebg"
+                android:gravity="center"
                 android:fontFamily="@font/backbones"
                 android:text="9"
                 android:textColor="@color/TextColor"
@@ -546,3 +563,4 @@
 
 
 </RelativeLayout>
+
