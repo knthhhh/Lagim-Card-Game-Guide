@@ -88,6 +88,28 @@
                 android:textColor="@color/cream"
                 android:textSize="25sp" />
 
+            <ImageView
+                android:id="@+id/lagimbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_lagim_btn"
+                android:layout_centerInParent="true"
+                android:layout_alignTop="@+id/txt1"
+                android:layout_marginTop="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LAGIM"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_alignTop="@id/lagimbtn"
+                android:layout_alignStart="@id/lagimbtn"
+                android:layout_alignBottom="@id/lagimbtn"
+                android:gravity="center"
+                android:layout_marginStart="65dp"
+                android:fontFamily="@font/lusitana"/>
+
         </RelativeLayout>
 
     </ScrollView>
