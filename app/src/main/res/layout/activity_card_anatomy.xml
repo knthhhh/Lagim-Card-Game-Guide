@@ -66,17 +66,17 @@
                 android:text="Card Anatomy"
                 android:textColor="@color/TextColor"
                 android:textSize="15sp"
-                tools:ignore="UsingOnClickInXml" />
+                tools:ignore="UsingOnClickInXml"
+                android:drawableBottom="@drawable/indicator"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/indicator"
-                android:layout_alignBottom="@+id/cardana"
-                android:layout_alignStart="@+id/cardana"
-                android:layout_alignEnd="@+id/cardana"
-                android:layout_marginBottom="-5dp"
-                />
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignStart="@+id/cardana"-->
+<!--                android:layout_alignEnd="@+id/cardana"-->
+<!--                android:layout_alignBottom="@+id/cardana"-->
+<!--                android:layout_marginBottom="-5dp"-->
+<!--                android:src="@drawable/indicator" />-->
 
             <ImageView
                 android:id="@+id/img1"

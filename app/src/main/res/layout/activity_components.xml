@@ -39,6 +39,13 @@
                 android:textColor="@color/TextColor"
                 android:textSize="15sp" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/indicator"
+                android:layout_alignBaseline="@+id/text"
+                />
+
             <TextView
                 android:id="@+id/text"
                 android:layout_width="wrap_content"
@@ -68,15 +75,6 @@
                 android:textSize="15sp"
                 tools:ignore="UsingOnClickInXml" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/indicator"
-                android:layout_alignBottom="@+id/ComponentText"
-                android:layout_alignStart="@+id/ComponentText"
-                android:layout_alignEnd="@+id/ComponentText"
-                android:layout_marginBottom="-5dp"
-                />
 
             <ImageView
                 android:id="@+id/gameboardbg"

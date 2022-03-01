@@ -92,23 +92,108 @@
                 android:id="@+id/lagimbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/bg_lagim_btn"
                 android:layout_centerInParent="true"
-                android:layout_alignTop="@+id/txt1"
-                android:layout_marginTop="50dp"/>
+                android:layout_below="@+id/txt1"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bg_lagim_btn" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="LAGIM"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:layout_alignTop="@id/lagimbtn"
                 android:layout_alignStart="@id/lagimbtn"
+                android:layout_alignTop="@id/lagimbtn"
                 android:layout_alignBottom="@id/lagimbtn"
-                android:gravity="center"
                 android:layout_marginStart="65dp"
-                android:fontFamily="@font/lusitana"/>
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="LAGIM"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/hiwagabtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/lagimbtn"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/bg_hiwaga_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/hiwagabtn"
+                android:layout_alignTop="@id/hiwagabtn"
+                android:layout_alignBottom="@id/hiwagabtn"
+                android:layout_marginStart="65dp"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="HIWAGA"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hiwagabtn"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/oldstyle"
+                android:text="BARYO CARDS"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/lakasbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bg_lakas_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/lakasbtn"
+                android:layout_alignTop="@id/lakasbtn"
+                android:layout_alignBottom="@id/lakasbtn"
+                android:layout_marginStart="65dp"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="LAKAS"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/kontrabtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lakasbtn"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/bg_kontra_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/kontrabtn"
+                android:layout_alignTop="@id/kontrabtn"
+                android:layout_alignBottom="@id/kontrabtn"
+                android:layout_marginStart="65dp"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="KONTRA"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kontrabtn"
+                android:layout_marginTop="50dp"
+                android:text=""/>
 
         </RelativeLayout>
 
@@ -142,17 +227,14 @@
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:background="@color/black"
             app:itemIconTint="@drawable/selector"
             app:itemTextColor="@drawable/selector"
-            app:menu="@menu/bottom_navigation"
-            android:layout_alignParentBottom="true"
-            />
+            app:menu="@menu/bottom_navigation" />
 
 
     </RelativeLayout>
-
-
 
     <RelativeLayout
         android:layout_width="250dp"
