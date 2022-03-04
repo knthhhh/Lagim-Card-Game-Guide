@@ -15,7 +15,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="UsingOnClickInXml">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -30,9 +31,6 @@
                 android:layout_alignBaseline="@+id/text"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="50dp"
-                android:layout_marginBottom="50dp"
                 android:fontFamily="@font/opensans"
                 android:onClick="CardsToComponents"
                 android:text="Components"
@@ -49,15 +47,16 @@
                 android:text="Cards"
                 android:textColor="@color/TextColor"
                 android:textSize="15sp"
-                tools:ignore="UsingOnClickInXml" />
+                tools:ignore="UsingOnClickInXml"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:drawableBottomCompat="@drawable/indicator" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/text"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/opensans"
@@ -65,16 +64,7 @@
                 android:text="Card Anatomy"
                 android:textColor="@color/lightGray"
                 android:textSize="15sp"
-                tools:ignore="UsingOnClickInXml" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/indicator"
-                android:layout_alignBottom="@id/text"
-                android:layout_centerInParent="true"
-                android:layout_marginBottom="-5dp"
-                />
+                tools:ignore="UsingOnClickInXml"/>
 
             <TextView
                 android:id="@+id/txt1"
@@ -88,14 +78,16 @@
                 android:textColor="@color/cream"
                 android:textSize="25sp" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/lagimbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_below="@+id/txt1"
+                android:layout_centerInParent="true"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bg_lagim_btn" />
+                android:onClick="Lagim"
+                android:src="@drawable/bg_lagim_btn"
+                android:background="@android:color/transparent"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -106,20 +98,24 @@
                 android:layout_marginStart="65dp"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center"
+                android:onClick="Lagim"
                 android:text="LAGIM"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/hiwagabtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_below="@id/lagimbtn"
+                android:layout_centerInParent="true"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/bg_hiwaga_btn" />
+                android:onClick="Hiwaga"
+                android:src="@drawable/bg_hiwaga_btn"
+                android:background="@android:color/transparent"/>
 
             <TextView
+                android:onClick="Hiwaga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/hiwagabtn"
@@ -144,16 +140,19 @@
                 android:textColor="@color/cream"
                 android:textSize="25sp" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/lakasbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txt2"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/bg_lakas_btn" />
+                android:onClick="Lakas"
+                android:src="@drawable/bg_lakas_btn"
+                android:background="@android:color/transparent"/>
 
             <TextView
+                android:onClick="Lakas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/lakasbtn"
@@ -166,16 +165,19 @@
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/kontrabtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/lakasbtn"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/bg_kontra_btn" />
+                android:onClick="Kontra"
+                android:src="@drawable/bg_kontra_btn"
+                android:background="@android:color/transparent"/>
 
             <TextView
+                android:onClick="Kontra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/kontrabtn"

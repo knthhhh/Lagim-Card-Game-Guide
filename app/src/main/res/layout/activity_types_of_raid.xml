@@ -8,123 +8,130 @@
     tools:context=".TypesOfRaid"
     android:background="@color/black">
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="364dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_typesofraiding"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_typesofraiding" />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/text1"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_typesofraiding_text" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/text1"
-                android:layout_marginTop="80dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_typesofraiding_text" />
-
-            <ImageButton
-                android:onClick="BackToHome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/ic_back" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:src="@drawable/ic_lagim_white" />
-
-            <TextView
-                android:id="@+id/text1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="140dp"
-                android:fontFamily="@font/lusitana"
-                android:text="TYPES OF RAIDING"
-                android:textColor="@color/cream"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/text2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/text1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="175dp"
-                android:fontFamily="@font/lusitana"
-                android:text="HASIK (Attack):"
-                android:textColor="@color/TextColor"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/text3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/text2"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="35dp"
-                android:fontFamily="@font/lusitana"
-                android:text="The action of using captured Lagim or Lagim equipped with Hiwaga cards to raid other Baryos, potentially causing the Baryos to exceed the Lagim Limit if it cannot defend."
-                android:textAlignment="textStart"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/text4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/text3"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="150dp"
-                android:fontFamily="@font/lusitana"
-                android:text="ANGKLA (Anchor):"
-                android:textColor="@color/TextColor"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/text5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/text4"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="35dp"
-                android:fontFamily="@font/lusitana"
-                android:text="The action of using captured Hiwaga cards to anchor its power on a Lagim or Hiwaga card dwelling on another Baryo."
-                android:textAlignment="textStart"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/lusitana"
+        android:text="TYPES OF RAID"
+        android:textColor="@color/cream"
+        android:textSize="20sp" />
 
 
-        </RelativeLayout>
-    </ScrollView>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/img"
+            android:layout_alignTop="@id/text1"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/lusitana"
+            android:gravity="center"
+            android:text="HASIK (Attack):"
+            android:textColor="@color/TextColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/text2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="35dp"
+            android:fontFamily="@font/lusitana"
+            android:text="The action of using captured Lagim or Lagim equipped with Hiwaga cards to raid other Baryos, potentially causing the Baryos to exceed the Lagim Limit if it cannot defend."
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/text3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/lusitana"
+        android:gravity="center"
+        android:text="ANGKLA (Anchor):"
+        android:textColor="@color/TextColor"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/text4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/lusitana"
+        android:text="The action of using captured Hiwaga cards to anchor its power on a Lagim or Hiwaga card dwelling on another Baryo."
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:onClick="BackToHome"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_lagim_white" />
+
+    </RelativeLayout>
 
 
 

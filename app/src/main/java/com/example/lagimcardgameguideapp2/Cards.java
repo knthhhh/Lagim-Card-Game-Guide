@@ -112,7 +112,6 @@ public class Cards extends System {
     }
 
     //Components
-
     public void CardsToCardAnatomy(View view) {
         Intent intent = new Intent(this, CardAnatomy.class);
         startActivity(intent);
