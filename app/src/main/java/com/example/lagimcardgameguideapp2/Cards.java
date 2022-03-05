@@ -1,7 +1,6 @@
 package com.example.lagimcardgameguideapp2;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -10,19 +9,30 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
+import java.util.ArrayList;
+
 public class Cards extends System {
 
     DrawerLayout drawerLayout;
+    ImageButton lagim, lakas, hiwaga, kontra;
+    ArrayList<String> Content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cards);
         hideSystemBars();
+
+        lagim = findViewById(R.id.lagimbtn);
+        lakas = findViewById(R.id.lakasbtn);
+        hiwaga = findViewById(R.id.hiwagabtn);
+        kontra = findViewById(R.id.kontrabtn);
+        Content = new ArrayList<String>();
 
         drawerLayout = findViewById(R.id.drawer_layout);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -52,6 +62,63 @@ public class Cards extends System {
             return false;
         }
     });
+
+        lagim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Content.clear();
+                Content.add("LAGIM CARDS");
+                Content.add("The symbol that represents the clan of each entity. The Archetype symbol is displayed beside a card’s ability and determines the pairing of character cards with their \n" +
+                        "equip cards.\n" +
+                        "\n" +
+                        "FOREST CARDS of the same ARCHETYPE automatically stack together, increasing their total ENTITY LEVEL.");
+                Intent intent = new Intent(Cards.this, BattleCardsArchetype.class);
+                intent.putExtra("Header",Content.get(0));
+                intent.putExtra("Text",Content.get(1));
+                intent.putExtra("bg", R.drawable.bg_lagim1);
+                startActivity(intent);
+            }
+        });
+
+        lakas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Content.clear();
+                Content.add("LAKAS CARDS");
+                Content.add("LAKAS CARDS of different ARCHETYPES can be played together during battle but each card can only equip KONTRA CARDS of the same Archetype (except for Special Kontra cards).\n" +
+                        "\n" +
+                        "Special Kontra cards can be identified by this symbol, and they can be paired with all Lakas Card Archetypes.");
+                Intent intent = new Intent(Cards.this, BattleCardsArchetype.class);
+                intent.putExtra("Header",Content.get(0));
+                intent.putExtra("Text",Content.get(1));
+                intent.putExtra("bg", R.drawable.bg_kontra1);
+                startActivity(intent);
+            }
+        });
+
+        hiwaga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Content.clear();
+                Content.add("HIWAGA CARDS");
+                Intent intent = new Intent(Cards.this, BattleCardsArchetype.class);
+                intent.putExtra("Header",Content.get(0));
+                intent.putExtra("bg", R.drawable.bg_lagim1);
+                startActivity(intent);
+            }
+        });
+
+        kontra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Content.clear();
+                Content.add("KONTRA CARDS");
+                Intent intent = new Intent(Cards.this, BattleCardsArchetype.class);
+                intent.putExtra("Header",Content.get(0));
+                intent.putExtra("bg", R.drawable.bg_kontra1);
+                startActivity(intent);
+            }
+        });
 
 }
     //Drawer Menu

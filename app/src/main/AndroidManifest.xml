@@ -10,16 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LagimCardGameGuideApp2">
         <activity
-            android:name=".Kontra"
+            android:name=".EquipCardsArchetype"
             android:exported="false" />
         <activity
-            android:name=".Lakas"
-            android:exported="false" />
-        <activity
-            android:name=".Hiwaga"
-            android:exported="false" />
-        <activity
-            android:name=".Lagim"
+            android:name=".BattleCardsArchetype"
             android:exported="false" />
         <activity
             android:name=".ForestCardDetails"

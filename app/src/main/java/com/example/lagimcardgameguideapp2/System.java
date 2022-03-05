@@ -8,8 +8,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 public class System extends AppCompatActivity {
 
     public void hideSystemBars() {
@@ -69,24 +67,5 @@ public class System extends AppCompatActivity {
         Intent intent = new Intent(this, TypesOfDefense.class);
         startActivity(intent);
     }
-
-    //Cards
-    public void Lagim(View view){
-        Intent intent = new Intent(this, Lagim.class);
-        startActivity(intent);
-    }
-    public void Hiwaga(View view){
-        Intent intent = new Intent(this, Hiwaga.class);
-        startActivity(intent);
-    }
-    public void Lakas(View view){
-        Intent intent = new Intent(this, Lakas.class);
-        startActivity(intent);
-    }
-    public void Kontra(View view){
-        Intent intent = new Intent(this, Kontra.class);
-        startActivity(intent);
-    }
-
 
 }
