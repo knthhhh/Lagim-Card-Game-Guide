@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardsDetails"
+    android:background="@color/black">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bgimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_card" />
+
+            <ImageView
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:paddingLeft="30dp"
+                android:paddingEnd="30dp"
+                android:src="@drawable/card_mambabarang" />
+
+            <ImageView
+                android:id="@+id/bgtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card"
+                android:layout_marginTop="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_card_text_large" />
+
+            <TextView
+                android:id="@+id/card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/bgtext"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/oldstyle"
+                android:text="Mambabarang"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/sub_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_name"
+                android:layout_alignStart="@id/card_name"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/oldstyle"
+                android:text="(Hex-Bringer)"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_name"
+                android:layout_alignBaseline="@id/card_name"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="70dp"
+                android:fontFamily="sans-serif"
+                android:text="Entity Level"
+                android:textColor="#62533E"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub1"
+                android:layout_alignStart="@id/sub1"
+                android:src="@drawable/level_five" />
+
+            <TextView
+                android:id="@+id/sub2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_name"
+                android:layout_alignStart="@id/card_name"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                android:text="Card Type"
+                android:textColor="#62533E"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/card_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub2"
+                android:layout_alignStart="@id/card_name"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/oldstyle"
+                android:text="Lagim Card"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sub3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/sub2"
+                android:layout_alignStart="@id/sub1"
+                android:fontFamily="sans-serif"
+                android:text="Archetype"
+                android:textColor="#62533E"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/archetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub3"
+                android:layout_alignStart="@id/sub3"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/oldstyle"
+                android:text="Witch"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sub4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_type"
+                android:layout_alignStart="@id/sub2"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Traits"
+                android:textColor="#62533E"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/traits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/oldstyle"
+                android:text="Hailing form a highborn bloodline of witches, the evil Mambabarang uses insects as a medium to torture, kill, or inflict hexes upon their victims."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sub5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/traits"
+                android:layout_alignStart="@id/sub2"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Abilities"
+                android:textColor="#62533E"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/oldstyle"
+                android:text="SOULREAPER: Defending player automatically lose 1 soul coin."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sub6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ability"
+                android:layout_alignStart="@id/sub2"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Increase Total Entity Level when paired to: "
+                android:textColor="#62533E"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/pair1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/card_mangkukulam" />
+
+
+            <ImageView
+                android:id="@+id/pair2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub6"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/card_alakdan_at_alupihan" />
+
+            <ImageView
+                android:id="@+id/pair3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pair1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-30dp"
+                android:src="@drawable/card_alakdan_at_alupihan" />
+
+            <ImageView
+                android:id="@+id/pair4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pair2"
+                android:layout_alignBaseline="@id/pair3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-30dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/card_alakdan_at_alupihan"
+                />
+
+            <ImageView
+                android:id="@+id/pair5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pair2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-30dp"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/card_alakdan_at_alupihan" />
+
+            <ImageView
+                android:id="@+id/pair6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pair4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-30dp"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/card_alakdan_at_alupihan" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:onClick="Back"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_lagim_white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
