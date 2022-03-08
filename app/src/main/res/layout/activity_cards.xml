@@ -85,7 +85,6 @@
                 android:layout_below="@+id/txt1"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="20dp"
-                android:onClick="Lagim"
                 android:src="@drawable/bg_lagim_btn"
                 android:background="@android:color/transparent"/>
 
@@ -98,7 +97,6 @@
                 android:layout_marginStart="65dp"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center"
-                android:onClick="Lagim"
                 android:text="LAGIM"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -110,12 +108,10 @@
                 android:layout_below="@id/lagimbtn"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="10dp"
-                android:onClick="Hiwaga"
                 android:src="@drawable/bg_hiwaga_btn"
                 android:background="@android:color/transparent"/>
 
             <TextView
-                android:onClick="Hiwaga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/hiwagabtn"
@@ -147,12 +143,10 @@
                 android:layout_below="@id/txt2"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="20dp"
-                android:onClick="Lakas"
                 android:src="@drawable/bg_lakas_btn"
                 android:background="@android:color/transparent"/>
 
             <TextView
-                android:onClick="Lakas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/lakasbtn"
@@ -172,12 +166,10 @@
                 android:layout_below="@id/lakasbtn"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="10dp"
-                android:onClick="Kontra"
                 android:src="@drawable/bg_kontra_btn"
                 android:background="@android:color/transparent"/>
 
             <TextView
-                android:onClick="Kontra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/kontrabtn"

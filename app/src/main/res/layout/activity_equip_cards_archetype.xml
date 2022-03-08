@@ -23,7 +23,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:scaleType="fitXY"/>
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_lagim"/>
 
         <ImageView
             android:id="@+id/titlebg"
@@ -48,7 +49,6 @@
             android:textSize="25sp" />
 
         <ImageButton
-            android:onClick="BackToCards"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -56,6 +56,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
+            android:onClick="Back"
             android:src="@drawable/ic_back" />
 
         <ImageView
@@ -100,7 +101,8 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="50dp"
             android:layout_marginTop="100dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/hiwaga_witch"/>
 
         <ImageView
             android:id="@+id/btn2"
@@ -110,7 +112,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="50dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/lagim_bestial" />
 
         <ImageView
             android:id="@+id/btn3"
@@ -120,7 +123,8 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="50dp"
             android:layout_marginTop="50dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/hiwaga_ghoul" />
 
         <ImageView
             android:id="@+id/btn4"
@@ -130,7 +134,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="50dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/hiwaga_giant" />
 
         <ImageView
             android:id="@+id/btn5"
@@ -139,7 +144,8 @@
             android:layout_below="@id/btn3"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/hiwaga_dwarf" />
 
     </RelativeLayout>
     </ScrollView>

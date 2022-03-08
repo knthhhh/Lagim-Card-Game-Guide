@@ -26,19 +26,7 @@ public class System extends AppCompatActivity {
     }
 
     //Global
-
-    //ToComponents
-    public void BackToComponents(View view){
-        finish();
-    }
-
-    //ToHome
-    public void BackToHome(View view){
-        finish();
-    }
-
-    //ToCards
-    public void BackToCards(View view){
+    public void Back(View view){
         finish();
     }
 

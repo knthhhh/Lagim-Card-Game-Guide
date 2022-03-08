@@ -1,6 +1,8 @@
 package com.example.lagimcardgameguideapp2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,17 +33,116 @@ public class EquipCardsArchetype extends System {
         header.setText(getIntent().getStringExtra("Header"));
 
         if (header.getText().equals("HIWAGA CARDS")){
-            img1.setImageResource(R.drawable.ic_witch_btn);
-            img2.setImageResource(R.drawable.ic_bestial_btn);
-            img3.setImageResource(R.drawable.ic_ghoul_btn);
-            img4.setImageResource(R.drawable.ic_giant_btn);
-            img5.setImageResource(R.drawable.ic_dwarf_btn);
+            img1.setImageResource(R.drawable.hiwaga_witch);
+            img2.setImageResource(R.drawable.lagim_bestial);
+            img3.setImageResource(R.drawable.hiwaga_ghoul);
+            img4.setImageResource(R.drawable.hiwaga_giant);
+            img5.setImageResource(R.drawable.hiwaga_dwarf);
         }else{
-            img1.setImageResource(R.drawable.ic_medium_button);
-            img2.setImageResource(R.drawable.ic_mortal_btn);
-            img3.setImageResource(R.drawable.ic_warrior_btn);
-            img4.setImageResource(R.drawable.ic_halfwarrior_btn);
-            img5.setImageResource(R.drawable.ic_special_btn);
+            img1.setImageResource(R.drawable.kontra_medium);
+            img2.setImageResource(R.drawable.kontra_mortal);
+            img3.setImageResource(R.drawable.kontra_warrior);
+            img4.setImageResource(R.drawable.kontra_halfmortal);
+            img5.setImageResource(R.drawable.kontra_special);
         }
+
+        img1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (header.getText().equals("HIWAGA CARDS")){
+                    Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
+                    lagim.putExtra("Archetype","Witch Archetype");
+                    lagim.putExtra("bg", R.drawable.bg_lagim);
+                    lagim.putExtra("card1", R.drawable.card_sumpangmanika);
+                    lagim.putExtra("card2", R.drawable.card_alakdan_at_alupihan);
+                    lagim.putExtra("card3", R.drawable.card_altar_ng_kulam);
+                    startActivity(lagim);
+                } else {
+                    Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
+                    lakas.putExtra("Archetype","Medium Archetype");
+                    lakas.putExtra("bg", R.drawable.bg_kontra);
+                    lakas.putExtra("card1", R.drawable.card_buntot_pagi);
+                    lakas.putExtra("card2",R.drawable.card_orasyonatinsenso);
+                    startActivity(lakas);
+                }
+            }
+        });
+
+        img2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (header.getText().equals("HIWAGA CARDS")){
+                    Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
+                    lagim.putExtra("Archetype","Bestial Archetype");
+                    lagim.putExtra("bg", R.drawable.bg_lagim);
+                    startActivity(lagim);
+                } else {
+                    Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
+                    lakas.putExtra("Archetype","Mortal Archetype");
+                    lakas.putExtra("bg", R.drawable.bg_kontra);
+                    lakas.putExtra("card1", R.drawable.card_tabakbawangatasin);
+                    startActivity(lakas);
+                }
+            }
+        });
+
+        img3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (header.getText().equals("HIWAGA CARDS")){
+                    Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
+                    lagim.putExtra("Archetype","Ghoul Archetype");
+                    lagim.putExtra("bg", R.drawable.bg_lagim);
+                    lagim.putExtra("card1", R.drawable.card_tiktikatbuwan);
+                    lagim.putExtra("card2", R.drawable.card_dugo_at_langis);
+                    startActivity(lagim);
+                } else {
+                    Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
+                    lakas.putExtra("Archetype","Warrior Archetype");
+                    lakas.putExtra("bg", R.drawable.bg_kontra);
+                    lakas.putExtra("card1", R.drawable.card_sibatatsulo);
+                    startActivity(lakas);
+                }
+            }
+        });
+
+        img4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (header.getText().equals("HIWAGA CARDS")){
+                    Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
+                    lagim.putExtra("Archetype","Giant Archetype");
+                    lagim.putExtra("bg", R.drawable.bg_lagim);
+                    lagim.putExtra("card1", R.drawable.card_punongacacia);
+                    startActivity(lagim);
+                } else {
+                    Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
+                    lakas.putExtra("Archetype","Half Mortal Archetype");
+                    lakas.putExtra("bg", R.drawable.bg_kontra);
+                    startActivity(lakas);
+                }
+            }
+        });
+
+        img5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (header.getText().equals("HIWAGA CARDS")){
+                    Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
+                    lagim.putExtra("Archetype","Dwarf Archetype");
+                    lagim.putExtra("bg", R.drawable.bg_lagim);
+                    lagim.putExtra("card1", R.drawable.card_bungo_at_tungkod);
+                    startActivity(lagim);
+                } else {
+                    Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
+                    lakas.putExtra("Archetype","Special Archetype");
+                    lakas.putExtra("bg", R.drawable.bg_kontra);
+                    lakas.putExtra("card1", R.drawable.card_agimat);
+                    lakas.putExtra("card2", R.drawable.card_gasera);
+                    startActivity(lakas);
+                }
+            }
+        });
+
     }
 }

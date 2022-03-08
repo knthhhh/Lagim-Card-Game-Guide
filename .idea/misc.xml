@@ -25,16 +25,20 @@
         <entry key="app/src/main/res/drawable/selector.xml" value="0.202" />
         <entry key="app/src/main/res/layout/activity_about_us.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_baryo_card_details.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_battle_cards_archetype.xml" value="0.20512820512820512" />
+        <entry key="app/src/main/res/layout/activity_battle_cards_list.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_boarding_screen1.xml" value="0.25831298828125004" />
         <entry key="app/src/main/res/layout/activity_boarding_screen2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_card_anatomy.xml" value="0.19925742574257427" />
         <entry key="app/src/main/res/layout/activity_cards.xml" value="0.2795138888888889" />
+        <entry key="app/src/main/res/layout/activity_cards_details.xml" value="0.2731535756154748" />
         <entry key="app/src/main/res/layout/activity_components.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_defending.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_dwellers.xml" value="0.2646397908528647" />
         <entry key="app/src/main/res/layout/activity_equip_cards_archetype.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_equip_cards_list.xml" value="0.20512820512820512" />
         <entry key="app/src/main/res/layout/activity_faqs.xml" value="0.25364583333333335" />
-        <entry key="app/src/main/res/layout/activity_forest_card_details.xml" value="0.16959269662921347" />
+        <entry key="app/src/main/res/layout/activity_forest_card_details.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_game_board.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_hdefending.xml" value="0.25364583333333335" />

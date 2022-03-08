@@ -361,7 +361,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
-            android:onClick="BackToComponents"
+            android:onClick="Back"
             android:src="@drawable/ic_back" />
 
         <ImageView

@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LagimCardGameGuideApp2">
         <activity
+            android:name=".EquipCardsList"
+            android:exported="false" />
+        <activity
+            android:name=".CardsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".BattleCardsList"
+            android:exported="false" />
+        <activity
             android:name=".EquipCardsArchetype"
             android:exported="false" />
         <activity
