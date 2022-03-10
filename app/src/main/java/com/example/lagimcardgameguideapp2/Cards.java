@@ -68,8 +68,7 @@ public class Cards extends System {
             public void onClick(View view) {
                 Content.clear();
                 Content.add("LAGIM CARDS");
-                Content.add("The symbol that represents the clan of each entity. The Archetype symbol is displayed beside a card’s ability and determines the pairing of character cards with their \n" +
-                        "equip cards.\n" +
+                Content.add("The symbol that represents the clan of each entity. The Archetype symbol is displayed beside a card’s ability and determines the pairing of character cards with their equip cards.\n" +
                         "\n" +
                         "FOREST CARDS of the same ARCHETYPE automatically stack together, increasing their total ENTITY LEVEL.");
                 Intent intent = new Intent(Cards.this, BattleCardsArchetype.class);

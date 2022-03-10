@@ -8,9 +8,9 @@
     tools:context=".EquipCardsArchetype"
     android:background="@color/black">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,29 +24,33 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:scaleType="fitXY"
-            android:src="@drawable/bg_lagim"/>
+            android:src="@drawable/bg_lagim" />
 
         <ImageView
             android:id="@+id/titlebg"
-            android:layout_width="280dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="80dp"
             android:scaleType="fitXY"
-            android:src="@drawable/bg_component_title" />
+            android:src="@drawable/bg_title" />
 
         <TextView
             android:id="@+id/Header1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/titlebg"
+            android:layout_alignStart="@id/titlebg"
+            android:layout_alignTop="@id/titlebg"
+            android:layout_alignEnd="@id/titlebg"
+            android:layout_alignBottom="@id/titlebg"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
             android:fontFamily="@font/oldstyle"
-            android:text="HIWAGA CARDS"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:text="LAGIM CARDS"
             android:textColor="@color/cream"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -86,12 +90,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/Header2"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="20dp"
             android:scaleType="fitXY"
-            android:src="@drawable/bg_lagim2" />
+            android:src="@drawable/bg_archetype" />
 
         <ImageView
             android:id="@+id/btn1"
@@ -99,10 +103,24 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/bg"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="60dp"
             android:layout_marginTop="100dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/hiwaga_witch"/>
+            android:src="@drawable/hiwaga_witch" />
+
+        <TextView
+            android:id="@+id/archetype1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn1"
+            android:layout_alignStart="@id/btn1"
+            android:layout_alignEnd="@id/btn1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lusitana"
+            android:text="Witch"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/btn2"
@@ -111,31 +129,71 @@
             android:layout_alignTop="@id/bg"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="100dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginEnd="60dp"
             android:background="@android:color/transparent"
             android:src="@drawable/lagim_bestial" />
+
+        <TextView
+            android:id="@+id/archetype2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn2"
+            android:layout_alignStart="@id/btn2"
+            android:layout_alignEnd="@id/btn2"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lusitana"
+            android:text="Witch"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
 
         <ImageView
             android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/btn1"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_alignStart="@+id/btn1"
+            android:layout_marginTop="100dp"
             android:background="@android:color/transparent"
             android:src="@drawable/hiwaga_ghoul" />
+
+        <TextView
+            android:id="@+id/archetype3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn3"
+            android:layout_alignStart="@id/btn3"
+            android:layout_alignEnd="@id/btn3"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lusitana"
+            android:text="Witch"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/btn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/btn2"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="50dp"
+            android:layout_alignEnd="@+id/btn2"
+            android:layout_marginTop="100dp"
             android:background="@android:color/transparent"
             android:src="@drawable/hiwaga_giant" />
+
+        <TextView
+            android:id="@+id/archetype4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn4"
+            android:layout_alignStart="@id/btn4"
+            android:layout_alignEnd="@id/btn4"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lusitana"
+            android:text="Witch"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/btn5"
@@ -143,11 +201,25 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btn3"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="100dp"
             android:background="@android:color/transparent"
             android:src="@drawable/hiwaga_dwarf" />
 
+        <TextView
+            android:id="@+id/archetype5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn5"
+            android:layout_alignStart="@id/btn5"
+            android:layout_alignEnd="@id/btn5"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lusitana"
+            android:text="Witch"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
     </RelativeLayout>
-    </ScrollView>
+<!--    </ScrollView>-->
 
 </RelativeLayout>

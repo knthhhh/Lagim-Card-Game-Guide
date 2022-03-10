@@ -16,7 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
         <ImageView
             android:id="@+id/img1"
             android:layout_width="match_parent"
@@ -27,34 +26,58 @@
             android:src="@drawable/bg_typesofdefense" />
 
         <ImageView
+            android:id="@+id/img2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text1"
-            android:layout_marginTop="79dp"
+            android:layout_alignTop="@id/title"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
             android:scaleType="fitXY"
             android:src="@drawable/bg_typesofdefense_text" />
 
         <TextView
-            android:id="@+id/text1"
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="140dp"
+            android:layout_marginTop="150dp"
             android:fontFamily="@font/lusitana"
             android:text="TYPES OF DEFENSE"
             android:textColor="@color/cream"
             android:textSize="20sp" />
 
+        <ImageView
+            android:id="@+id/bg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_title_home" />
+
+        <ImageView
+            android:id="@+id/hasik1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/bg1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/bg1"
+            android:src="@drawable/ic_bihag" />
+
         <TextView
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text1"
-            android:layout_alignParentStart="true"
+            android:layout_alignStart="@id/bg1"
+            android:layout_alignTop="@id/bg1"
+            android:layout_alignEnd="@id/bg1"
+            android:layout_alignBottom="@+id/bg1"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="178dp"
             android:fontFamily="@font/lusitana"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
             android:text="BIHAG (Capture):"
             android:textColor="@color/TextColor"
             android:textSize="16sp" />
@@ -63,11 +86,11 @@
             android:id="@+id/text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text2"
+            android:layout_below="@id/text2"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/lusitana"
             android:text="The action of engaging in battle using your Defenders to capture the attacking Forest cards by defeating its Entity Level."
@@ -75,15 +98,36 @@
             android:textColor="@color/black"
             android:textSize="16sp" />
 
+        <ImageView
+            android:id="@+id/bg2"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_title_home" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/bg2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/bg2"
+            android:src="@drawable/ic_tabla" />
+
         <TextView
             android:id="@+id/text4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text3"
-            android:layout_alignParentStart="true"
+            android:layout_alignStart="@id/bg2"
+            android:layout_alignTop="@id/bg2"
+            android:layout_alignEnd="@id/bg2"
+            android:layout_alignBottom="@id/bg2"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="125dp"
             android:fontFamily="@font/lusitana"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
             android:text="TABLA (Draw):"
             android:textColor="@color/TextColor"
             android:textSize="16sp" />
@@ -92,11 +136,11 @@
             android:id="@+id/text5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text4"
+            android:layout_below="@id/text4"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/lusitana"
             android:text="The action of eliminating the opposing Forest card (or Forest card stack) but only with an equal total Entity Level. Forest cards are not captured but discarded to the Graveyard pile."
@@ -104,15 +148,36 @@
             android:textColor="@color/black"
             android:textSize="16sp" />
 
+        <ImageView
+            android:id="@+id/bg3"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text5"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_title_home" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/bg3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/bg3"
+            android:src="@drawable/ic_salag" />
+
         <TextView
             android:id="@+id/text6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text5"
-            android:layout_alignParentStart="true"
+            android:layout_alignStart="@id/bg3"
+            android:layout_alignTop="@id/bg3"
+            android:layout_alignEnd="@id/bg3"
+            android:layout_alignBottom="@id/bg3"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="145dp"
             android:fontFamily="@font/lusitana"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
             android:text="SALAG (Block):"
             android:textColor="@color/TextColor"
             android:textSize="16sp" />
@@ -121,11 +186,11 @@
             android:id="@+id/text7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text6"
+            android:layout_below="@id/text6"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/lusitana"
             android:text="The action of using the Agimat card to block a Forest card’s (or Forest card stack) ability and temporarily hold it in place until a Lakas card is available to equip the Agimat."
@@ -133,15 +198,27 @@
             android:textColor="@color/black"
             android:textSize="16sp" />
 
+        <ImageView
+            android:id="@+id/bg4"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text7"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_title_home" />
+
         <TextView
             android:id="@+id/text8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text7"
-            android:layout_alignParentStart="true"
+            android:layout_alignStart="@id/bg4"
+            android:layout_alignTop="@id/bg4"
+            android:layout_alignEnd="@id/bg4"
+            android:layout_alignBottom="@id/bg4"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="140dp"
             android:fontFamily="@font/lusitana"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
             android:text="PAGTAULI (Counter-raid):"
             android:textColor="@color/TextColor"
             android:textSize="16sp" />
@@ -150,18 +227,17 @@
             android:id="@+id/text9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text8"
+            android:layout_below="@id/text8"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/lusitana"
             android:text="The action of countering the raid or attack of another Baryo by using captured Hiwaga cards."
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="16sp" />
-
 
     </RelativeLayout>
 

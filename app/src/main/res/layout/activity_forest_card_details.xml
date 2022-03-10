@@ -24,24 +24,28 @@
 
             <ImageView
                 android:id="@+id/img1"
-                android:layout_width="290dp"
+                android:layout_width="230dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="80dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_component_title" />
+                android:src="@drawable/bg_title" />
 
             <TextView
                 android:id="@+id/txt1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/img1"
+                android:layout_alignBottom="@id/img1"
+                android:layout_alignStart="@+id/img1"
+                android:layout_alignEnd="@id/img1"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="31 FOREST CARDS"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textview"
@@ -65,11 +69,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/textview"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
                 android:layout_marginStart="67dp"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/img_forestcard"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="40dp"/>
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/img_forestcard" />
 
             <ImageView
                 android:layout_width="match_parent"

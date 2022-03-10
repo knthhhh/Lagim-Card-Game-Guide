@@ -11,7 +11,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -68,38 +69,40 @@
 
 
             <ImageView
-                android:id="@+id/gameboardbg"
-                android:layout_width="250dp"
+                android:id="@+id/titlebg"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/ComponentText"
-                android:layout_marginTop="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/ComponentText"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_component_title" />
+                android:src="@drawable/bg_title" />
 
             <TextView
-                android:id="@+id/text1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignStart="@id/gameboardbg"
-                android:layout_alignTop="@id/gameboardbg"
-                android:layout_alignEnd="@id/gameboardbg"
-                android:layout_alignBottom="@+id/gameboardbg"
+                android:id="@+id/Header1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/titlebg"
+                android:layout_alignTop="@id/titlebg"
+                android:layout_alignEnd="@id/titlebg"
+                android:layout_alignBottom="@id/titlebg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:text="GAME BOARD"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text1"
+                android:layout_below="@+id/Header1"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="The game board displays the Forest realm and Baryo realm where both players and Forest creatures co-exist."
@@ -110,9 +113,9 @@
                 android:id="@+id/board"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/textview"
+                android:layout_below="@+id/textview"
                 android:layout_centerInParent="true"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="20dp"
                 android:paddingEnd="10dp"
                 android:src="@drawable/img_gameboard" />
 
@@ -120,9 +123,9 @@
                 android:id="@+id/detailsbg1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/board"
+                android:layout_below="@+id/board"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="262dp"
+                android:layout_marginTop="20dp"
                 android:onClick="ComponentsToBoardDetails"
                 android:src="@drawable/bg_detail_btn" />
 
@@ -144,12 +147,12 @@
 
             <ImageView
                 android:id="@+id/silabbg"
-                android:layout_width="130dp"
+                android:layout_width="105dp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/Details"
+                android:layout_below="@+id/Details"
                 android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_component_title" />
+                android:src="@drawable/bg_title" />
 
             <TextView
                 android:id="@+id/Silab"
@@ -158,22 +161,24 @@
                 android:layout_alignStart="@id/silabbg"
                 android:layout_alignTop="@+id/silabbg"
                 android:layout_alignEnd="@id/silabbg"
+                android:layout_alignBottom="@+id/silabbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:text="SILAB"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/text3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/Silab"
+                android:layout_below="@+id/Silab"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="The Silab is used to indicate the active player and what game phase the player is currently on during their turn. Players must pass the Silab to the next player after their turn."
@@ -184,43 +189,45 @@
                 android:id="@+id/silabImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text3"
+                android:layout_below="@+id/text3"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="20dp"
                 android:src="@drawable/img_silab" />
 
             <ImageView
                 android:id="@+id/gamesheetbg"
-                android:layout_width="250dp"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/silabImage"
-                android:layout_marginTop="400dp"
+                android:layout_below="@+id/silabImage"
+                android:layout_marginTop="-10dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_component_title" />
+                android:src="@drawable/bg_title" />
 
             <TextView
                 android:id="@+id/text4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignStart="@id/gamesheetbg"
                 android:layout_alignTop="@+id/gamesheetbg"
                 android:layout_alignEnd="@id/gamesheetbg"
+                android:layout_alignBottom="@id/gamesheetbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:text="GAME SHEET"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/text5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text4"
+                android:layout_below="@+id/text4"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="The game sheet contains marks for Silab to be placed upon, indicating what phase the active player is currently on. It also serves as a quick reference guide for the different game actions."
@@ -231,44 +238,46 @@
                 android:id="@+id/gameSheetImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text5"
+                android:layout_below="@+id/text5"
                 android:layout_centerInParent="true"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="60dp"
                 android:paddingEnd="15dp"
                 android:src="@drawable/img_gamesheet" />
 
             <ImageView
                 android:id="@+id/soulcoinsbg"
-                android:layout_width="230dp"
+                android:layout_width="170dp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/gameSheetImage"
-                android:layout_marginTop="200dp"
+                android:layout_below="@+id/gameSheetImage"
+                android:layout_marginTop="70dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_component_title" />
+                android:src="@drawable/bg_title" />
 
             <TextView
                 android:id="@+id/text6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignTop="@+id/soulcoinsbg"
                 android:layout_alignStart="@id/soulcoinsbg"
+                android:layout_alignTop="@+id/soulcoinsbg"
                 android:layout_alignEnd="@id/soulcoinsbg"
+                android:layout_alignBottom="@id/soulcoinsbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:text="SOUL COINS"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/text7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text6"
+                android:layout_below="@+id/text6"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="The most important resource in the game. Soul Coins represent your Baryo’s life points. Stealing 3 Soul Coins from other Baryos completes your Spirit Path."
@@ -287,36 +296,38 @@
 
             <ImageView
                 android:id="@+id/darksoulcoinsbg"
-                android:layout_width="330dp"
+                android:layout_width="240dp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/CoinImage"
-                android:layout_marginTop="400dp"
+                android:layout_below="@+id/CoinImage"
+                android:layout_marginTop="-20dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_component_title" />
+                android:src="@drawable/bg_title" />
 
             <TextView
                 android:id="@+id/text8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/darksoulcoinsbg"
                 android:layout_alignStart="@id/darksoulcoinsbg"
+                android:layout_alignTop="@+id/darksoulcoinsbg"
                 android:layout_alignEnd="@id/darksoulcoinsbg"
+                android:layout_alignBottom="@id/darksoulcoinsbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:text="DARK SOUL COINS"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/text9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text8"
+                android:layout_below="@+id/text8"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="The most powerful piece in the game. A Dark Soul Coin allows you to capture any 2 Forest cards from your Baryo or the Forest Deck."
@@ -328,51 +339,52 @@
                 android:id="@+id/DarkCoinImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text9"
+                android:layout_below="@+id/text9"
                 android:layout_centerInParent="true"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="50dp"
                 android:paddingEnd="55dp"
                 android:src="@drawable/img_darksoulcoins" />
 
             <ImageView
                 android:id="@+id/agimatbg"
-                android:layout_width="170dp"
+                android:layout_width="125dp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/DarkCoinImage"
-                android:layout_marginTop="370dp"
+                android:layout_below="@+id/DarkCoinImage"
+                android:layout_marginTop="25dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_component_title" />
+                android:src="@drawable/bg_title" />
 
             <TextView
                 android:id="@+id/text10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignTop="@+id/agimatbg"
                 android:layout_alignStart="@id/agimatbg"
+                android:layout_alignTop="@+id/agimatbg"
                 android:layout_alignEnd="@+id/agimatbg"
+                android:layout_alignBottom="@id/agimatbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:text="AGIMAT"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/text11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text10"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/text10"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="The sacred amulet that nullifies all negative abilities.\n\nThe Agimat is rewarded to the player that wins the game of Lagim, and will be able to benefit from its effect during the next game."
                 android:textAlignment="textStart"
                 android:textColor="@color/TextColor"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/AgimatImage"
@@ -386,12 +398,12 @@
 
             <ImageView
                 android:id="@+id/baryocardsbg"
-                android:layout_width="300dp"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/AgimatImage"
-                android:layout_marginTop="400dp"
+                android:layout_below="@+id/AgimatImage"
+                android:layout_marginTop="20dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_component_title" />
+                android:src="@drawable/bg_title" />
 
             <TextView
                 android:id="@+id/text12"
@@ -400,23 +412,25 @@
                 android:layout_alignStart="@id/baryocardsbg"
                 android:layout_alignTop="@+id/baryocardsbg"
                 android:layout_alignEnd="@id/baryocardsbg"
+                android:layout_alignBottom="@id/baryocardsbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="55dp"
                 android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:text="31 BARYO CARDS"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/text13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text12"
+                android:layout_below="@+id/text12"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="80dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Baryo cards consist of Lakas and Kontra cards that fall under 3 main archetypes: Medium, Mortal, and Warrior.\n\nIn addition, Kontra cards include Special cards that have unique capabilities. These cards represent the villagers and equipment that Baryos can use to build their defenses."
                 android:textAlignment="textStart"
@@ -427,11 +441,11 @@
                 android:id="@+id/BaryoImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text13"
+                android:layout_below="@+id/text13"
                 android:layout_centerInParent="true"
-                android:layout_marginTop="150dp"
-                android:src="@drawable/img_baryocard"
-                android:paddingStart="22dp"/>
+                android:layout_marginTop="20dp"
+                android:paddingStart="22dp"
+                android:src="@drawable/img_baryocard" />
 
             <ImageView
                 android:id="@+id/detialsbg2"
@@ -460,12 +474,12 @@
 
             <ImageView
                 android:id="@+id/forestcardbg"
-                android:layout_width="300dp"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/Details2"
-                android:layout_marginTop="100dp"
+                android:layout_below="@+id/Details2"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_component_title" />
+                android:src="@drawable/bg_title" />
 
             <TextView
                 android:id="@+id/text16"
@@ -473,13 +487,15 @@
                 android:layout_height="match_parent"
                 android:layout_alignStart="@id/forestcardbg"
                 android:layout_alignTop="@+id/forestcardbg"
-                android:layout_alignEnd="@+id/fore"
+                android:layout_alignEnd="@+id/forestcardbg"
+                android:layout_alignBottom="@id/forestcardbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="55dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="31 FOREST CARDS"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/text17"
@@ -501,10 +517,10 @@
                 android:id="@+id/ForestImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/text17"
+                android:layout_below="@+id/text17"
                 android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
                 android:paddingStart="25dp"
-                android:layout_marginTop="150dp"
                 android:src="@drawable/img_forestcard" />
 
             <ImageView
@@ -541,10 +557,6 @@
                 android:layout_marginTop="100dp"
                 />
 
-        </RelativeLayout>
-
-    </ScrollView>
-
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -573,13 +585,17 @@
                     android:id="@+id/bottom_navigation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
                     android:background="@color/black"
                     app:itemIconTint="@drawable/selector"
                     app:itemTextColor="@drawable/selector"
-                    app:menu="@menu/bottom_navigation"
-                    android:layout_alignParentBottom="true"/>
+                    app:menu="@menu/bottom_navigation" />
 
             </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
 
     <RelativeLayout
         android:layout_width="250dp"

@@ -21,38 +21,67 @@
         android:scaleType="fitXY"
         android:src="@drawable/bg_typesofraiding"/>
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/text1"
-        android:layout_marginTop="40dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/bg_typesofraiding_text" />
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/text1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_typesofraiding_text" />
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="140dp"
-        android:fontFamily="@font/lusitana"
-        android:text="TYPES OF RAID"
-        android:textColor="@color/cream"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/lusitana"
+            android:text="TYPES OF RAID"
+            android:textColor="@color/cream"
+            android:textSize="20sp" />
 
+        <ImageView
+            android:id="@+id/bg1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_title_home" />
+
+        <ImageView
+            android:id="@+id/hasik1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/bg1"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/bg1"
+            android:src="@drawable/ic_hasik1" />
+
+        <ImageView
+            android:id="@+id/hasik2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hasik2"
+            android:layout_alignTop="@id/hasik1"
+            android:layout_toEndOf="@id/hasik1"/>
 
         <TextView
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@id/img"
-            android:layout_alignTop="@id/text1"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="135dp"
+            android:layout_alignStart="@id/bg1"
+            android:layout_alignTop="@id/bg1"
+            android:layout_alignEnd="@id/bg1"
+            android:layout_alignBottom="@id/bg1"
+            android:layout_marginStart="20dp"
             android:fontFamily="@font/lusitana"
-            android:gravity="center"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
             android:text="HASIK (Attack):"
             android:textColor="@color/TextColor"
             android:textSize="16sp" />
@@ -61,12 +90,12 @@
             android:id="@+id/text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text2"
+            android:layout_below="@id/text2"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/lusitana"
             android:text="The action of using captured Lagim or Lagim equipped with Hiwaga cards to raid other Baryos, potentially causing the Baryos to exceed the Lagim Limit if it cannot defend."
             android:textAlignment="textStart"
@@ -74,36 +103,59 @@
             android:textSize="16sp" />
 
 
-    <TextView
-        android:id="@+id/text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/text3"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="150dp"
-        android:fontFamily="@font/lusitana"
-        android:gravity="center"
-        android:text="ANGKLA (Anchor):"
-        android:textColor="@color/TextColor"
-        android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/bg2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_title_home" />
+
+        <ImageView
+            android:id="@+id/angkla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/bg2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/bg2"
+            android:src="@drawable/ic_angkla" />
 
 
-    <TextView
-        android:id="@+id/text5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/text4"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="35dp"
-        android:fontFamily="@font/lusitana"
-        android:text="The action of using captured Hiwaga cards to anchor its power on a Lagim or Hiwaga card dwelling on another Baryo."
-        android:textAlignment="textStart"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/bg2"
+            android:layout_alignTop="@id/bg2"
+            android:layout_alignEnd="@id/bg2"
+            android:layout_alignBottom="@id/bg2"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/lusitana"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:text="ANGKLA (Anchor):"
+            android:textColor="@color/TextColor"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/lusitana"
+            android:text="The action of using captured Hiwaga cards to anchor its power on a Lagim or Hiwaga card dwelling on another Baryo."
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
     </RelativeLayout>
 

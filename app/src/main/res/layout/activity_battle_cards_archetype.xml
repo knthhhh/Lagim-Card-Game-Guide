@@ -28,25 +28,29 @@
 
             <ImageView
                 android:id="@+id/titlebg"
-                android:layout_width="240dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="80dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_component_title" />
+                android:src="@drawable/bg_title" />
 
             <TextView
                 android:id="@+id/Header1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/titlebg"
+                android:layout_alignStart="@id/titlebg"
+                android:layout_alignTop="@id/titlebg"
+                android:layout_alignEnd="@id/titlebg"
+                android:layout_alignBottom="@id/titlebg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
                 android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:text="LAGIM CARDS"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/Header2"
@@ -72,7 +76,7 @@
                 android:layout_marginTop="35dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="The symbol that represents the clan of each entity. The Archetype symbol is displayed beside a card’s ability and determines the pairing of character cards with their equip cards. \n\nFOREST CARDS of the same ARCHETYPE automatically stack together, increasing their total ENTITY LEVEL."
+                android:text="The symbol that represents the clan of each entity. The Archetype symbol is displayed beside a card’s ability and determines the pairing of character cards with their equip cards. \n\n\nFOREST CARDS of the same ARCHETYPE automatically stack together, increasing their total ENTITY LEVEL."
                 android:textAlignment="textStart"
                 android:textColor="@color/TextColor"
                 android:textSize="16sp" />
@@ -82,49 +86,117 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/TextContent"
-                android:layout_marginTop="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_lagim2" />
+                android:src="@drawable/bg_archetype" />
 
             <ImageView
                 android:id="@+id/btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bg"
                 android:layout_alignTop="@id/bg"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="100dp"
-                android:background="@android:color/transparent" />
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/lagim_witch" />
+
+            <TextView
+                android:id="@+id/archetype1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn1"
+                android:layout_alignStart="@id/btn1"
+                android:layout_alignEnd="@id/btn1"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Witch"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/btn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/bg"
+                android:layout_alignEnd="@id/bg"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="100dp"
-                android:layout_marginEnd="50dp"
-                android:background="@android:color/transparent" />
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/lagim_bestial" />
+
+            <TextView
+                android:id="@+id/archetype2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn2"
+                android:layout_alignStart="@id/btn2"
+                android:layout_alignEnd="@id/btn2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Bestial"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/btn3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/btn1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="50dp"
-                android:background="@android:color/transparent" />
+                android:layout_alignStart="@id/bg"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="65dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/lagim_ghoul" />
+
+            <TextView
+                android:id="@+id/archetype3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn3"
+                android:layout_alignStart="@id/btn3"
+                android:layout_alignEnd="@id/btn3"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Ghoul"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/btn4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/btn2"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="50dp"
-                android:background="@android:color/transparent" />
+                android:layout_alignEnd="@id/bg"
+                android:layout_marginTop="65dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/lagim_giant" />
+
+            <TextView
+                android:id="@+id/archetype4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn4"
+                android:layout_alignStart="@id/btn4"
+                android:layout_alignEnd="@id/btn4"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Giant"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/btn5"
@@ -132,8 +204,24 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/btn3"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="50dp"
-                android:background="@android:color/transparent" />
+                android:layout_marginTop="65dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/lagim_dwarf" />
+
+            <TextView
+
+                android:id="@+id/archetype5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn5"
+                android:layout_alignStart="@id/btn5"
+                android:layout_alignEnd="@id/btn5"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Giant"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
 
         </RelativeLayout>
@@ -170,3 +258,4 @@
 
 
 </RelativeLayout>
+

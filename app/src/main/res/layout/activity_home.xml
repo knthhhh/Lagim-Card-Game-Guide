@@ -57,25 +57,28 @@
                 android:src="@drawable/bg_home_btn" />
 
             <TextView
+                android:id="@+id/txt1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/text1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="155dp"
-                android:layout_marginTop="120dp"
+                android:layout_alignStart="@id/img1"
+                android:layout_alignTop="@id/img1"
+                android:layout_alignEnd="@id/img1"
+                android:layout_alignBottom="@id/img1"
+                android:layout_marginStart="70dp"
                 android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
                 android:onClick="Raiding"
                 android:text="Raiding"
                 android:textColor="@color/cream"
-                android:textSize="23sp"/>
+                android:textSize="25sp" />
 
             <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignTop="@id/text1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignTop="@id/img1"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="-20dp"
                 android:onClick="Raiding"
                 android:src="@drawable/img_home_raiding" />
 
@@ -84,9 +87,9 @@
                 android:id="@+id/img2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/img1"
+                android:layout_below="@id/img1"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginEnd="30dp"
                 android:onClick="Defending"
                 android:src="@drawable/bg_home_btn" />
@@ -94,23 +97,25 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/img1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="155dp"
-                android:layout_marginTop="140dp"
+                android:layout_alignStart="@id/img2"
+                android:layout_alignTop="@id/img2"
+                android:layout_alignEnd="@id/img2"
+                android:layout_alignBottom="@id/img2"
+                android:layout_marginStart="70dp"
                 android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
                 android:onClick="Defending"
                 android:text="Defending"
                 android:textColor="@color/cream"
-                android:textSize="23sp" />
+                android:textSize="25sp" />
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignTop="@id/img1"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignTop="@id/img2"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="85dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-40dp"
                 android:onClick="Defending"
                 android:src="@drawable/img_home_defending" />
 
@@ -118,9 +123,9 @@
                 android:id="@+id/img3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/img2"
+                android:layout_below="@id/img2"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginEnd="30dp"
                 android:onClick="Dwellers"
                 android:src="@drawable/bg_home_btn" />
@@ -128,130 +133,137 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/img2"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="155dp"
-                android:layout_marginTop="140dp"
+                android:layout_alignStart="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignEnd="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:layout_marginStart="70dp"
                 android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
                 android:onClick="Dwellers"
                 android:text="Dwellers"
                 android:textColor="@color/cream"
-                android:textSize="23sp" />
+                android:textSize="25sp" />
 
             <ImageView
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:layout_alignTop="@id/img2"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_alignTop="@id/img3"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-40dp"
                 android:onClick="Dwellers"
                 android:src="@drawable/img_home_dwellers" />
 
             <ImageView
-                android:onClick="LagimLimit"
                 android:id="@+id/img4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/img3"
+                android:layout_below="@id/img3"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginEnd="30dp"
+                android:onClick="LagimLimit"
                 android:src="@drawable/bg_home_btn" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/img3"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="155dp"
-                android:layout_marginTop="140dp"
+                android:layout_alignStart="@id/img4"
+                android:layout_alignTop="@id/img4"
+                android:layout_alignEnd="@id/img4"
+                android:layout_alignBottom="@id/img4"
+                android:layout_marginStart="70dp"
                 android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
                 android:onClick="LagimLimit"
                 android:text="Lagim Limit"
                 android:textColor="@color/cream"
-                android:textSize="23sp" />
+                android:textSize="25sp" />
 
             <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_alignTop="@id/img3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignTop="@id/img4"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="-45dp"
                 android:onClick="LagimLimit"
                 android:src="@drawable/img_home_lagimlimit" />
 
             <ImageView
-                android:onClick="TypesOfRaid"
                 android:id="@+id/img5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/img4"
+                android:layout_below="@id/img4"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginEnd="30dp"
+                android:onClick="TypesOfRaid"
                 android:src="@drawable/bg_home_btn" />
 
             <TextView
-                android:onClick="TypesOfRaid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/img4"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="155dp"
-                android:layout_marginTop="140dp"
+                android:layout_alignStart="@id/img5"
+                android:layout_alignTop="@id/img5"
+                android:layout_alignEnd="@id/img5"
+                android:layout_alignBottom="@id/img5"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
+                android:onClick="TypesOfRaid"
                 android:text="Types of Raid"
                 android:textColor="@color/cream"
-                android:textSize="23sp"
-                android:fontFamily="@font/lusitana"
-                />
+                android:textSize="25sp" />
 
 
             <ImageView
-                android:onClick="TypesOfRaid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/img_home_typesofraid"
-                android:layout_alignTop="@id/img4"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="88dp"
-                android:layout_marginStart="20dp"
-                />
-
-
-            <ImageView
-                android:onClick="TypesOfDefense"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_alignTop="@id/img5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-40dp"
+                android:onClick="TypesOfRaid"
+                android:src="@drawable/img_home_typesofraid" />
+
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img5"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginEnd="30dp"
+                android:onClick="TypesOfDefense"
                 android:src="@drawable/bg_home_btn" />
 
             <TextView
-                android:onClick="TypesOfDefense"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/img5"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="155dp"
-                android:layout_marginTop="140dp"
+                android:layout_alignStart="@id/img6"
+                android:layout_alignTop="@id/img6"
+                android:layout_alignEnd="@id/img6"
+                android:layout_alignBottom="@id/img6"
+                android:layout_marginStart="70dp"
                 android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
+                android:onClick="TypesOfDefense"
                 android:text="Types of Defense"
                 android:textColor="@color/cream"
-                android:textSize="23sp" />
+                android:textSize="25sp" />
 
 
             <ImageView
-                android:onClick="TypesOfDefense"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/img5"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignTop="@id/img6"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="95dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-35dp"
+                android:onClick="TypesOfDefense"
                 android:src="@drawable/img_home_typesofdefense" />
 
             <TextView
@@ -259,7 +271,7 @@
                 android:layout_height="wrap_content"
                 android:text="test"
                 android:textColor="@color/black"
-                android:layout_marginTop="1050dp"
+                android:layout_marginTop="1100dp"
                 />
 
         </RelativeLayout>

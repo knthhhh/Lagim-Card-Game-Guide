@@ -1,19 +1,14 @@
 package com.example.lagimcardgameguideapp2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.logging.Level;
-
 public class CardsDetails extends System {
 
     ImageView Card, Pair1, Pair2, Pair3, Pair4, Pair5, Pair6, bgImg, Level, bgText;
-    TextView Name, SubName, CardType, Archetype, Traits, Ability;
-    ArrayList<String> Content;
+    TextView Name, SubName, CardType, Archetype, Traits, Ability, Sub4, Sub5;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +17,6 @@ public class CardsDetails extends System {
         hideSystemBars();
 
         Bundle bundle = getIntent().getExtras();
-        Content = new ArrayList<>();
 
         Card = findViewById(R.id.card);
         Pair1 = findViewById(R.id.pair1);
@@ -40,6 +34,8 @@ public class CardsDetails extends System {
         Archetype = findViewById(R.id.archetype);
         Traits = findViewById(R.id.traits);
         Ability = findViewById(R.id.ability);
+        Sub4 = findViewById(R.id.sub4);
+        Sub5 = findViewById(R.id.sub5);
 
         Name.setText(getIntent().getStringExtra("CardName"));
         SubName.setText(getIntent().getStringExtra("SubName"));
@@ -69,6 +65,19 @@ public class CardsDetails extends System {
         Pair5.setImageResource(pair5);
         Pair6.setImageResource(pair6);
         Level.setImageResource(level);
+
+        String text1 = "Artifact";
+        String text2 = "Use/Effect";
+        String text3 = "Traits";
+        String text4 = "Abilities";
+
+        if ((CardType.getText().equals("Hiwaga Card")) || (CardType.getText().equals("Kontra Card")) || (CardType.getText().equals("Special Kontra Card")) ){
+            Sub4.setText(text1);
+            Sub5.setText(text2);
+        }else{
+            Sub4.setText(text3);
+            Sub5.setText(text4);
+        }
 
     }
 }

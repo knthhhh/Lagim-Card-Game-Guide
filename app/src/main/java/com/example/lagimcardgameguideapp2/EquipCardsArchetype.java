@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class EquipCardsArchetype extends System {
 
     ImageView imageView;
-    TextView header;
+    TextView header, Archetype1, Archetype2, Archetype3, Archetype4, Archetype5;
     ImageView img1, img2, img3, img4, img5;
 
     @Override
@@ -23,6 +23,12 @@ public class EquipCardsArchetype extends System {
         img3 = findViewById(R.id.btn3);
         img4 = findViewById(R.id.btn4);
         img5 = findViewById(R.id.btn5);
+        Archetype1 = findViewById(R.id.archetype1);
+        Archetype2 = findViewById(R.id.archetype2);
+        Archetype3 = findViewById(R.id.archetype3);
+        Archetype4 = findViewById(R.id.archetype4);
+        Archetype5 = findViewById(R.id.archetype5);
+
         imageView = findViewById(R.id.bgimg);
         header = findViewById(R.id.Header1);
         Bundle bundle = getIntent().getExtras();
@@ -38,12 +44,22 @@ public class EquipCardsArchetype extends System {
             img3.setImageResource(R.drawable.hiwaga_ghoul);
             img4.setImageResource(R.drawable.hiwaga_giant);
             img5.setImageResource(R.drawable.hiwaga_dwarf);
+            Archetype1.setText("Witch");
+            Archetype2.setText("Bestial");
+            Archetype3.setText("Ghoul");
+            Archetype4.setText("Giant");
+            Archetype5.setText("Dwarf");
         }else{
             img1.setImageResource(R.drawable.kontra_medium);
             img2.setImageResource(R.drawable.kontra_mortal);
             img3.setImageResource(R.drawable.kontra_warrior);
             img4.setImageResource(R.drawable.kontra_halfmortal);
             img5.setImageResource(R.drawable.kontra_special);
+            Archetype1.setText("Medium");
+            Archetype2.setText("Mortal");
+            Archetype3.setText("Warrior");
+            Archetype4.setText("Half Mortal");
+            Archetype5.setText("Special");
         }
 
         img1.setOnClickListener(new View.OnClickListener() {
