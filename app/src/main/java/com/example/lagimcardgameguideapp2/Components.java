@@ -1,7 +1,6 @@
 package com.example.lagimcardgameguideapp2;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -47,7 +46,7 @@ public class Components extends System {
                         return true;
                     case R.id.mechanics:
                         startActivity(new Intent(getApplicationContext()
-                                , Mechanics.class));
+                                , Story.class));
                         overridePendingTransition(0, 0);
                         finish();
                         return true;
@@ -88,7 +87,7 @@ public class Components extends System {
     }
 
     public void ClickMechanics(View view) {
-        Intent intent = new Intent(this, Mechanics.class);
+        Intent intent = new Intent(this, Story.class);
         startActivity(intent);
     }
 

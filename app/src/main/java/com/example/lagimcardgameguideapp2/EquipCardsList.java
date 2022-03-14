@@ -36,11 +36,13 @@ public class EquipCardsList extends System {
         int card1 = bundle.getInt("card1");
         int card2 = bundle.getInt("card2");
         int card3 = bundle.getInt("card3");
+        int bgheader = bundle.getInt("titlebg");
 
         bgimg.setImageResource(bg);
         imageView1.setImageResource(card1);
         imageView2.setImageResource(card2);
         imageView3.setImageResource(card3);
+        Header.setImageResource(bgheader);
 
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,7 +89,7 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_buntot_pagi);
                     intent.putExtra("Pair1", R.drawable.card_espiritista);
                     intent.putExtra("Pair2", R.drawable.card_albularyo);
-                    intent.putExtra("Pair3", R.drawable.card_orasyonatinsenso);
+                    intent.putExtra("Pair5", R.drawable.card_orasyonatinsenso);
                     intent.putExtra("Level", R.drawable.level_two);
                     intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
@@ -110,7 +112,7 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_tiktikatbuwan);
                     intent.putExtra("Pair1", R.drawable.card_aswang);
                     intent.putExtra("Pair2", R.drawable.card_manananggal);
-                    intent.putExtra("Pair3", R.drawable.card_dugo_at_langis);
+                    intent.putExtra("Pair5", R.drawable.card_dugo_at_langis);
                     intent.putExtra("Level", R.drawable.level_two);
                     intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
@@ -157,7 +159,7 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_punongacacia);
                     intent.putExtra("Pair1", R.drawable.card_tikbalang);
                     intent.putExtra("Pair2", R.drawable.card_kapre);
-                    intent.putExtra("Pair3", R.drawable.card_bungisngis);
+                    intent.putExtra("Pair5", R.drawable.card_bungisngis);
                     intent.putExtra("Level", R.drawable.level_two);
                     intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
@@ -281,7 +283,7 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_orasyonatinsenso);
                     intent.putExtra("Pair1", R.drawable.card_albularyo);
                     intent.putExtra("Pair2", R.drawable.card_espiritista);
-                    intent.putExtra("Pair3", R.drawable.card_buntot_pagi);
+                    intent.putExtra("Pair5", R.drawable.card_buntot_pagi);
                     intent.putExtra("Level", R.drawable.level_two);
                     intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);

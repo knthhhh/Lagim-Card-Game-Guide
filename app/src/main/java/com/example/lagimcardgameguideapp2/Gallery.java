@@ -1,6 +1,5 @@
 package com.example.lagimcardgameguideapp2;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -54,7 +53,7 @@ public class Gallery extends System {
     }
 
     public void ClickMechanics(View view) {
-        Intent intent = new Intent(this, Mechanics.class);
+        Intent intent = new Intent(this, Story.class);
         startActivity(intent);
     }
 

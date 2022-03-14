@@ -33,7 +33,7 @@
         <entry key="app/src/main/res/layout/activity_card_anatomy.xml" value="0.19925742574257427" />
         <entry key="app/src/main/res/layout/activity_cards.xml" value="0.2795138888888889" />
         <entry key="app/src/main/res/layout/activity_cards_details.xml" value="0.2731535756154748" />
-        <entry key="app/src/main/res/layout/activity_components.xml" value="0.13248688931824454" />
+        <entry key="app/src/main/res/layout/activity_components.xml" value="0.13208585580627408" />
         <entry key="app/src/main/res/layout/activity_defending.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_dwellers.xml" value="0.2646397908528647" />
         <entry key="app/src/main/res/layout/activity_equip_cards_archetype.xml" value="0.4244031830238727" />
@@ -55,9 +55,10 @@
         <entry key="app/src/main/res/layout/activity_lagim_limit.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_lakas.xml" value="0.2064102564102564" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/activity_mechanics.xml" value="0.25364583333333335" />
+        <entry key="app/src/main/res/layout/activity_mechanics.xml" value="0.45" />
         <entry key="app/src/main/res/layout/activity_raiding.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_story.xml" value="0.21052631578947367" />
         <entry key="app/src/main/res/layout/activity_types_of_defense.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_types_of_raid.xml" value="0.335" />
         <entry key="app/src/main/res/layout/content_test.xml" value="0.25364583333333335" />

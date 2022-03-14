@@ -96,6 +96,7 @@ public class BattleCardsArchetype extends System {
                     lagim.putExtra("Archetype","Bestial Archetype");
                     lagim.putExtra("titlebg", R.drawable.bg_title_cards_maroon);
                     lagim.putExtra("bg", R.drawable.bg_lagim);
+                    lagim.putExtra("card1", R.drawable.card_sigbin);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(BattleCardsArchetype.this, BattleCardsList.class);

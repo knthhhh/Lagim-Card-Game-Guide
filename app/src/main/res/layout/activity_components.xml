@@ -67,7 +67,6 @@
                 android:textSize="15sp"
                 tools:ignore="UsingOnClickInXml" />
 
-
             <ImageView
                 android:id="@+id/titlebg"
                 android:layout_width="185dp"
@@ -125,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/board"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:onClick="ComponentsToBoardDetails"
                 android:src="@drawable/bg_detail_btn" />
 
@@ -199,7 +198,7 @@
                 android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/silabImage"
-                android:layout_marginTop="-10dp"
+                android:layout_marginTop="-20dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_title" />
 
@@ -291,7 +290,7 @@
                 android:layout_alignTop="@+id/text7"
                 android:layout_centerInParent="true"
                 android:paddingStart="5dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="60dp"
                 android:src="@drawable/img_soulcoins" />
 
             <ImageView
@@ -557,6 +556,10 @@
                 android:layout_marginTop="100dp"
                 />
 
+        </RelativeLayout>
+
+    </ScrollView>
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -592,10 +595,6 @@
                     app:menu="@menu/bottom_navigation" />
 
             </RelativeLayout>
-
-        </RelativeLayout>
-
-    </ScrollView>
 
     <RelativeLayout
         android:layout_width="250dp"

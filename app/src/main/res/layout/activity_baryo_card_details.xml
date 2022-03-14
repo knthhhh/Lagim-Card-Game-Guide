@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ForestCardDetails"
-    android:background="@color/black">
+    android:background="@color/black"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,7 +21,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_boardgame" />
+                android:src="@drawable/bg_boardgame"
+                />
 
             <ImageView
                 android:id="@+id/img1"
@@ -51,11 +53,11 @@
                 android:id="@+id/textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/txt1"
+                android:layout_below="@+id/txt1"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Baryo cards consist of Lakas and Kontra cards that fall under 3 main archetypes: Medium, Mortal, and Warrior. \n\nIn addition,Kontra cards include Special cards that have unique capabilities. These cards represent the villagers and equipment that Baryos can use to build their defenses."
@@ -75,23 +77,46 @@
                 android:layout_marginEnd="50dp"
                 android:src="@drawable/img_baryocard" />
 
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/txt15"
+                android:layout_marginTop="50dp"/>
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/board"
-                android:layout_marginTop="400dp"
+                android:layout_below="@+id/board"
+                android:layout_marginTop="0dp"
+                android:layout_alignBottom="@id/footer"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_baryocards_text" />
+
+            <ImageView
+                android:id="@+id/bg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/board"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/bg_lakascards_title" />
 
             <TextView
                 android:id="@+id/title1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/board"
+                android:layout_below="@id/board"
+                android:layout_alignStart="@+id/bg1"
+                android:layout_alignTop="@id/bg1"
+                android:layout_alignEnd="@id/bg1"
+                android:layout_alignBottom="@id/bg1"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="580dp"
                 android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
                 android:text="18 Lakas Cards"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
@@ -100,11 +125,11 @@
                 android:id="@+id/txt2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/title1"
+                android:layout_below="@id/title1"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="45dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="45dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Lakas cards represent the villagers and consist of:"
@@ -213,14 +238,25 @@
                 android:layout_marginEnd="80dp"
                 android:src="@drawable/archetype_warrior" />
 
+            <ImageView
+                android:id="@+id/bg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt8"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/bg_kontracards_title" />
+
             <TextView
                 android:id="@+id/title2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/txt8"
-                android:layout_alignParentStart="true"
+                android:layout_alignTop="@id/bg2"
+                android:layout_alignEnd="@id/bg2"
+                android:layout_alignBottom="@+id/bg2"
+                android:layout_alignStart="@+id/bg2"
+                android:gravity="center_vertical"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="120dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="13 Kontra Cards"
                 android:textColor="@color/white"
@@ -230,11 +266,11 @@
                 android:id="@+id/txt9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/title2"
+                android:layout_below="@id/title2"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="45dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="45dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Kontra cards represent the equipment you can use to strengthen your villagers and consist of:"
@@ -342,11 +378,6 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="80dp"
                 android:src="@drawable/archetype_special" />
-
-
-
-
-
 
         </RelativeLayout>
 

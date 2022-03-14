@@ -25,12 +25,21 @@
             android:scaleType="fitXY"
             android:src="@drawable/bg_typesofdefense" />
 
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text=""/>
+
         <ImageView
             android:id="@+id/img2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/title"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@id/title"
+            android:layout_alignBottom="@id/footer"
             android:layout_marginTop="0dp"
             android:scaleType="fitXY"
             android:src="@drawable/bg_typesofdefense_text" />
@@ -52,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/title"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="80dp"
             android:scaleType="fitXY"
             android:src="@drawable/bg_title_home" />
 

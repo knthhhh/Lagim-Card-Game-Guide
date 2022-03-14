@@ -77,6 +77,7 @@ public class EquipCardsArchetype extends System {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Medium Archetype");
                     lakas.putExtra("bg", R.drawable.bg_kontra);
+                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     lakas.putExtra("card1", R.drawable.card_buntot_pagi);
                     lakas.putExtra("card2",R.drawable.card_orasyonatinsenso);
                     startActivity(lakas);
@@ -96,6 +97,7 @@ public class EquipCardsArchetype extends System {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Mortal Archetype");
                     lakas.putExtra("bg", R.drawable.bg_kontra);
+                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     lakas.putExtra("card1", R.drawable.card_tabakbawangatasin);
                     startActivity(lakas);
                 }
@@ -116,6 +118,7 @@ public class EquipCardsArchetype extends System {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Warrior Archetype");
                     lakas.putExtra("bg", R.drawable.bg_kontra);
+                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     lakas.putExtra("card1", R.drawable.card_sibatatsulo);
                     startActivity(lakas);
                 }
@@ -135,6 +138,7 @@ public class EquipCardsArchetype extends System {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Half Mortal Archetype");
                     lakas.putExtra("bg", R.drawable.bg_kontra);
+                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     startActivity(lakas);
                 }
             }
@@ -153,6 +157,7 @@ public class EquipCardsArchetype extends System {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Special Archetype");
                     lakas.putExtra("bg", R.drawable.bg_kontra);
+                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     lakas.putExtra("card1", R.drawable.card_agimat);
                     lakas.putExtra("card2", R.drawable.card_gasera);
                     startActivity(lakas);

@@ -10,7 +10,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -52,11 +53,11 @@
                 android:id="@+id/textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/txt1"
+                android:layout_below="@+id/txt1"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="The game board displays the Forest realm and Baryo realm where both players and Forest creatures co-exist."
@@ -73,11 +74,28 @@
                 android:layout_marginTop="100dp"
                 android:src="@drawable/img_gameboard_details" />
 
+            <TextView
+                android:id="@+id/bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coinstashtext"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Players keep their starting Soul Coins here."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
             <ImageView
+                android:id="@+id/bg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/board"
-                android:layout_marginTop="300dp"
+                android:layout_below="@+id/board"
+                android:layout_alignBottom="@id/bottom"
+                android:layout_marginTop="0dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_gameboard" />
 
@@ -85,22 +103,22 @@
                 android:id="@+id/onebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/board"
+                android:layout_below="@+id/board"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="440dp"
+                android:layout_marginTop="100dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/onebg"
-                android:layout_alignBottom="@+id/onebg"
                 android:layout_alignStart="@id/onebg"
+                android:layout_alignTop="@+id/onebg"
                 android:layout_alignEnd="@id/onebg"
-                android:gravity="center"
+                android:layout_alignBottom="@+id/onebg"
                 android:fontFamily="@font/backbones"
+                android:gravity="center"
                 android:text="1"
                 android:textColor="@color/TextColor"
                 android:textSize="30sp" />
@@ -119,13 +137,14 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/coinvesseltext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/CoinVessel"
+                android:layout_below="@+id/CoinVessel"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Residing in the center of the Forest is the source of its power. The Coin Vessel contains all the Soul Coins and Dark Soul Coins that come with the game. All discarded coins must be placed here."
@@ -136,22 +155,22 @@
                 android:id="@+id/twobg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/onebg"
+                android:layout_below="@+id/coinvesseltext"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/twobg"
-                android:layout_alignBottom="@id/twobg"
                 android:layout_alignStart="@id/twobg"
+                android:layout_alignTop="@+id/twobg"
                 android:layout_alignEnd="@id/twobg"
-                android:gravity="center"
+                android:layout_alignBottom="@id/twobg"
                 android:fontFamily="@font/backbones"
+                android:gravity="center"
                 android:text="2"
                 android:textColor="@color/TextColor"
                 android:textSize="30sp" />
@@ -169,13 +188,14 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/baryotext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/two"
+                android:layout_below="@+id/two"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Situated in the light side of the Forest, this deck contains resources such as villagers and equipment: Lakas and Kontra."
@@ -186,22 +206,22 @@
                 android:id="@+id/threebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/twobg"
+                android:layout_below="@+id/baryotext"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="160dp"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/threebg"
-                android:layout_alignBottom="@+id/threebg"
                 android:layout_alignStart="@id/threebg"
+                android:layout_alignTop="@+id/threebg"
                 android:layout_alignEnd="@id/threebg"
-                android:gravity="center"
+                android:layout_alignBottom="@+id/threebg"
                 android:fontFamily="@font/backbones"
+                android:gravity="center"
                 android:text="3"
                 android:textColor="@color/TextColor"
                 android:textSize="30sp" />
@@ -219,13 +239,14 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/foresttext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/three"
+                android:layout_below="@+id/three"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Situated in the dark side of the Forest, this deck contains its creatures and cursed items: Lagim and Hiwaga."
@@ -236,22 +257,22 @@
                 android:id="@+id/fourbg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/threebg"
+                android:layout_below="@+id/foresttext"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="160dp"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/four"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/fourbg"
-                android:layout_alignBottom="@id/fourbg"
-                android:layout_alignEnd="@id/fourbg"
                 android:layout_alignStart="@id/fourbg"
-                android:gravity="center"
+                android:layout_alignTop="@+id/fourbg"
+                android:layout_alignEnd="@id/fourbg"
+                android:layout_alignBottom="@id/fourbg"
                 android:fontFamily="@font/backbones"
+                android:gravity="center"
                 android:text="4"
                 android:textColor="@color/TextColor"
                 android:textSize="30sp" />
@@ -270,13 +291,14 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/restingpiletext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/four"
+                android:layout_below="@+id/four"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Situated beside the Baryo Deck, this area is where players discard Baryo cards."
@@ -287,22 +309,22 @@
                 android:id="@+id/fivebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/fourbg"
+                android:layout_below="@+id/restingpiletext"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="140dp"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/five"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/fivebg"
-                android:layout_alignBottom="@id/fivebg"
                 android:layout_alignStart="@id/fivebg"
+                android:layout_alignTop="@+id/fivebg"
                 android:layout_alignEnd="@id/fivebg"
-                android:gravity="center"
+                android:layout_alignBottom="@id/fivebg"
                 android:fontFamily="@font/backbones"
+                android:gravity="center"
                 android:text="5"
                 android:textColor="@color/TextColor"
                 android:textSize="30sp" />
@@ -320,13 +342,14 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/graveyardpiletext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/five"
+                android:layout_below="@+id/five"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Situated beside the Baryo Deck, this area is where players discard Baryo cards."
@@ -337,22 +360,22 @@
                 android:id="@+id/sixbg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/fivebg"
+                android:layout_below="@+id/graveyardpiletext"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="140dp"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/six"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/sixbg"
-                android:layout_alignBottom="@id/sixbg"
                 android:layout_alignStart="@id/sixbg"
+                android:layout_alignTop="@+id/sixbg"
                 android:layout_alignEnd="@id/sixbg"
-                android:gravity="center"
+                android:layout_alignBottom="@id/sixbg"
                 android:fontFamily="@font/backbones"
+                android:gravity="center"
                 android:text="6"
                 android:textColor="@color/TextColor"
                 android:textSize="30sp" />
@@ -370,13 +393,14 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/baryorealmtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/six"
+                android:layout_below="@+id/six"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Encircling the Forest are 6 Baryos where players reside under constant threat of attack every night."
@@ -387,22 +411,22 @@
                 android:id="@+id/sevenbg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/sixbg"
+                android:layout_below="@+id/baryorealmtext"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="160dp"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
                 android:id="@+id/seven"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignStart="@id/sevenbg"
                 android:layout_alignTop="@+id/sevenbg"
                 android:layout_alignEnd="@id/sevenbg"
-                android:layout_alignStart="@id/sevenbg"
                 android:layout_alignBottom="@id/sevenbg"
-                android:gravity="center"
                 android:fontFamily="@font/backbones"
+                android:gravity="center"
                 android:text="7"
                 android:textColor="@color/TextColor"
                 android:textSize="30sp" />
@@ -420,13 +444,14 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/forestrealmtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/seven"
+                android:layout_below="@+id/seven"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="The Forest is divided into two sides: light and dark. Baryos gather resources from the light side during the twilight. Creatures attack from the dark side during the Midnight."
@@ -437,10 +462,10 @@
                 android:id="@+id/eightbg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/sevenbg"
+                android:layout_below="@+id/forestrealmtext"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="175dp"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
@@ -470,13 +495,14 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/spiritpathtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/eight"
+                android:layout_below="@+id/eight"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="A mysterious path that leads to the center of the Forest. Each Baryo is connected to an empty Spirit Path. In order to complete it, players must steal 3 Soul Coins from other Baryos and place them on their Spirit Path."
@@ -487,10 +513,10 @@
                 android:id="@+id/ninebg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/eightbg"
+                android:layout_below="@+id/spiritpathtext"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/bg_number" />
 
             <TextView
@@ -520,13 +546,14 @@
                 android:textSize="25sp" />
 
             <TextView
+                android:id="@+id/coinstashtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/nine"
+                android:layout_below="@+id/nine"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Players keep their starting Soul Coins here."

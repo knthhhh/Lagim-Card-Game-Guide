@@ -75,22 +75,45 @@
                 android:layout_marginEnd="40dp"
                 android:src="@drawable/img_forestcard" />
 
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/dwarf1"
+                android:layout_marginTop="50dp"
+                />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/board"
-                android:layout_marginTop="400dp"
+                android:layout_below="@+id/board"
+                android:layout_alignBottom="@id/footer"
+                android:layout_marginTop="0dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_forestcards_text" />
+
+            <ImageView
+                android:id="@+id/bg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/board"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/bg_lagimcards_title" />
 
             <TextView
                 android:id="@+id/title1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/board"
-                android:layout_alignParentStart="true"
+                android:layout_below="@id/board"
+                android:layout_alignStart="@id/bg1"
+                android:layout_alignBottom="@id/bg1"
+                android:layout_alignTop="@id/bg1"
+                android:layout_alignEnd="@id/bg1"
+                android:paddingBottom="15dp"
+                android:gravity="center_vertical"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="580dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="19 Lagim Cards"
                 android:textColor="@color/white"
@@ -100,11 +123,11 @@
                 android:id="@+id/txt2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/title1"
+                android:layout_below="@id/title1"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="45dp"
-                android:layout_marginTop="105dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="45dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Lagim cards represent the evil creatures of the Forest and consist of:"
@@ -250,14 +273,25 @@
                 android:layout_marginEnd="80dp"
                 android:src="@drawable/archetype_dwarf" />
 
+            <ImageView
+                android:id="@+id/bg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt10"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/bg_kontracards_title" />
+
             <TextView
                 android:id="@+id/title2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/txt10"
-                android:layout_alignParentStart="true"
+                android:layout_alignTop="@id/bg2"
+                android:layout_alignEnd="@id/bg2"
+                android:layout_alignBottom="@id/bg2"
+                android:layout_alignStart="@id/bg2"
+                android:gravity="center_vertical"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="145dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="13 Kontra Cards"
                 android:textColor="@color/white"
@@ -267,11 +301,11 @@
                 android:id="@+id/txt11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/title2"
+                android:layout_below="@id/title2"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="45dp"
-                android:layout_marginTop="115dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="45dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Hiwaga cards represent the cursed items found in the Forest and consist of:"

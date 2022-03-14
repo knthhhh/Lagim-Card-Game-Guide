@@ -47,7 +47,7 @@ public class Mechanics extends System {
                         return true;
                     case R.id.mechanics:
                         startActivity(new Intent(getApplicationContext()
-                                , Mechanics.class));
+                                , Story.class));
                         overridePendingTransition(0, 0);
                         finish();
                         return true;
@@ -57,6 +57,7 @@ public class Mechanics extends System {
         });
 
     }
+
     //Drawer Menu
     public void Menu(View view){
         openDrawer(drawerLayout);
@@ -112,5 +113,10 @@ public class Mechanics extends System {
         super.onPause();
         closeDrawer((drawerLayout));
         overridePendingTransition(0, 0);
+    }
+
+    public void MechanicsToStory (View view){
+        Intent intent = new Intent(this, Story.class);
+        startActivity(intent);
     }
 }

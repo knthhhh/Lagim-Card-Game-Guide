@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LagimCardGameGuideApp2">
         <activity
+            android:name=".Mechanics"
+            android:exported="false" />
+        <activity
             android:name=".EquipCardsList"
             android:exported="false" />
         <activity
@@ -49,7 +52,7 @@
             android:name=".Gallery"
             android:exported="false" />
         <activity
-            android:name=".Mechanics"
+            android:name=".Story"
             android:exported="false" />
         <activity
             android:name=".Components"
