@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LagimCardGameGuideApp2">
         <activity
+            android:name=".Phase3"
+            android:exported="false" />
+        <activity
+            android:name=".Phase2"
+            android:exported="false" />
+        <activity
+            android:name=".Phase1"
+            android:exported="false" />
+        <activity
+            android:name=".AdditionalRules"
+            android:exported="false" />
+        <activity
+            android:name=".PositionsArrangement"
+            android:exported="false" />
+        <activity
+            android:name=".GameSetup"
+            android:exported="false" />
+        <activity
             android:name=".Mechanics"
             android:exported="false" />
         <activity

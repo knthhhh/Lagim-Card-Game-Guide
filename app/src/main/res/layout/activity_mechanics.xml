@@ -11,7 +11,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -61,18 +62,464 @@
                 tools:ignore="UsingOnClickInXml" />
 
             <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/phase3"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/footer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/detailsbg3"
+                android:layout_marginTop="100dp"
+                />
+
+            <ImageView
+                android:id="@+id/bgtext1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setup"
+                android:layout_marginTop="-20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_text1" />
+
+            <ImageView
+                android:id="@+id/bgtext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider1"
+                android:layout_marginTop="-30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_text2" />
+
+            <ImageView
+                android:id="@+id/bgtext3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider2"
+                android:layout_marginTop="-50dp"
+                android:layout_alignBottom="@id/footer"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_text3" />
+
+            <ImageView
+                android:id="@+id/bgtext4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider3"
+                android:layout_marginTop="-35dp"
+                android:layout_alignBottom="@id/footer1"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_text4" />
+
+            <ImageView
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bgtext1"
+                android:layout_marginTop="-25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_divider1" />
+
+            <ImageView
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bgtext2"
+                android:layout_marginTop="-25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_divider2" />
+
+            <ImageView
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bgtext3"
+                android:layout_marginTop="-25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_divider3" />
+
+            <TextView
                 android:id="@+id/setup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
                 android:layout_below="@id/story"
-                android:layout_marginTop="30dp"
+                android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
                 android:fontFamily="@font/oldstyle"
                 android:gravity="center_vertical"
                 android:text="Setting Up The Game"
                 android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/bgstep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_step"
+                android:layout_alignTop="@id/bgtext1"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bgstep"
+                android:layout_alignTop="@id/bgstep"
+                android:layout_alignEnd="@id/bgstep"
+                android:layout_alignBottom="@id/bgstep"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Step 1:"
+                android:textColor="@color/TextColor"
                 android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/gameboardtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/step"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/step"
+                android:fontFamily="@font/lusitana"
+                android:text="PREPARE THE\nGAMEBOARD"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gameboardtitle"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Unfold the game board and place it in the center of the play area."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:paddingRight="3dp"
+                android:src="@drawable/img_board" />
+
+            <ImageView
+                android:id="@+id/detailsbg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/board"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-15dp"
+                android:onClick="MechanicsToGameSetup"
+                android:src="@drawable/bg_details_button" />
+
+            <TextView
+                android:id="@+id/details1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/detailsbg1"
+                android:layout_alignTop="@+id/detailsbg1"
+                android:layout_alignEnd="@id/detailsbg1"
+                android:layout_alignBottom="@id/detailsbg1"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:onClick="MechanicsToGameSetup"
+                android:text="Details"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/divider1"
+                android:layout_alignTop="@id/divider1"
+                android:layout_alignEnd="@id/divider1"
+                android:layout_alignBottom="@id/divider1"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="Positions &amp; Arrangement"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/bgtext2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/lusitana"
+                android:text="PLAYER’S BARYO"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/player"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="A player’s Baryo consists of the Spirit Path, Coin stash, and Dweller yard."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/board1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:paddingStart="65dp"
+                android:src="@drawable/img_board1" />
+
+            <ImageView
+                android:id="@+id/detailsbg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/board1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:onClick="MechanicsToPositions"
+                android:src="@drawable/bg_details_button" />
+
+            <TextView
+                android:id="@+id/details2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/detailsbg2"
+                android:layout_alignTop="@+id/detailsbg2"
+                android:layout_alignEnd="@id/detailsbg2"
+                android:layout_alignBottom="@id/detailsbg2"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:onClick="MechanicsToPositions"
+                android:text="Details"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/gameplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/divider2"
+                android:layout_alignTop="@id/divider2"
+                android:layout_alignEnd="@id/divider2"
+                android:layout_alignBottom="@id/divider2"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="The Gameplay"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gameplay"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:lineSpacingExtra="5dp"
+                android:text="During the game, players take turns one after another until a player completes a Spirit Path (by gaining 3 Soul Coins) or becomes the last surviving Baryo (by being the last player to have life points in the form of starting Soul Coins). When that happens, that player is declared the winner, and the game ends.\n\nEach player’s turn is divided into 3 phases, representing a complete day cycle in the Baryo. On your turn, you must complete the following phases in order:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/phase1bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_phase" />
+
+            <TextView
+                android:onClick="Phase1"
+                android:id="@+id/phase1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/phase1bg"
+                android:layout_alignTop="@id/phase1bg"
+                android:layout_alignEnd="@id/phase1bg"
+                android:layout_alignBottom="@id/phase1bg"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:text="PHASE 1 : TAKIPSILIM (TWILIGHT)"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/phase2bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_phase"
+                android:layout_below="@id/phase1"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:onClick="Phase2"
+                android:id="@+id/phase2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/phase2bg"
+                android:layout_alignTop="@id/phase2bg"
+                android:layout_alignEnd="@id/phase2bg"
+                android:layout_alignBottom="@id/phase2bg"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:text="PHASE 2 : HATING-GABI MIDNIGHT"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/phase3bg"
+                android:layout_width="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_phase"
+                android:layout_below="@id/phase2"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:onClick="Phase3"
+                android:id="@+id/phase3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/phase3bg"
+                android:layout_alignTop="@id/phase3bg"
+                android:layout_alignEnd="@id/phase3bg"
+                android:layout_alignBottom="@id/phase3bg"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:text="PHASE 3 : BUKANG-LIWAYWAY (DAWN)"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/divider3"
+                android:layout_alignTop="@id/divider3"
+                android:layout_alignEnd="@id/divider3"
+                android:layout_alignBottom="@id/divider3"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:text="Additional Rules"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/shuffling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rules"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="SHUFFLING"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/shufflingimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shuffling"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-50dp"
+                android:paddingStart="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_shuffling" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shufflingimg"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-45dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="When either deck runs out of cards, shuffle the discarded cards to replenish the decks. However, do not shuffle the cards if there are only 2 players left."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/detailsbg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:onClick="MechanicsToAdditionalRules"
+                android:src="@drawable/bg_details_button" />
+
+            <TextView
+                android:id="@+id/details3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/detailsbg3"
+                android:layout_alignTop="@+id/detailsbg3"
+                android:layout_alignEnd="@id/detailsbg3"
+                android:layout_alignBottom="@id/detailsbg3"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:onClick="MechanicsToAdditionalRules"
+                android:text="Details"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:ignore="UsingOnClickInXml" />
+
+
 
         </RelativeLayout>
 

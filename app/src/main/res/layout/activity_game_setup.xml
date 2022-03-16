@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameSetup"
+    android:background="@color/black">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_gamesetup" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setup"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-10dp"
+                android:layout_alignBottom="@id/footer"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_gamesetup_text" />
+
+            <TextView
+                android:id="@+id/setup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="Setting Up The Game"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/bgstep1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_step"
+                android:layout_below="@id/setup"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bgstep1"
+                android:layout_alignTop="@id/bgstep1"
+                android:layout_alignEnd="@id/bgstep1"
+                android:layout_alignBottom="@id/bgstep1"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Step 1:"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/step1"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/step1"
+                android:fontFamily="@font/lusitana"
+                android:text="PREPARE THE\nGAMEBOARD"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Unfold the game board and place it in the center of the play area."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:paddingRight="3dp"
+                android:src="@drawable/img_board" />
+
+            <ImageView
+                android:id="@+id/bgstep2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_step"
+                android:layout_below="@id/img1"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bgstep2"
+                android:layout_alignTop="@id/bgstep2"
+                android:layout_alignEnd="@id/bgstep2"
+                android:layout_alignBottom="@id/bgstep2"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Step 2:"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/step2"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/step2"
+                android:fontFamily="@font/lusitana"
+                android:text="DISTRIBUTE THE SOUL\nCOINS AND DARK\nSOUL COINS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Your starting Soul Coins represent your life points in the game. Place 3 Soul Coins and 1 Dark Soul Coin on each Baryo Coin Stash."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:paddingRight="3dp"
+                android:src="@drawable/img_coins" />
+
+            <ImageView
+                android:id="@+id/bgstep3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_step"
+                android:layout_below="@id/img2"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bgstep3"
+                android:layout_alignTop="@id/bgstep3"
+                android:layout_alignEnd="@id/bgstep3"
+                android:layout_alignBottom="@id/bgstep3"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Step 3:"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/step3"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/step3"
+                android:fontFamily="@font/lusitana"
+                android:text="DISTRIBUTE THE\nSTARTING CARDS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Your starting hand represents the current resources you have in your Baryo. Shuffle the Baryo cards and distribute these to each player’s hand:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:paddingStart="5dp"
+                android:src="@drawable/img_cards" />
+
+            <ImageView
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img3"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_table" />
+
+            <ImageView
+                android:id="@+id/bgstep4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_step"
+                android:layout_below="@id/table"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/step4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bgstep4"
+                android:layout_alignTop="@id/bgstep4"
+                android:layout_alignEnd="@id/bgstep4"
+                android:layout_alignBottom="@id/bgstep4"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Step 4:"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/step4"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/step4"
+                android:fontFamily="@font/lusitana"
+                android:text="DISTRIBUTE THE\nGAME SHEET"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Each player gets a game sheet. This sheet serves as a quick-reference guide for each player to perform the actions available for each game phase."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:paddingEnd="15dp"
+                android:src="@drawable/img_gamesheet" />
+
+            <ImageView
+                android:id="@+id/bgstep5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_step"
+                android:layout_below="@id/img4"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/step5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bgstep5"
+                android:layout_alignTop="@id/bgstep5"
+                android:layout_alignEnd="@id/bgstep5"
+                android:layout_alignBottom="@id/bgstep5"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Step 5:"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/step5"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/step4"
+                android:fontFamily="@font/lusitana"
+                android:text="PREPARE THE CARD\nDECK HOLDERS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Place a card deck holder on each of these areas:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:paddingEnd="15dp"
+                android:src="@drawable/img_deck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On the dark\nside of the\nForest Realm"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_alignStart="@id/img5"
+                android:layout_alignTop="@id/img5"
+                android:fontFamily="@font/lusitana"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On the light\nside of the\nForest Realm "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_alignEnd="@id/img5"
+                android:layout_alignBottom="@id/img5"
+                android:fontFamily="@font/lusitana"
+                android:layout_marginEnd="20dp"/>
+
+            <ImageView
+                android:id="@+id/bgstep6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_step"
+                android:layout_below="@id/img5"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/step6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bgstep6"
+                android:layout_alignTop="@id/bgstep6"
+                android:layout_alignEnd="@id/bgstep6"
+                android:layout_alignBottom="@id/bgstep6"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Step 6:"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/title6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/step6"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/step6"
+                android:fontFamily="@font/lusitana"
+                android:text="PREPARE THE\nFOREST DECK"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title6"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Shuffle the Forest cards and place them on the card deck holder on the dark side of the Forest Realm in the game board."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text6"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_forestdeck" />
+
+            <ImageView
+                android:id="@+id/bgstep7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_step"
+                android:layout_below="@id/img6"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/step7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bgstep7"
+                android:layout_alignTop="@id/bgstep7"
+                android:layout_alignEnd="@id/bgstep7"
+                android:layout_alignBottom="@id/bgstep7"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Step 7:"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/title7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/step7"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/step6"
+                android:fontFamily="@font/lusitana"
+                android:text="PREPARE THE\nBARYO DECK"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title7"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Shuffle the Baryo cards and place them on the card deck holder on the light side of the Forest Realm in the game board.\n\n*If you have Sigbin card, shuffle\nit with Baryo cards."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text7"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_baryodeck" />
+
+            <ImageView
+                android:id="@+id/bgstep8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_step"
+                android:layout_below="@id/img7"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/step8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bgstep8"
+                android:layout_alignTop="@id/bgstep8"
+                android:layout_alignEnd="@id/bgstep8"
+                android:layout_alignBottom="@id/bgstep8"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Step 8:"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/title8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/step8"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/step3"
+                android:fontFamily="@font/lusitana"
+                android:text="PREPARE THE SILAB"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title8"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Give the Silab to the first player. Players can pick the bravest among them to go first. "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_below="@id/text8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-20dp"
+                android:paddingStart="5dp"
+                android:src="@drawable/img_silab" />
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/img8"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:onClick="Back"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_lagim_white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

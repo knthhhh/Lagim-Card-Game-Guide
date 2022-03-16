@@ -1,7 +1,6 @@
 package com.example.lagimcardgameguideapp2;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -14,7 +13,7 @@ import android.view.View;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class Mechanics extends System {
+public class Story extends System {
 
     DrawerLayout drawerLayout;
     BottomNavigationView bottomNavigationView;
@@ -22,7 +21,7 @@ public class Mechanics extends System {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mechanics);
+        setContentView(R.layout.activity_story);
         hideSystemBars();
 
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -57,7 +56,6 @@ public class Mechanics extends System {
         });
 
     }
-
     //Drawer Menu
     public void Menu(View view){
         openDrawer(drawerLayout);
@@ -115,33 +113,8 @@ public class Mechanics extends System {
         overridePendingTransition(0, 0);
     }
 
-    public void MechanicsToStory (View view){
-        Intent intent = new Intent(this, Story.class);
+    public void StoryToMechanics (View view){
+        Intent intent = new Intent(this, Mechanics.class);
         startActivity(intent);
     }
-    public void MechanicsToGameSetup (View view){
-        Intent intent = new Intent(this, GameSetup.class);
-        startActivity(intent);
-    }
-    public void MechanicsToPositions (View view){
-        Intent intent = new Intent(this, PositionsArrangement.class);
-        startActivity(intent);
-    }
-    public void MechanicsToAdditionalRules (View view){
-        Intent intent = new Intent(this, AdditionalRules.class);
-        startActivity(intent);
-    }
-    public void Phase1 (View view){
-        Intent intent = new Intent(this, Phase1.class);
-        startActivity(intent);
-    }
-    public void Phase2 (View view){
-        Intent intent = new Intent(this, Phase2.class);
-        startActivity(intent);
-    }
-    public void Phase3 (View view){
-        Intent intent = new Intent(this, Phase3.class);
-        startActivity(intent);
-    }
-
 }

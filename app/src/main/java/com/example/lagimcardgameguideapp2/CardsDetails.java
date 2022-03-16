@@ -199,6 +199,7 @@ public class CardsDetails extends System {
                     SubName.setText("(Invoker)");
                     CardType.setText("Lakas Card");
                     Archetype.setText("Medium");
+                    Level.setImageResource(R.drawable.level_five);
                     Sub4.setText("Traits");
                     Sub5.setText("Abilities");
                     Traits.setText("The Espiritista is a warden of faith, invoking spirits and divine powers to heal the sick, cast out evil, and perform miraculous deeds.");
@@ -207,13 +208,16 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_buntot_pagi);
                     Pair3.setImageResource(R.drawable.card_orasyonatinsenso);
                     Pair4.setImageResource(R.drawable.card_gasera);
+                    Pair5.setImageDrawable(null);
                     Pair6.setImageResource(R.drawable.card_agimat);
-                } else if (Name.getText().equals("Espiritista")){
+                    bgText.setImageResource(R.drawable.bg_card_text_large);
+                } else if (Name.getText().equals("Espiritista") || (Name.getText().equals("Orasyon at Insenso"))){
                     Card.setImageResource(R.drawable.card_albularyo);
                     Name.setText("Albularyo");
                     SubName.setText("(Shaman)");
                     CardType.setText("Lakas Card");
                     Archetype.setText("Medium");
+                    Level.setImageResource(R.drawable.level_five);
                     Sub4.setText("Traits");
                     Sub5.setText("Abilities");
                     Traits.setText("The Albularyo comes form an old and noble clan of healers whose traditional healing arts are known to cure even the most supernatural ailments.");
@@ -222,7 +226,9 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_orasyonatinsenso);
                     Pair3.setImageResource(R.drawable.card_buntot_pagi);
                     Pair4.setImageResource(R.drawable.card_agimat);
+                    Pair5.setImageDrawable(null);
                     Pair6.setImageResource(R.drawable.card_gasera);
+                    bgText.setImageResource(R.drawable.bg_card_text_large);
                 } else if (Name.getText().equals("Amihan")){
                     Card.setImageResource(R.drawable.card_tabakbawangatasin);
                     Name.setText("Tabak, Bawang, at Asin");
@@ -238,7 +244,7 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_amihan);
                     Pair3.setImageResource(R.drawable.card_tabakbawangatasin);
                     Pair4.setImageResource(R.drawable.card_sibatatsulo);
-                } else if (Name.getText().equals("Tabak, Bawang, at Asin") || (Name.getText().equals("Sibat at Sulo") || (Name.getText().equals("Agimat")))){
+                } else if (Name.getText().equals("Tabak, Bawang, at Asin") || (Name.getText().equals("Sibat at Sulo") || (Name.getText().equals("Agimat") || (Name.getText().equals("Gasera"))))){
                     Card.setImageResource(R.drawable.card_dante);
                     Name.setText("Dante");
                     SubName.setText("(Woodsman)");
@@ -452,6 +458,57 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_amihan);
                     Pair3.setImageResource(R.drawable.card_tabakbawangatasin);
                     Pair4.setImageResource(R.drawable.card_sibatatsulo);
+                } else if (Name.getText().equals("Buntot Pagi")){
+                    Card.setImageResource(R.drawable.card_albularyo);
+                    Name.setText("Albularyo");
+                    SubName.setText("(Shaman)");
+                    CardType.setText("Lakas Card");
+                    Archetype.setText("Medium");
+                    Level.setImageResource(R.drawable.level_five);
+                    Sub4.setText("Traits");
+                    Sub5.setText("Abilities");
+                    Traits.setText("The Albularyo comes form an old and noble clan of healers whose traditional healing arts are known to cure even the most supernatural ailments.");
+                    Ability.setText("DISSOLVE: After successful defense, select and keep a random card from another player’s hand. If it is a Lagim card, discard it to the Graveyard pile.");
+                    Pair1.setImageResource(R.drawable.card_espiritista);
+                    Pair2.setImageResource(R.drawable.card_orasyonatinsenso);
+                    Pair3.setImageResource(R.drawable.card_buntot_pagi);
+                    Pair4.setImageResource(R.drawable.card_agimat);
+                    Pair5.setImageDrawable(null);
+                    Pair6.setImageResource(R.drawable.card_gasera);
+                    bgText.setImageResource(R.drawable.bg_card_text_large);
+                } else if (Name.getText().equals("Orasyon at Insenso")){
+                    Card.setImageResource(R.drawable.card_espiritista);
+                    Name.setText("Espiritista");
+                    SubName.setText("(Invoker)");
+                    CardType.setText("Lakas Card");
+                    Archetype.setText("Medium");
+                    Level.setImageResource(R.drawable.level_five);
+                    Sub4.setText("Traits");
+                    Sub5.setText("Abilities");
+                    Traits.setText("The Espiritista is a warden of faith, invoking spirits and divine powers to heal the sick, cast out evil, and perform miraculous deeds.");
+                    Ability.setText("PREDICT: After a successful defense, player may choose to guess 1 card in opponent’s hand. If correct: Discard selected card. Claim 1 soul from opponent. If incorrect: Pay 1 soul to the opponent.");
+                    Pair1.setImageResource(R.drawable.card_albularyo);
+                    Pair2.setImageResource(R.drawable.card_buntot_pagi);
+                    Pair3.setImageResource(R.drawable.card_orasyonatinsenso);
+                    Pair4.setImageResource(R.drawable.card_gasera);
+                    Pair5.setImageDrawable(null);
+                    Pair6.setImageResource(R.drawable.card_agimat);
+                    bgText.setImageResource(R.drawable.bg_card_text_large);
+                } else if (Name.getText().equals("Tabak, Bawang, at Asin") || (Name.getText().equals("Sibat at Sulo") || (Name.getText().equals("Agimat") || (Name.getText().equals("Gasera"))))){
+                    Card.setImageResource(R.drawable.card_amihan);
+                    Name.setText("Amihan");
+                    SubName.setText("(Lightbringer)");
+                    CardType.setText("Lakas Card");
+                    Archetype.setText("Mortal");
+                    Level.setImageResource(R.drawable.level_three);
+                    Sub4.setText("Traits");
+                    Sub5.setText("Abilities");
+                    Traits.setText("Fair and gentle lady of the Barrio, Amihan's radiant beauty is known far and wide; alluring all, from the noblest of men to even the most hideous of giants.");
+                    Ability.setText("ENCHANT: After successful defense, sacrifice any 1 Hiwaga card from hand to the Graveyard pile to enchant (aquire) a Giant card from the deck to the dwell on another Baryo. ");
+                    Pair1.setImageResource(R.drawable.card_tabakbawangatasin);
+                    Pair2.setImageResource(R.drawable.card_sibatatsulo);
+                    Pair3.setImageResource(R.drawable.card_agimat);
+                    Pair4.setImageResource(R.drawable.card_gasera);
                 }
             }
         });
@@ -571,6 +628,39 @@ public class CardsDetails extends System {
                     Pair4.setImageResource(R.drawable.card_albularyo);
                     Pair6.setImageDrawable(null);
                     bgText.setImageResource(R.drawable.bg_card_text_medium);
+                } else if (Name.getText().equals("Tabak, Bawang, at Asin") || (Name.getText().equals("Sibat at Sulo"))){
+                    Card.setImageResource(R.drawable.card_tabakbawangatasin);
+                    Name.setText("Tabak, Bawang, at Asin");
+                    SubName.setText("(Blade, Garlic, & Salt)");
+                    Level.setImageResource(R.drawable.level_two);
+                    CardType.setText("Kontra Card");
+                    Archetype.setText("Mortal");
+                    Sub4.setText("Artifact");
+                    Sub5.setText("Use/Effect");
+                    Traits.setText("It is said that these items can be used to ward off or attack evil creatures like the Aswangs.");
+                    Ability.setText("NULLIFY: When equipped with a Mortal, all abilities of opposing cards are nullified and do not take effect. +1 to defense Entity Level.");
+                    Pair1.setImageResource(R.drawable.card_dante);
+                    Pair2.setImageResource(R.drawable.card_amihan);
+                    Pair3.setImageResource(R.drawable.card_tabakbawangatasin);
+                    Pair4.setImageResource(R.drawable.card_sibatatsulo);
+                } else if (Name.getText().equals("Agimat") || (Name.getText().equals("Gasera"))){
+                    Card.setImageResource(R.drawable.card_albularyo);
+                    Name.setText("Albularyo");
+                    SubName.setText("(Shaman)");
+                    CardType.setText("Lakas Card");
+                    Archetype.setText("Medium");
+                    Level.setImageResource(R.drawable.level_five);
+                    Sub4.setText("Traits");
+                    Sub5.setText("Abilities");
+                    Traits.setText("The Albularyo comes form an old and noble clan of healers whose traditional healing arts are known to cure even the most supernatural ailments.");
+                    Ability.setText("DISSOLVE: After successful defense, select and keep a random card from another player’s hand. If it is a Lagim card, discard it to the Graveyard pile.");
+                    Pair1.setImageResource(R.drawable.card_espiritista);
+                    Pair2.setImageResource(R.drawable.card_orasyonatinsenso);
+                    Pair3.setImageResource(R.drawable.card_buntot_pagi);
+                    Pair4.setImageResource(R.drawable.card_agimat);
+                    Pair5.setImageDrawable(null);
+                    Pair6.setImageResource(R.drawable.card_gasera);
+                    bgText.setImageResource(R.drawable.bg_card_text_large);
                 }
             }
         });
@@ -642,6 +732,39 @@ public class CardsDetails extends System {
                     Pair4.setImageResource(R.drawable.card_albularyo);
                     Pair6.setImageDrawable(null);
                     bgText.setImageResource(R.drawable.bg_card_text_medium);
+                } else if (Name.getText().equals("Tabak, Bawang, at Asin") || (Name.getText().equals("Sibat at Sulo"))){
+                    Card.setImageResource(R.drawable.card_sibatatsulo);
+                    Name.setText("Sibat at Sulo");
+                    SubName.setText("(Spear & Torch)");
+                    Level.setImageResource(R.drawable.level_two);
+                    CardType.setText("Kontra Card");
+                    Archetype.setText("Warrior");
+                    Sub4.setText("Artifact");
+                    Sub5.setText("Use/Effect");
+                    Traits.setText("\"By this torch, I can see in the darkness. By this spear, I can cut through the night.\"");
+                    Ability.setText("NULLIFY: When equipped with a Warrior, all abilities of opposing cards are nullified and do not take effect  +1 to defense Entity level.");
+                    Pair1.setImageResource(R.drawable.card_dante);
+                    Pair2.setImageResource(R.drawable.card_amihan);
+                    Pair3.setImageResource(R.drawable.card_tabakbawangatasin);
+                    Pair4.setImageResource(R.drawable.card_sibatatsulo);
+                } else if (Name.getText().equals("Agimat") || (Name.getText().equals("Gasera"))){
+                    Card.setImageResource(R.drawable.card_espiritista);
+                    Name.setText("Espiritista");
+                    SubName.setText("(Invoker)");
+                    CardType.setText("Lakas Card");
+                    Archetype.setText("Medium");
+                    Level.setImageResource(R.drawable.level_five);
+                    Sub4.setText("Traits");
+                    Sub5.setText("Abilities");
+                    Traits.setText("The Espiritista is a warden of faith, invoking spirits and divine powers to heal the sick, cast out evil, and perform miraculous deeds.");
+                    Ability.setText("PREDICT: After a successful defense, player may choose to guess 1 card in opponent’s hand. If correct: Discard selected card. Claim 1 soul from opponent. If incorrect: Pay 1 soul to the opponent.");
+                    Pair1.setImageResource(R.drawable.card_albularyo);
+                    Pair2.setImageResource(R.drawable.card_buntot_pagi);
+                    Pair3.setImageResource(R.drawable.card_orasyonatinsenso);
+                    Pair4.setImageResource(R.drawable.card_gasera);
+                    Pair5.setImageDrawable(null);
+                    Pair6.setImageResource(R.drawable.card_agimat);
+                    bgText.setImageResource(R.drawable.bg_card_text_large);
                 }
             }
         });
@@ -705,6 +828,42 @@ public class CardsDetails extends System {
                     Pair1.setImageResource(R.drawable.card_aswang);
                     Pair2.setImageResource(R.drawable.card_manananggal);
                     Pair5.setImageResource(R.drawable.card_tiktikatbuwan);
+                } else if (Name.getText().equals("Buntot Pagi")){
+                    Card.setImageResource(R.drawable.card_orasyonatinsenso);
+                    Name.setText("Orasyon at Insenso");
+                    SubName.setText("(Prayer & Incense)");
+                    CardType.setText("Kontra Card");
+                    Archetype.setText("Medium");
+                    Level.setImageResource(R.drawable.level_two);
+                    Sub4.setText("Artifact");
+                    Sub5.setText("Use/Effect");
+                    Traits.setText("The prayers of the faithful will be heard, and divine protection will be bestowed upon those who believe.");
+                    Ability.setText("NULLIFY: When equipped with a Shaman, all abilities of opposing cards are nullified and do not take effect.");
+                    Pair1.setImageResource(R.drawable.card_espiritista);
+                    Pair2.setImageResource(R.drawable.card_albularyo);
+                    Pair5.setImageResource(R.drawable.card_buntot_pagi);
+                    Pair3.setImageDrawable(null);
+                    Pair4.setImageDrawable(null);
+                    Pair6.setImageDrawable(null);
+                    bgText.setImageResource(R.drawable.bg_card_text_medium);
+                } else if (Name.getText().equals("Orasyon at Insenso")){
+                    Card.setImageResource(R.drawable.card_buntot_pagi);
+                    Name.setText("Buntot Pagi");
+                    SubName.setText("(Stingray Tail)");
+                    CardType.setText("Kontra Card");
+                    Archetype.setText("Medium");
+                    Level.setImageResource(R.drawable.level_two);
+                    Sub4.setText("Artifact");
+                    Sub5.setText("Use/Effect");
+                    Traits.setText("The stingray tail is an effective talisman and fine weapon against certain evil beings.");
+                    Ability.setText("NULLIFY: When equipped with a Shaman, all abilities of opposing cards are nullified and do not take effect. +1 to defense Entity Level.");
+                    Pair1.setImageResource(R.drawable.card_espiritista);
+                    Pair2.setImageResource(R.drawable.card_albularyo);
+                    Pair5.setImageResource(R.drawable.card_orasyonatinsenso);
+                    Pair3.setImageDrawable(null);
+                    Pair4.setImageDrawable(null);
+                    Pair6.setImageDrawable(null);
+                    bgText.setImageResource(R.drawable.bg_card_text_medium);
                 }
             }
         });
