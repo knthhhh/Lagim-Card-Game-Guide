@@ -46,7 +46,7 @@ public class Story extends System {
                         return true;
                     case R.id.mechanics:
                         startActivity(new Intent(getApplicationContext()
-                                , Story.class));
+                                , Mechanics.class));
                         overridePendingTransition(0, 0);
                         finish();
                         return true;
@@ -88,7 +88,8 @@ public class Story extends System {
     }
 
     public void ClickMechanics(View view) {
-        closeDrawer(drawerLayout);
+        Intent intent = new Intent(this, Mechanics.class);
+        startActivity(intent);
     }
 
     public void ClickGallery(View view) {

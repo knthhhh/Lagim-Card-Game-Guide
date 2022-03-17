@@ -8,6 +8,510 @@
     tools:context=".PositionsArrangement"
     android:background="@color/black">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_positionsarrangement"/>
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="Positions &amp; Arrangement"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/bgtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/position"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@id/footer"
+                android:layout_marginTop="-10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_positionsarrangement_text" />
+
+            <TextView
+                android:id="@+id/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/position"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/lusitana"
+                android:text="PLAYER’S BARYO"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/player"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="A player’s Baryo consists of the Spirit Path, Coin stash, and Dweller yard."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:paddingStart="65dp"
+                android:src="@drawable/img_board1" />
+
+            <ImageView
+                android:id="@+id/onebg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/bg_number" />
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/onebg"
+                android:layout_alignBottom="@id/onebg"
+                android:layout_alignStart="@id/onebg"
+                android:layout_alignEnd="@id/onebg"
+                android:gravity="center"
+                android:fontFamily="@font/backbones"
+                android:text="1"
+                android:textColor="@color/TextColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/one"
+                android:layout_alignTop="@+id/one"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Spirit Path"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/spiritpathtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/one"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="When you gain Soul coins from stealing, place them on the Spirit path."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/twobg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spiritpathtext"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/bg_number" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/twobg"
+                android:layout_alignBottom="@id/twobg"
+                android:layout_alignStart="@id/twobg"
+                android:layout_alignEnd="@id/twobg"
+                android:gravity="center"
+                android:fontFamily="@font/backbones"
+                android:text="2"
+                android:textColor="@color/TextColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/two"
+                android:layout_alignTop="@+id/two"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Dweller Yard"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/dwelleryardtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/two"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="When you have Dwellers, place them on the Dweller yard faceup, where the card’s upper part is touching the given space."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/threebg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dwelleryardtext"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/bg_number" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/threebg"
+                android:layout_alignTop="@+id/threebg"
+                android:layout_alignEnd="@id/threebg"
+                android:layout_alignBottom="@id/threebg"
+                android:fontFamily="@font/backbones"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/TextColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/three"
+                android:layout_alignTop="@+id/three"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Baryo Defense"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/baryodefensetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/three"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="When you have Dwellers, place them on the Dweller yard faceup, where the card’s upper part is touching the given space."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/fourbg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/baryodefensetext"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/bg_number" />
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/fourbg"
+                android:layout_alignTop="@+id/fourbg"
+                android:layout_alignEnd="@id/fourbg"
+                android:layout_alignBottom="@id/fourbg"
+                android:fontFamily="@font/backbones"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/TextColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/four"
+                android:layout_alignTop="@+id/four"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Coin Stash"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/coinstashtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/four"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Contains your starting Soul coins and Dark soul coins."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/fivebg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coinstashtext"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/bg_number" />
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/fivebg"
+                android:layout_alignTop="@+id/fivebg"
+                android:layout_alignEnd="@id/fivebg"
+                android:layout_alignBottom="@id/fivebg"
+                android:fontFamily="@font/backbones"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/TextColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/five"
+                android:layout_alignTop="@+id/five"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Coin Vessel"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/coinvesseltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/five"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="If you lose due to a Forest Attack or exceed the Lagim Limit during Midnight Phase, place the discarded Soul Coins on the Coin Vessel in the middle of the Forest."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/forestcardstack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coinvesseltext"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/lusitana"
+                android:text="FOREST CARD STACK"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forestcardstack"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Forest Card Dwellers of the same Archetype automatically stack together. Arrange them in the Dweller’s yard in this manner:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/cardstack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/img_cardstack" />
+
+            <TextView
+                android:id="@+id/castingsalag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardstack"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="65dp"
+                android:fontFamily="@font/lusitana"
+                android:text="CASTING SALAG - Agimat\nCard Position"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/castingsalag"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Place the Agimat card horizontally or perpendicular to the Forest card (or Forest card stack)."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/casting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-50dp"
+                android:paddingEnd="50dp"
+                android:src="@drawable/img_casting" />
+
+            <TextView
+                android:id="@+id/gamephase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/casting"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lusitana"
+                android:text="GAME PHASE - Silab Position"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gamephase"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="During your turn, place Silab on top of each phase on the Game Sheet to indicate the phase you are currently on."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/gamephaseimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img_gamephase" />
+
+            <TextView
+                android:id="@+id/disabledcards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gamephaseimg"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lusitana"
+                android:text="DISABLED CARDS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/disabledcards"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Turn the card 90 degrees, making it horizontally positioned within the area."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/disabledcardsimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:src="@drawable/img_disabledcard" />
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/disabledcardsimg"
+                android:layout_marginTop="50dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

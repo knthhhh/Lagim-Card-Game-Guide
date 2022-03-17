@@ -26,37 +26,41 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_story1" />
 
-            <TextView
-                android:id="@+id/story"
+            <Button
+                android:id="@+id/mechanics"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="120dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginEnd="30dp"
-                android:layout_toStartOf="@+id/mechanics"
-                android:drawableBottom="@drawable/indicator"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/transparent"
                 android:fontFamily="@font/opensans"
                 android:gravity="center_horizontal"
-                android:text="Story"
-                android:textColor="@color/TextColor"
+                android:onClick="StoryToMechanics"
+                android:text="Mechanics"
+                android:textAllCaps="false"
+                android:textColor="@color/lightGray"
                 android:textSize="15sp"
                 tools:ignore="UsingOnClickInXml" />
 
-            <TextView
-                android:id="@+id/mechanics"
+            <Button
+                android:id="@+id/story"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="100dp"
-                android:layout_marginEnd="120dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="65dp"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/indicator"
                 android:fontFamily="@font/opensans"
-                android:onClick="StoryToMechanics"
-                android:text="Mechanics"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Story"
                 android:textAlignment="center"
-                android:textColor="@color/lightGray"
+                android:textAllCaps="false"
+                android:textColor="@color/TextColor"
                 android:textSize="15sp"
                 tools:ignore="UsingOnClickInXml" />
 
@@ -232,48 +236,46 @@
                 android:layout_below="@id/goaltext"
                 android:layout_marginTop="100dp"/>
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_lagim_white" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="Menu"
+                    android:src="@drawable/ic_menu" />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black"
+                    app:itemIconTint="@drawable/selector"
+                    app:itemTextColor="@drawable/selector"
+                    app:menu="@menu/bottom_navigation" />
+
+
+            </RelativeLayout>
+
         </RelativeLayout>
 
     </ScrollView>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_lagim_white" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@android:color/transparent"
-            android:onClick="Menu"
-            android:src="@drawable/ic_menu" />
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            app:itemIconTint="@drawable/selector"
-            app:itemTextColor="@drawable/selector"
-            app:menu="@menu/bottom_navigation"
-            android:layout_alignParentBottom="true"
-            />
-
-
-    </RelativeLayout>
-
 
 
     <RelativeLayout

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdditionalRules"
+    tools:context=".CardMechanics"
     android:background="@color/black">
 
     <ScrollView
@@ -24,18 +24,18 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_additionalrules" />
+                android:src="@drawable/bg_cardmechanics" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title1"
-                android:layout_alignBottom="@id/footer"
+                android:layout_alignBottom="@+id/footer"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="-20dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_additionalrules_text" />
+                android:src="@drawable/bg_cardmechanics_text" />
 
             <TextView
                 android:id="@+id/title1"
@@ -47,215 +47,228 @@
                 android:layout_marginTop="100dp"
                 android:fontFamily="@font/oldstyle"
                 android:gravity="center_vertical"
-                android:text="Additional Rules"
+                android:text="Card Mechanics"
                 android:textColor="@color/cream"
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/title2"
+                android:id="@+id/entitylevel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title1"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="65dp"
+                android:layout_marginTop="60dp"
                 android:fontFamily="@font/lusitana"
-                android:text="SHUFFLING"
+                android:text="ENTITY LEVEL"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/img1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title2"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="-65dp"
-                android:paddingStart="10dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_shuffling" />
 
             <TextView
                 android:id="@+id/text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/img1"
+                android:layout_below="@id/entitylevel"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="-50dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="When either deck runs out of cards, shuffle the discarded cards to replenish the decks. However, do not shuffle the cards if there are only 2 players left."
+                android:text="A card’s strength is determined by its Entity level. The higher the value, the stronger the cards are. A battle between cards is concluded by the result of their total Entity Levels. Combine cards of the same Archetype to increase your card’s strength."
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/title3"
+            <ImageView
+                android:id="@+id/img1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_cardmechanics" />
+
+            <TextView
+                android:id="@+id/archetypes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="50dp"
                 android:fontFamily="@font/lusitana"
-                android:text="AGIMAT NULLIFIES\nCARD STACKING"
+                android:text="ARCHETYPES"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/img2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title3"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_agimat2" />
 
             <TextView
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/img2"
+                android:layout_below="@id/archetypes"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="00dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="The Agimat is a Special Kontra card that allows a Defender to separate a Forest card from its stack; letting you battle certain cards from the card stack."
+                android:text="The Archetype symbol determines the pairing and stacking of cards. "
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/title4"
+                android:id="@+id/rule1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text2"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/lusitana"
-                android:text="LOSING SOUL COINS"
+                android:text="Rules:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rule1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Forest Card Stack: All Forest cards of the same archetype automatically stack together regardless of their card type.\n\nEx. A  Mangkukulam has an Archetype of Witch; All other Witch cards (Hiwaga or Lagim) will stack with it, increasing their total Entity Level."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_cardstack5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
 
             <TextView
                 android:id="@+id/text4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/title4"
+                android:layout_below="@id/img2"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="When your Baryo’s exceeds the Lagim Limit, all the cards on your Baryo are discarded and you lose 1 Soul Coin."
+                android:text="Baryo Lakas cards of different Archetypes can be played together during battle, but each can only equip Kontra cards of the same Archetype (except for Special Kontra cards).\n\nSpecial Kontra cards can be equipped with any Baryo Lakas cards regardless of their Archetype or be played as solo/standalone.\n\nEx. An Agimat Kontra card can defend against a Dweller card’s ability and hold it until a Lakas card is available to be paired with it and repel the dweller completely."
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/sidetext1"
+                android:id="@+id/cardabilitieseffect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text4"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginTop="50dp"
                 android:fontFamily="@font/lusitana"
-                android:text="If you lose a Soul Coin due to a raid, the attacking Baryo steals it and places it onto it’s Spirit Path."
+                android:text="CARD ABILITIES &amp; EFFECT"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:id="@+id/img3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sidetext1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="0dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_board2" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/sidetext2"
+                android:id="@+id/rule2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/img3"
+                android:layout_below="@id/cardabilitieseffect"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="-20dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/lusitana"
-                android:text="If you lose a Soul Coin due to Forest attack, your Soul Coin goes into the Coin Vessel in the middle of the game board."
+                android:text="Rules:"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
 
             <TextView
                 android:id="@+id/text5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/sidetext2"
+                android:layout_below="@id/rule2"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="Your Baryo is eliminated from the game once you lose all of your starting Soul Coins, regardless of any Soul Coins you have on your Spirit Path."
+                android:text="Forest Card Ability/Effect immediately activates during battle or once it becomes a Dweller in a Baryo unless nullified by an opposing card ability/effect through engaging in battle."
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/title5"
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text5"
+                android:layout_alignTop="@id/text6"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
-                android:fontFamily="@font/lusitana"
-                android:text="HIWAGA DWELLERS"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/img4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title5"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="-65dp"
-                android:paddingStart="15dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_cardx" />
+                android:src="@drawable/ic_marker_text" />
 
             <TextView
                 android:id="@+id/text6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/img4"
+                android:layout_below="@id/text5"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="-10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="Hiwaga card dwellers don’t count towards the Lagim Limit, but they do make Lagim cards stronger, making it more difficult for a Baryo to defend against a raid or attack."
+                android:text="Hiwaga or Kontra card effect is activated during battle when it is equipped to a Lagim or Lakas card of the same Archetype."
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/title6"
+                android:id="@+id/forestdeck"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text6"
@@ -263,38 +276,28 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="50dp"
                 android:fontFamily="@font/lusitana"
-                android:text="FULL MOON"
+                android:text="FOREST DECK"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/img5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title6"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_fullmoon" />
 
             <TextView
                 android:id="@+id/text7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/img5"
+                android:layout_below="@id/forestdeck"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="On top of each Forest card is an illustration of its moon alignment. The Full Moon alignment is shown as a circular line symbol.\n\n2 Lagim cards of the same archetype that has a Full Moon alignment triggers a summoning spell that lets you draw 1 Lagim card (must be the same Archetype) from the Forest Deck to add to your offense and increase your cards’ total Entity Level.\n\nTo take advantage of this ability, raid a Baryo with at least 2 Lagim cards (must be the same Archetype) that have the Full Moon alignment. Then, draw 1 Lagim card (of the same Arche-type as the Full Moon cards) from the Forest Deck and add it to your raid stack. The new stack now functions as a Forest card stack and must be defeated together."
+                android:text="Shuffle the Lagim and Hiwaga cards together in this deck."
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/title7"
+                android:id="@+id/baryodeck"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text7"
@@ -302,38 +305,28 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="50dp"
                 android:fontFamily="@font/lusitana"
-                android:text="SIGBIN ( Limited Edition )"
+                android:text="BARYO DECK"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/img6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title7"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/card_sigbin" />
 
             <TextView
                 android:id="@+id/text8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/img6"
+                android:layout_below="@id/baryodeck"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="The Sigbin card can be used to raid a Baryo at any point during the game. It’s a quick way to steal a Baryo’s Soul Coin if they don’t have enough resources to defend."
+                android:text="Shuffle the Lagim and Hiwaga cards together in this deck."
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/title8"
+                android:id="@+id/summonabilities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text8"
@@ -341,74 +334,90 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="50dp"
                 android:fontFamily="@font/lusitana"
-                android:text="ARCHETYPES &amp; FOREST CARD STACK"
+                android:text="SUMMON ABILITIES"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/img7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title8"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:paddingStart="10dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_cardstack2" />
 
             <TextView
                 android:id="@+id/text9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/img7"
+                android:layout_below="@id/summonabilities"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="During battle, Forest cards of the same Archetype automatically stack. When that happens, you must engage in battle with the entire stack. A Forest card stack cannot be separated during battle unless your Defender is equipped with an Agimat card.\n\nWhen raiding another Baryo, you can only use Forest cards of the same Archetype. You cannot counter an Angkla raid. You can only counter a Hasik raid (using a captured Hiwaga card of the same Archetype).\n\nWhen building your defense, Kontra cards must be equipped to Lakas cards of the same Archetype, except for Special Kontra cards, which can be equipped by any Lakas card."
+                android:text="Some Forest cards have the ability to summon an additional Forest card when they stack. If your Forest Dwellers stack and summon a new Lagim Dweller in your Baryo, that might cause you to exceed the Lagim Limit and lose a Soul Coin."
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/title9"
+                android:id="@+id/rule3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text9"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/lusitana"
-                android:text="ARCHETYPES &amp; FOREST CARD STACK"
+                android:text="Rules:"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/img8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/title9"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:paddingStart="10dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_cardstack3" />
+                android:layout_alignTop="@id/text10"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
 
             <TextView
                 android:id="@+id/text10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/img8"
+                android:layout_below="@id/rule3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Summon ability casted by an opposing player towards your Baryo can be nullified by a Lakas card with equipped nullifying Kontra card. To do so, immediately engage in battle with the Forest cards before they become Dwellers. "
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dwellers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text10"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/lusitana"
+                android:text="DISABLERS  &amp; DISABLED CARDS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dwellers"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="During battle, a Lagim card’s ability affects you immediately regardless of your Defenders’ total Entity Level – unless your cards have a nullifying ability/effect.\n\nExamples of Nullify Cards are: Agimat, Orasyon at Insenso , Buntot Pagi, Sibat at Sulo"
+                android:text="Some Forest cards have the ability to disable one (or more) of your Defenders. When that happens, the disabled Defender (along with its Kontra cards) is turned horizontally and cannot be used until the Forest card disabler is captured or eliminated (or until specified in the card’s ability). As long as the disabler is a Dweller in your Baryo, the disabled card will remain disabled."
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -417,7 +426,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:layout_below="@id/text10"
+                android:layout_below="@id/text11"
                 android:layout_marginTop="50dp"/>
 
         </RelativeLayout>

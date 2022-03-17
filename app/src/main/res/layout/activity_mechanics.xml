@@ -27,121 +27,53 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_mechanics" />
 
-            <TextView
-                android:id="@+id/story"
+            <Button
+                android:id="@+id/mechanics"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="120dp"
-                android:layout_marginTop="100dp"
-                android:fontFamily="@font/opensans"
-                android:gravity="center_horizontal"
-                android:text="Story"
-                android:onClick="MechanicsToStory"
-                android:textColor="@color/lightGray"
-                android:textSize="15sp"
-                tools:ignore="UsingOnClickInXml" />
-
-            <TextView
-                android:id="@+id/mechanics"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="100dp"
-                android:layout_marginEnd="120dp"
-                android:layout_toEndOf="@id/story"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/transparent"
                 android:drawableBottom="@drawable/indicator"
                 android:fontFamily="@font/opensans"
+                android:gravity="center_horizontal"
                 android:text="Mechanics"
-                android:textAlignment="center"
+                android:textAllCaps="false"
                 android:textColor="@color/TextColor"
                 android:textSize="15sp"
                 tools:ignore="UsingOnClickInXml" />
 
-            <TextView
-                android:id="@+id/footer"
+            <Button
+                android:id="@+id/story"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:layout_below="@+id/phase3"
-                android:layout_marginTop="30dp"/>
-
-            <TextView
-                android:id="@+id/footer1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:layout_below="@id/detailsbg3"
-                android:layout_marginTop="100dp"
-                />
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="65dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/opensans"
+                android:onClick="MechanicsToStory"
+                android:text="Story"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/lightGray"
+                android:textSize="15sp"
+                tools:ignore="UsingOnClickInXml" />
 
             <ImageView
                 android:id="@+id/bgtext1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/setup"
-                android:layout_marginTop="-20dp"
+                android:layout_alignTop="@+id/setup"
+                android:layout_alignBottom="@id/firstfooter"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_mechanics_text1" />
-
-            <ImageView
-                android:id="@+id/bgtext2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/divider1"
-                android:layout_marginTop="-30dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_text2" />
-
-            <ImageView
-                android:id="@+id/bgtext3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/divider2"
-                android:layout_marginTop="-50dp"
-                android:layout_alignBottom="@id/footer"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_text3" />
-
-            <ImageView
-                android:id="@+id/bgtext4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/divider3"
-                android:layout_marginTop="-35dp"
-                android:layout_alignBottom="@id/footer1"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_text4" />
-
-            <ImageView
-                android:id="@+id/divider1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/bgtext1"
-                android:layout_marginTop="-25dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_divider1" />
-
-            <ImageView
-                android:id="@+id/divider2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/bgtext2"
-                android:layout_marginTop="-25dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_divider2" />
-
-            <ImageView
-                android:id="@+id/divider3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/bgtext3"
-                android:layout_marginTop="-25dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_divider3" />
 
             <TextView
                 android:id="@+id/setup"
@@ -162,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/bg_step"
-                android:layout_alignTop="@id/bgtext1"
+                android:layout_alignTop="@id/setup"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="100dp"
                 android:layout_marginStart="20dp"/>
@@ -202,7 +134,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="Unfold the game board and place it in the center of the play area."
@@ -246,6 +178,33 @@
                 tools:ignore="UsingOnClickInXml" />
 
             <TextView
+                android:id="@+id/firstfooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/details1"
+                android:layout_marginTop="50dp"/>
+
+            <ImageView
+                android:id="@+id/bgtext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider1"
+                android:layout_alignBottom="@id/secondfooter"
+                android:layout_marginTop="-30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_text2" />
+
+            <ImageView
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bgtext1"
+                android:layout_marginTop="-25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_divider1" />
+
+            <TextView
                 android:id="@+id/position"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -264,10 +223,10 @@
                 android:id="@+id/player"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/bgtext2"
+                android:layout_alignTop="@id/position"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="135dp"
                 android:fontFamily="@font/lusitana"
                 android:text="PLAYER’S BARYO"
                 android:textColor="@color/black"
@@ -282,7 +241,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="A player’s Baryo consists of the Spirit Path, Coin stash, and Dweller yard."
@@ -305,7 +264,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/board1"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="50dp"
                 android:onClick="MechanicsToPositions"
                 android:src="@drawable/bg_details_button" />
 
@@ -324,6 +283,33 @@
                 android:textColor="@color/white"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/secondfooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/details2"
+                android:layout_marginTop="60dp"/>
+
+            <ImageView
+                android:id="@+id/bgtext3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider2"
+                android:layout_alignBottom="@id/thirdfooter"
+                android:layout_marginTop="-45dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_text3" />
+
+            <ImageView
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bgtext2"
+                android:layout_marginTop="-25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_divider2" />
 
             <TextView
                 android:id="@+id/gameplay"
@@ -438,13 +424,149 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/rules"
+                android:id="@+id/thirdfooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/phase3"
+                android:layout_marginTop="50dp"/>
+
+            <ImageView
+                android:id="@+id/bgtext4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider3"
+                android:layout_alignBottom="@id/fourthfooter"
+                android:layout_marginTop="-50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_text4" />
+
+
+            <ImageView
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bgtext3"
+                android:layout_marginTop="-25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_divider3" />
+
+            <TextView
+                android:id="@+id/cardmechanics"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/divider3"
                 android:layout_alignTop="@id/divider3"
                 android:layout_alignEnd="@id/divider3"
                 android:layout_alignBottom="@id/divider3"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="Card Mechanics"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/cardmechanicstitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardmechanics"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="ENTITY LEVEL"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardmechanicstitle"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:lineSpacingExtra="5dp"
+                android:text="A card’s strength is determined by its Entity level. The higher the value, the stronger the cards are. A battle between cards is concluded by the result of their total Entity Levels. Combine cards of the same Archetype to increase your card’s strength."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/cardmechanicsimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_cardmechanics" />
+
+            <ImageView
+                android:id="@+id/detailsbg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardmechanicsimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:onClick="MechanicsToCardMechanics"
+                android:src="@drawable/bg_details_button" />
+
+            <TextView
+                android:id="@+id/details3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/detailsbg3"
+                android:layout_alignTop="@+id/detailsbg3"
+                android:layout_alignEnd="@id/detailsbg3"
+                android:layout_alignBottom="@id/detailsbg3"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:onClick="MechanicsToCardMechanics"
+                android:text="Details"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/fourthfooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/details3"
+                android:layout_marginTop="60dp"/>
+
+            <ImageView
+                android:id="@+id/bgtext5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider4"
+                android:layout_marginTop="-35dp"
+                android:layout_alignBottom="@id/fifthfooter"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_text5" />
+
+            <ImageView
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bgtext4"
+                android:layout_marginTop="-30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_mechanics_divider4" />
+
+            <TextView
+                android:id="@+id/rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/divider4"
+                android:layout_alignTop="@id/divider4"
+                android:layout_alignEnd="@id/divider4"
+                android:layout_alignBottom="@id/divider4"
                 android:layout_marginStart="20dp"
                 android:fontFamily="@font/oldstyle"
                 android:gravity="center_vertical"
@@ -460,7 +582,7 @@
                 android:layout_below="@id/rules"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/lusitana"
                 android:text="SHUFFLING"
                 android:textColor="@color/black"
@@ -479,7 +601,7 @@
                 android:src="@drawable/img_shuffling" />
 
             <TextView
-                android:id="@+id/text4"
+                android:id="@+id/text5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/shufflingimg"
@@ -494,23 +616,23 @@
                 android:textSize="16sp" />
 
             <ImageView
-                android:id="@+id/detailsbg3"
+                android:id="@+id/detailsbg4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/text4"
+                android:layout_below="@+id/text5"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="50dp"
                 android:onClick="MechanicsToAdditionalRules"
                 android:src="@drawable/bg_details_button" />
 
             <TextView
-                android:id="@+id/details3"
+                android:id="@+id/details4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@id/detailsbg3"
-                android:layout_alignTop="@+id/detailsbg3"
-                android:layout_alignEnd="@id/detailsbg3"
-                android:layout_alignBottom="@id/detailsbg3"
+                android:layout_alignStart="@id/detailsbg4"
+                android:layout_alignTop="@+id/detailsbg4"
+                android:layout_alignEnd="@id/detailsbg4"
+                android:layout_alignBottom="@id/detailsbg4"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center"
                 android:onClick="MechanicsToAdditionalRules"
@@ -519,6 +641,13 @@
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
 
+            <TextView
+                android:id="@+id/fifthfooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/details4"
+                android:layout_marginTop="100dp"/>
 
 
         </RelativeLayout>

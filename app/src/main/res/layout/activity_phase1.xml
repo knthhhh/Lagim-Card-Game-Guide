@@ -8,6 +8,248 @@
     tools:context=".Phase1"
     android:background="@color/black">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_phase1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1"
+                android:layout_alignBottom="@id/footer"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_phase1_text" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="The Gameplay"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/phasebg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_phase_title"
+                android:layout_below="@id/title1"
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/phase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/phasebg"
+                android:layout_alignTop="@id/phasebg"
+                android:layout_alignEnd="@id/phasebg"
+                android:layout_alignBottom="@id/phasebg"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Phase 1:"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lusitana"
+                android:text="TAKIPSILIM (TWILIGHT)"
+                android:layout_toEndOf="@id/phase"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_alignBaseline="@id/phase"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="The Baryo prepares for the coming night by gathering resources and setting up defenses. Only those who are willing to risk their lives can be called Defenders."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/img1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Perform these steps:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-30dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/img_drawcard" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text10"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_toStartOf="@id/img1"
+                android:fontFamily="@font/lusitana"
+                android:text="Draw a card from\nthe Baryo Deck and\nplace it in your hand."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Next, build your Baryo Defense by initially placing a maximum of 3 Lakas or Special Kontra cards face-down on your Baryo. Lakas cards placed on your Baryo are your Defenders. Equip them with Kontra cards to increase their strength.\n\nExample combinations:\n\n3 Lakas cards (no equipped Kontra cards)\n2 Lakas cards + 1 equipped Kontra card"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:paddingStart="90dp"
+                android:src="@drawable/img_baryodefense" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/bg_phase1_text_black" />
+
+            <TextView
+                android:id="@id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:layout_alignEnd="@id/img3"
+                android:layout_alignBottom="@id/img3"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
+                android:text="You can add more defense cards or switch them with new Baryo cards from your hand, on your next turn."
+                android:textColor="@color/cream"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/phase1bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:onClick="Phase1ToPhase2"
+                android:src="@drawable/bg_details_button" />
+
+            <TextView
+                android:id="@+id/phase1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/phase1bg"
+                android:layout_alignTop="@+id/phase1bg"
+                android:layout_alignEnd="@id/phase1bg"
+                android:layout_alignBottom="@id/phase1bg"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:onClick="Phase1ToPhase2"
+                android:text="Phase2"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/phase1"
+                android:layout_marginTop="50dp"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

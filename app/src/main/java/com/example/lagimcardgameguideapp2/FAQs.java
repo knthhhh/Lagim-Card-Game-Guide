@@ -53,7 +53,7 @@ public class FAQs extends System {
     }
 
     public void ClickMechanics(View view) {
-        Intent intent = new Intent(this, Story.class);
+        Intent intent = new Intent(this, Mechanics.class);
         startActivity(intent);
     }
 

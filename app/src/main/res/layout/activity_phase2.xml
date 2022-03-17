@@ -8,6 +8,772 @@
     tools:context=".Phase2"
     android:background="@color/black">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_phase2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1"
+                android:layout_alignBottom="@+id/footer"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_phase2_text" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="The Gameplay"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/phasebg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_phase_title"
+                android:layout_below="@id/title1"
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/phase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/phasebg"
+                android:layout_alignTop="@id/phasebg"
+                android:layout_alignEnd="@id/phasebg"
+                android:layout_alignBottom="@id/phasebg"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:text="Phase 2:"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/phase"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/phase"
+                android:fontFamily="@font/lusitana"
+                android:text="HATING-GABI  (MIDNIGHT)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="The Baryo prepares for the coming night by gathering resources and setting up defenses. Only those who are willing to risk their lives can be called Defenders."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_below="@id/text1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_hatinggabi" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toStartOf="@id/img1"
+                android:fontFamily="@font/lusitana"
+                android:text="The Baryo must defend itself from the impending attack or risk gaining a Dweller."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toStartOf="@id/img1"
+                android:fontFamily="@font/lusitana"
+                android:text="The Forest Deck contains the evil creatures and cursed items residing in the forest."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Perform these steps:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Draw a card from the Forest Deck and place it face-up on your Baryo."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:paddingStart="100dp"
+                android:src="@drawable/img_forestdeck2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Choose 1 action from the following to respond to the attacking Forest card:"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Actions:"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text8"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/red_marker" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text7"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="DEFEND, ENGAGE IN BATTLE:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text8"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Choose one or more of your Defenders to engage in battle with the attacking Forest card in order to capture or eliminate it."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text10"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/long_red_marker" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text9"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="DEFEND BY PERFORMING BIHAG (CAPTURE)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text10"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:drawableRight="@drawable/img_tikbalang"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
+                android:text="You capture the opposing Forest card (or Forest card stack) if your Defenders’ total Entity Level is greater. Captured Forest cards can be used to raid other Baryos or to perform a counter-raid."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text12"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/long_red_marker" />
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text11"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="DEFEND BY PERFORMING TABLA (DRAW)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text12"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="You eliminate the opposing Forest card (or Forest card stack) if its total Entity Level is equal to your Defenders’ total Entity Level. The opposing Forest cards are then discarded."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text14"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/long_red_marker" />
+
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text13"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="DEFEND BY CASTING SALAG (BLOCK)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"
+                android:layout_alignTop="@id/top"
+                android:layout_alignBottom="@id/bottom"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text14"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="You can use the Agimat card to block or nullify an attacking Forest card’s ability (or Forest card stack abilities) and hold it in place temporarily until a Lakas card is available to equip the Agimat card and repel the Forest card (Forest card stack) completely."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text15"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Regardless of the outcome, used Defender/s (along with their equipped Kontra cards) are discarded after battle (except Agimat card while it is still active as Salag)."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text17"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/red_marker" />
+
+            <TextView
+                android:id="@+id/text17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text16"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/lusitana"
+                android:text="STANDBY:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text17"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="You may choose not to engage in battle to save your Defenders for later use. The attacking Forest card automatically becomes a Dweller in your Baryo."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_below="@id/text18"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/bg_phase2_text_black" />
+
+            <TextView
+                android:id="@+id/text19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/img4"
+                android:layout_alignTop="@id/img4"
+                android:layout_alignEnd="@id/img4"
+                android:layout_alignBottom="@id/img4"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center_vertical"
+                android:paddingBottom="15dp"
+                android:text="Beware of Forest card stack! If the attacking Forest card stacks with one or more of your Dwellers, you must defeat the whole stack before they overwhelm your Baryo. When they are defeated in battle, the whole stack is captured or eliminated."
+                android:textColor="@color/cream"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text19"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/img_cardstack4" />
+
+            <TextView
+                android:id="@+id/text20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text="HOW TO:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text21"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text20"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:textStyle="bold"
+                android:text="Perform BIHAG"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text21"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Choose a Lakas card (or multiple Lakas cards equipped with Kontra cards) from your defense line. The total Entity Level must be higher than the opposing Forest card (or Forest card stack).\n\nDiscard the used Baryo cards to the Resting pile after battle.\n\nKeep the captured Forest card (or Forest card stack in your hand)."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text23"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text22"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Perform TABLA"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text23"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Choose a Lakas card (or multiple Lakas cards equipped with Kontra cards) from your defense line to match the total Entity Level of the opposing Forest card (or Forest card stack).\n\nA matching total Entity Level is considered a draw. This type of defense is still considered successful, but no cards will be captured.\n\nDiscard the used Baryo cards to the Resting pile after battle and the opposing Forest card (or Forest card stack) to the Graveyard pile."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text25"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text24"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Perform SILAG"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text25"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Place the Agimat card face-up and turn horizontally on top of the opposing Forest card (or Forest card stack). This action signifies that it is actively blocking the opposing cards’ abilities from taking effect.\n\n*A single Agimat cannot be used to cast Salag on multiple Forest card stacks.\n\nOn your next turn, you can add a Lakas card to the Agimat and completely repel the opposing Forest card (or Forest card stack). "
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text26"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="If you lose from a Forest Attack or exceed the Lagim Limit caused by a Forest Attack during Midnight Phase:"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text28"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text27"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Discard a Sole Coin to the Forest Coin Vessel."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text29"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text28"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Next, discard all your Baryo Dwellers (both Lagim and Hiwaga) and Defense cards. * Cards on the player’s hand do not get discarded."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text30"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_marker_text" />
+
+            <TextView
+                android:id="@+id/text30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text29"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Then, proceed to the next phase."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/phase2bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text30"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"
+                android:onClick="Phase2ToPhase1"
+                android:src="@drawable/bg_details_button" />
+
+            <TextView
+                android:id="@+id/phase2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/phase2bg"
+                android:layout_alignTop="@+id/phase2bg"
+                android:layout_alignEnd="@id/phase2bg"
+                android:layout_alignBottom="@id/phase2bg"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:onClick="Phase2ToPhase1"
+                android:text="Phase3"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <ImageView
+                android:id="@+id/phase3bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text30"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:onClick="Phase2ToPhase3"
+                android:src="@drawable/bg_details_button" />
+
+            <TextView
+                android:id="@+id/phase3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/phase3bg"
+                android:layout_alignTop="@+id/phase3bg"
+                android:layout_alignEnd="@id/phase3bg"
+                android:layout_alignBottom="@id/phase3bg"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:onClick="Phase2ToPhase3"
+                android:text="Phase3"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/phase3"
+                android:layout_marginTop="50dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

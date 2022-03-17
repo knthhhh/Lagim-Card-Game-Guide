@@ -47,7 +47,7 @@ public class Mechanics extends System {
                         return true;
                     case R.id.mechanics:
                         startActivity(new Intent(getApplicationContext()
-                                , Story.class));
+                                , Mechanics.class));
                         overridePendingTransition(0, 0);
                         finish();
                         return true;
@@ -125,6 +125,10 @@ public class Mechanics extends System {
     }
     public void MechanicsToPositions (View view){
         Intent intent = new Intent(this, PositionsArrangement.class);
+        startActivity(intent);
+    }
+    public void MechanicsToCardMechanics (View view){
+        Intent intent = new Intent(this, CardMechanics.class);
         startActivity(intent);
     }
     public void MechanicsToAdditionalRules (View view){
