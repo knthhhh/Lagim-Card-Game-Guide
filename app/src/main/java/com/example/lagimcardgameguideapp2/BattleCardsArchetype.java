@@ -32,14 +32,14 @@ public class BattleCardsArchetype extends System {
         Archetype4 = findViewById(R.id.archetype4);
         Archetype5 = findViewById(R.id.archetype5);
 
-        Bundle bundle = getIntent().getExtras();
-        String get = bundle.getString("Header");
-        int img = bundle.getInt("bg");
-
-        imageView.setImageResource(img);
         header.setText(getIntent().getStringExtra("Header"));
         text.setText(getIntent().getStringExtra("Text"));
 
+        if(header.getText().equals("LAGIM CARDS")){
+            imageView.setImageResource(R.drawable.bg_lagimarchetype);
+        }else{
+            imageView.setImageResource(R.drawable.bg_lakasarchetype);
+        }
 
         if (header.getText().equals("LAGIM CARDS")){
             img1.setImageResource(R.drawable.lagim_witch);
@@ -71,16 +71,12 @@ public class BattleCardsArchetype extends System {
                 if (header.getText().equals("LAGIM CARDS")){
                     Intent lagim = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lagim.putExtra("Archetype","Witch Archetype");
-                    lagim.putExtra("titlebg", R.drawable.bg_title_cards_maroon);
-                    lagim.putExtra("bg", R.drawable.bg_lagim);
                     lagim.putExtra("card1", R.drawable.card_mambabarang);
                     lagim.putExtra("card2", R.drawable.card_mangkukulam);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lakas.putExtra("Archetype","Medium Archetype");
-                    lakas.putExtra("bg", R.drawable.bg_kontra);
-                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     lakas.putExtra("card1", R.drawable.card_albularyo);
                     lakas.putExtra("card2",R.drawable.card_espiritista);
                     startActivity(lakas);
@@ -94,16 +90,12 @@ public class BattleCardsArchetype extends System {
                 if (header.getText().equals("LAGIM CARDS")){
                     Intent lagim = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lagim.putExtra("Archetype","Bestial Archetype");
-                    lagim.putExtra("titlebg", R.drawable.bg_title_cards_maroon);
-                    lagim.putExtra("bg", R.drawable.bg_lagim);
                     lagim.putExtra("card1", R.drawable.card_sigbin);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lakas.putExtra("Archetype","Mortal Archetype");
-                    lakas.putExtra("bg", R.drawable.bg_kontra);
                     lakas.putExtra("card1", R.drawable.card_amihan);
-                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     startActivity(lakas);
                 }
             }
@@ -115,16 +107,12 @@ public class BattleCardsArchetype extends System {
                 if (header.getText().equals("LAGIM CARDS")){
                     Intent lagim = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lagim.putExtra("Archetype","Ghoul Archetype");
-                    lagim.putExtra("titlebg", R.drawable.bg_title_cards_maroon);
-                    lagim.putExtra("bg", R.drawable.bg_lagim);
                     lagim.putExtra("card1", R.drawable.card_manananggal);
                     lagim.putExtra("card2", R.drawable.card_aswang);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lakas.putExtra("Archetype","Warrior Archetype");
-                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
-                    lakas.putExtra("bg", R.drawable.bg_kontra);
                     lakas.putExtra("card1", R.drawable.card_dante);
                     startActivity(lakas);
                 }
@@ -137,8 +125,6 @@ public class BattleCardsArchetype extends System {
                 if (header.getText().equals("LAGIM CARDS")){
                     Intent lagim = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lagim.putExtra("Archetype","Giant Archetype");
-                    lagim.putExtra("titlebg", R.drawable.bg_title_cards_maroon);
-                    lagim.putExtra("bg", R.drawable.bg_lagim);
                     lagim.putExtra("card1", R.drawable.card_kapre);
                     lagim.putExtra("card2", R.drawable.card_tikbalang);
                     lagim.putExtra("card3", R.drawable.card_bungisngis);
@@ -146,8 +132,6 @@ public class BattleCardsArchetype extends System {
                 } else {
                     Intent lakas = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lakas.putExtra("Archetype","Half Mortal Archetype");
-                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
-                    lakas.putExtra("bg", R.drawable.bg_kontra);
                     startActivity(lakas);
                 }
             }
@@ -159,16 +143,12 @@ public class BattleCardsArchetype extends System {
                 if (header.getText().equals("LAGIM CARDS")){
                     Intent lagim = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lagim.putExtra("Archetype","Dwarf Archetype");
-                    lagim.putExtra("titlebg", R.drawable.bg_title_cards_maroon);
-                    lagim.putExtra("bg", R.drawable.bg_lagim);
                     lagim.putExtra("card1", R.drawable.card_duwende);
                     lagim.putExtra("card2", R.drawable.card_nunosapunso);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lakas.putExtra("Archetype","Special Archetype");
-                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
-                    lakas.putExtra("bg", R.drawable.bg_kontra);
                     startActivity(lakas);
                 }
             }

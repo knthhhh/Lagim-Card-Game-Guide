@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_card" />
+                android:src="@drawable/bg_lagim_card_details" />
 
             <ImageView
                 android:id="@+id/card"

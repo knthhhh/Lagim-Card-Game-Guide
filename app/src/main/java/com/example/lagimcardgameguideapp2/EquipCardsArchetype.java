@@ -31,12 +31,14 @@ public class EquipCardsArchetype extends System {
 
         imageView = findViewById(R.id.bgimg);
         header = findViewById(R.id.Header1);
-        Bundle bundle = getIntent().getExtras();
-        String get = bundle.getString("Header");
-        int img = bundle.getInt("bg");
 
-        imageView.setImageResource(img);
         header.setText(getIntent().getStringExtra("Header"));
+
+        if(header.getText().equals("HIWAGA CARDS")){
+            imageView.setImageResource(R.drawable.bg_hiwagaarchetype);
+        }else{
+            imageView.setImageResource(R.drawable.bg_kontraarchetype);
+        }
 
         if (header.getText().equals("HIWAGA CARDS")){
             img1.setImageResource(R.drawable.hiwaga_witch);
@@ -68,7 +70,6 @@ public class EquipCardsArchetype extends System {
                 if (header.getText().equals("HIWAGA CARDS")){
                     Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lagim.putExtra("Archetype","Witch Archetype");
-                    lagim.putExtra("bg", R.drawable.bg_lagim);
                     lagim.putExtra("card1", R.drawable.card_sumpangmanika);
                     lagim.putExtra("card2", R.drawable.card_alakdan_at_alupihan);
                     lagim.putExtra("card3", R.drawable.card_altar_ng_kulam);
@@ -76,8 +77,6 @@ public class EquipCardsArchetype extends System {
                 } else {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Medium Archetype");
-                    lakas.putExtra("bg", R.drawable.bg_kontra);
-                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     lakas.putExtra("card1", R.drawable.card_buntot_pagi);
                     lakas.putExtra("card2",R.drawable.card_orasyonatinsenso);
                     startActivity(lakas);
@@ -91,13 +90,10 @@ public class EquipCardsArchetype extends System {
                 if (header.getText().equals("HIWAGA CARDS")){
                     Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lagim.putExtra("Archetype","Bestial Archetype");
-                    lagim.putExtra("bg", R.drawable.bg_lagim);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Mortal Archetype");
-                    lakas.putExtra("bg", R.drawable.bg_kontra);
-                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     lakas.putExtra("card1", R.drawable.card_tabakbawangatasin);
                     startActivity(lakas);
                 }
@@ -110,15 +106,12 @@ public class EquipCardsArchetype extends System {
                 if (header.getText().equals("HIWAGA CARDS")){
                     Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lagim.putExtra("Archetype","Ghoul Archetype");
-                    lagim.putExtra("bg", R.drawable.bg_lagim);
                     lagim.putExtra("card1", R.drawable.card_tiktikatbuwan);
                     lagim.putExtra("card2", R.drawable.card_dugo_at_langis);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Warrior Archetype");
-                    lakas.putExtra("bg", R.drawable.bg_kontra);
-                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     lakas.putExtra("card1", R.drawable.card_sibatatsulo);
                     startActivity(lakas);
                 }
@@ -131,14 +124,11 @@ public class EquipCardsArchetype extends System {
                 if (header.getText().equals("HIWAGA CARDS")){
                     Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lagim.putExtra("Archetype","Giant Archetype");
-                    lagim.putExtra("bg", R.drawable.bg_lagim);
                     lagim.putExtra("card1", R.drawable.card_punongacacia);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Half Mortal Archetype");
-                    lakas.putExtra("bg", R.drawable.bg_kontra);
-                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     startActivity(lakas);
                 }
             }
@@ -150,14 +140,11 @@ public class EquipCardsArchetype extends System {
                 if (header.getText().equals("HIWAGA CARDS")){
                     Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lagim.putExtra("Archetype","Dwarf Archetype");
-                    lagim.putExtra("bg", R.drawable.bg_lagim);
                     lagim.putExtra("card1", R.drawable.card_bungo_at_tungkod);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Special Archetype");
-                    lakas.putExtra("bg", R.drawable.bg_kontra);
-                    lakas.putExtra("titlebg", R.drawable.bg_title_cards_gray);
                     lakas.putExtra("card1", R.drawable.card_agimat);
                     lakas.putExtra("card2", R.drawable.card_gasera);
                     startActivity(lakas);

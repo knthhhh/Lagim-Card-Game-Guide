@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_boardgame" />
+                android:src="@drawable/bg_components" />
 
             <TextView
                 android:id="@+id/ComponentText"
@@ -126,7 +126,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:onClick="ComponentsToBoardDetails"
-                android:src="@drawable/bg_detail_btn" />
+                android:src="@drawable/bg_details_button" />
 
             <TextView
                 android:id="@+id/Details"
@@ -453,7 +453,7 @@
                 android:layout_alignTop="@+id/BaryoImage"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="390dp"
-                android:src="@drawable/bg_detail_btn" />
+                android:src="@drawable/bg_details_button" />
 
             <TextView
                 android:id="@+id/Details2"
@@ -526,7 +526,7 @@
                 android:id="@+id/detailsbg3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/bg_detail_btn"
+                android:src="@drawable/bg_details_button"
                 android:layout_alignTop="@+id/ForestImage"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="390dp"
@@ -552,7 +552,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:layout_alignTop="@id/Details3"
+                android:layout_below="@id/Details3"
                 android:layout_marginTop="100dp"
                 />
 

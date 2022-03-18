@@ -24,7 +24,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_lagim" />
+                android:src="@drawable/bg_lagimarchetype" />
 
             <ImageView
                 android:id="@+id/titlebg"

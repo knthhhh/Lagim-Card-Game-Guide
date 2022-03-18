@@ -26,14 +26,24 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_story1" />
 
-            <Button
+            <ImageView
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="125dp"
+                android:layout_marginEnd="63dp"
+                android:src="@drawable/indicator" />
+
+            <TextView
                 android:id="@+id/mechanics"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="65dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginStart="94dp"
+                android:layout_marginTop="100dp"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/opensans"
                 android:gravity="center_horizontal"
@@ -41,27 +51,24 @@
                 android:text="Mechanics"
                 android:textAllCaps="false"
                 android:textColor="@color/lightGray"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 tools:ignore="UsingOnClickInXml" />
 
-            <Button
+            <TextView
                 android:id="@+id/story"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="80dp"
-                android:layout_marginEnd="65dp"
+                android:layout_alignStart="@id/indicator"
+                android:layout_alignEnd="@id/indicator"
+                android:layout_alignBottom="@id/indicator"
+                android:layout_marginBottom="5dp"
+                android:layout_alignBaseline="@id/mechanics"
                 android:background="@android:color/transparent"
-                android:drawableBottom="@drawable/indicator"
                 android:fontFamily="@font/opensans"
-                android:paddingStart="15dp"
-                android:paddingEnd="15dp"
                 android:text="Story"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="@color/TextColor"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 tools:ignore="UsingOnClickInXml" />
 
             <ImageView

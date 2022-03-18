@@ -31,17 +31,27 @@ public class BattleCardsList extends System {
         bgimg = findViewById(R.id.bgimg);
 
         textView.setText(getIntent().getStringExtra("Archetype"));
-        int bg = bundle.getInt("bg");
+
         int card1 = bundle.getInt("card1");
         int card2 = bundle.getInt("card2");
         int card3 = bundle.getInt("card3");
-        int bgheader = bundle.getInt("titlebg");
 
-        bgimg.setImageResource(bg);
         imageView1.setImageResource(card1);
         imageView2.setImageResource(card2);
         imageView3.setImageResource(card3);
-        Header.setImageResource(bgheader);
+
+
+        if (textView.getText().equals("Witch Archetype") ||
+                (textView.getText().equals("Ghoul Archetype") ||
+                        (textView.getText().equals("Bestial Archetype") ||
+                                (textView.getText().equals("Giant Archetype") ||
+                                        (textView.getText().equals("Dwarf Archetype")))))){
+            Header.setImageResource(R.drawable.bg_title_cards_maroon);
+            bgimg.setImageResource(R.drawable.bg_lagim_cardlist);
+        }else{
+            Header.setImageResource(R.drawable.bg_title_cards_gray);
+            bgimg.setImageResource(R.drawable.bg_kontra);
+        }
 
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +77,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair3", R.drawable.card_sumpangmanika);
                     intent.putExtra("Pair4", R.drawable.card_altar_ng_kulam);
                     intent.putExtra("Level", R.drawable.level_five);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Medium Archetype")){
@@ -92,7 +101,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair4", R.drawable.card_agimat);
                     intent.putExtra("Pair6", R.drawable.card_gasera);
                     intent.putExtra("Level", R.drawable.level_five);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_large);
                     startActivity(intent);
                 }else if (textView.getText().equals("Ghoul Archetype")){
@@ -115,7 +123,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair2", R.drawable.card_dugo_at_langis);
                     intent.putExtra("Pair5", R.drawable.card_tiktikatbuwan);
                     intent.putExtra("Level", R.drawable.level_four);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Mortal Archetype")){
@@ -139,7 +146,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair3", R.drawable.card_agimat);
                     intent.putExtra("Pair4", R.drawable.card_gasera);
                     intent.putExtra("Level", R.drawable.level_three);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Giant Archetype")){
@@ -162,7 +168,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair2", R.drawable.card_bungisngis);
                     intent.putExtra("Pair5", R.drawable.card_punongacacia);
                     intent.putExtra("Level", R.drawable.level_three);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Warrior Archetype")){
@@ -186,7 +191,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair3", R.drawable.card_gasera);
                     intent.putExtra("Pair4", R.drawable.card_agimat);
                     intent.putExtra("Level", R.drawable.level_three);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Dwarf Archetype")){
@@ -208,7 +212,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_nunosapunso);
                     intent.putExtra("Pair2", R.drawable.card_bungo_at_tungkod);
                     intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Bestial Archetype")){
@@ -228,7 +231,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_sigbin);
                     intent.putExtra("Level", R.drawable.level_five);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_small);
                     startActivity(intent);
                 }
@@ -259,7 +261,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair3", R.drawable.card_sumpangmanika);
                     intent.putExtra("Pair4", R.drawable.card_altar_ng_kulam);
                     intent.putExtra("Level", R.drawable.level_five);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
                     startActivity(intent);
             }else if (textView.getText().equals("Medium Archetype")){
@@ -284,7 +285,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair4", R.drawable.card_gasera);
                     intent.putExtra("Pair6", R.drawable.card_agimat);
                     intent.putExtra("Level", R.drawable.level_five);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_large);
                     startActivity(intent);
                 }else if (textView.getText().equals("Ghoul Archetype")){
@@ -307,7 +307,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair2", R.drawable.card_dugo_at_langis);
                     intent.putExtra("Pair5", R.drawable.card_tiktikatbuwan);
                     intent.putExtra("Level", R.drawable.level_four);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Giant Archetype")){
@@ -330,7 +329,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair2", R.drawable.card_bungisngis);
                     intent.putExtra("Pair5", R.drawable.card_punongacacia);
                     intent.putExtra("Level", R.drawable.level_three);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Dwarf Archetype")){
@@ -352,7 +350,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_duwende);
                     intent.putExtra("Pair2", R.drawable.card_bungo_at_tungkod);
                     intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_small);
                     startActivity(intent);
                 }
@@ -382,7 +379,6 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair2", R.drawable.card_kapre);
                     intent.putExtra("Pair5", R.drawable.card_punongacacia);
                     intent.putExtra("Level", R.drawable.level_three);
-                    intent.putExtra("bgimg", R.drawable.bg_card);
                     intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
                     startActivity(intent);
                 }

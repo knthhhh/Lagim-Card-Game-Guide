@@ -17,5 +17,6 @@ public class Phase1 extends System {
     public void Phase1ToPhase2(View view){
         Intent intent = new Intent(this, Phase2.class);
         startActivity(intent);
+        finish();
     }
 }

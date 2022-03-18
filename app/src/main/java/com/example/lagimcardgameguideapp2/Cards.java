@@ -74,7 +74,6 @@ public class Cards extends System {
                 Intent intent = new Intent(Cards.this, BattleCardsArchetype.class);
                 intent.putExtra("Header",Content.get(0));
                 intent.putExtra("Text",Content.get(1));
-                intent.putExtra("bg", R.drawable.bg_lagim);
                 startActivity(intent);
             }
         });
@@ -90,7 +89,6 @@ public class Cards extends System {
                 Intent intent = new Intent(Cards.this, BattleCardsArchetype.class);
                 intent.putExtra("Header",Content.get(0));
                 intent.putExtra("Text",Content.get(1));
-                intent.putExtra("bg", R.drawable.bg_kontra);
                 startActivity(intent);
             }
         });
@@ -102,7 +100,6 @@ public class Cards extends System {
                 Content.add("HIWAGA CARDS");
                 Intent intent = new Intent(Cards.this, EquipCardsArchetype.class);
                 intent.putExtra("Header",Content.get(0));
-                intent.putExtra("bg", R.drawable.bg_lagim);
                 startActivity(intent);
             }
         });
@@ -114,7 +111,6 @@ public class Cards extends System {
                 Content.add("KONTRA CARDS");
                 Intent intent = new Intent(Cards.this, EquipCardsArchetype.class);
                 intent.putExtra("Header",Content.get(0));
-                intent.putExtra("bg", R.drawable.bg_kontra);
                 startActivity(intent);
             }
         });

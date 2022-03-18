@@ -27,32 +27,42 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_mechanics" />
 
-            <Button
+            <ImageView
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="125dp"
+                android:layout_marginStart="75dp"
+                android:src="@drawable/indicator" />
+
+            <TextView
                 android:id="@+id/mechanics"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="65dp"
-                android:layout_marginTop="80dp"
+                android:layout_alignStart="@id/indicator"
+                android:layout_alignEnd="@id/indicator"
+                android:layout_alignBottom="@id/indicator"
+                android:layout_marginBottom="5dp"
                 android:background="@android:color/transparent"
-                android:drawableBottom="@drawable/indicator"
                 android:fontFamily="@font/opensans"
                 android:gravity="center_horizontal"
                 android:text="Mechanics"
                 android:textAllCaps="false"
                 android:textColor="@color/TextColor"
                 android:textSize="15sp"
+                android:layout_alignBaseline="@id/story"
                 tools:ignore="UsingOnClickInXml" />
 
-            <Button
+            <TextView
                 android:id="@+id/story"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="80dp"
-                android:layout_marginEnd="65dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="94dp"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/opensans"
                 android:onClick="MechanicsToStory"

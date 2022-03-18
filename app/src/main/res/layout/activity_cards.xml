@@ -45,12 +45,12 @@
                 android:layout_marginTop="100dp"
                 android:fontFamily="@font/opensans"
                 android:text="Cards"
+                android:textAlignment="center"
                 android:textColor="@color/TextColor"
                 android:textSize="15sp"
-                tools:ignore="UsingOnClickInXml"
                 android:textStyle="bold"
-                android:textAlignment="center"
-                app:drawableBottomCompat="@drawable/indicator" />
+                app:drawableBottomCompat="@drawable/indicator"
+                tools:ignore="UsingOnClickInXml" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
                 android:fontFamily="@font/oldstyle"
                 android:text="FOREST CARDS"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <ImageButton
                 android:id="@+id/lagimbtn"
@@ -134,7 +134,7 @@
                 android:fontFamily="@font/oldstyle"
                 android:text="BARYO CARDS"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <ImageButton
                 android:id="@+id/lakasbtn"

@@ -46,7 +46,6 @@ public class CardsDetails extends System {
         Traits.setText(getIntent().getStringExtra("Traits"));
         Ability.setText(getIntent().getStringExtra("Ability"));
 
-        int bg = bundle.getInt("bgimg");
         int bgtext = bundle.getInt("bgtext");
         int card = bundle.getInt("Card");
         int pair1 = bundle.getInt("Pair1");
@@ -57,7 +56,6 @@ public class CardsDetails extends System {
         int pair6 = bundle.getInt("Pair6");
         int level = bundle.getInt("Level");
 
-        bgImg.setImageResource(bg);
         bgText.setImageResource(bgtext);
         Card.setImageResource(card);
         Pair1.setImageResource(pair1);
@@ -72,6 +70,16 @@ public class CardsDetails extends System {
         String text2 = "Use/Effect";
         String text3 = "Traits";
         String text4 = "Abilities";
+
+        if (Archetype.getText().equals("Witch") ||
+                (Archetype.getText().equals("Ghoul") ||
+                        (Archetype.getText().equals("Bestial") ||
+                                (Archetype.getText().equals("Giant") ||
+                                        (Archetype.getText().equals("Dwarf")))))){
+            bgImg.setImageResource(R.drawable.bg_lagim_card_details);
+        }else{
+            bgImg.setImageResource(R.drawable.bg_kontra);
+        }
 
         if ((CardType.getText().equals("Hiwaga Card")) || (CardType.getText().equals("Kontra Card")) || (CardType.getText().equals("Special Kontra Card")) ){
             Sub4.setText(text1);

@@ -8,10 +8,6 @@
     tools:context=".EquipCardsArchetype"
     android:background="@color/black">
 
-<!--    <ScrollView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -24,7 +20,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:scaleType="fitXY"
-            android:src="@drawable/bg_lagim" />
+            android:src="@drawable/bg_lagimarchetype" />
 
         <ImageView
             android:id="@+id/titlebg"
