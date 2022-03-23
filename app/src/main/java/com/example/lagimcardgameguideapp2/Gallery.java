@@ -3,10 +3,13 @@ package com.example.lagimcardgameguideapp2;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 
 public class Gallery extends System {
 
@@ -76,6 +79,61 @@ public class Gallery extends System {
         super.onPause();
         closeDrawer((drawerLayout));
         overridePendingTransition(0, 0);
+    }
+
+
+    public void img1(View view){
+        Intent intent = new Intent(this, GalleryView.class);
+        intent.putExtra("img", R.drawable.img_giant);
+        startActivity(intent);
+    }
+
+    public void img2(View view){
+        Intent intent = new Intent(this, GalleryView.class);
+        intent.putExtra("img", R.drawable.img_tigbanua);
+        startActivity(intent);
+    }
+
+    public void img3(View view){
+        Intent intent = new Intent(this, GalleryView.class);
+        intent.putExtra("img", R.drawable.img_mambabarang);
+        startActivity(intent);
+    }
+
+    public void img4(View view){
+        Intent intent = new Intent(this, GalleryView.class);
+        intent.putExtra("img", R.drawable.img_duwende);
+        startActivity(intent);
+    }
+
+    public void img5(View view){
+        Intent intent = new Intent(this, GalleryView.class);
+        intent.putExtra("img", R.drawable.img_kapre);
+        startActivity(intent);
+    }
+
+    public void img6(View view){
+        Intent intent = new Intent(this, GalleryView.class);
+        intent.putExtra("img", R.drawable.img_aswang);
+        startActivity(intent);
+    }
+
+    public void img7(View view){
+        Intent intent = new Intent(this, GalleryView.class);
+        intent.putExtra("img", R.drawable.img_espiritista);
+        startActivity(intent);
+    }
+
+    public void img8(View view){
+        Intent intent = new Intent(this, GalleryView.class);
+        intent.putExtra("img", R.drawable.img_torment);
+        startActivity(intent);
+    }
+
+    public void img9(View view){
+        Intent intent = new Intent(this, GalleryView.class);
+        intent.putExtra("img", R.drawable.img_albularyo);
+        startActivity(intent);
     }
 
 }

@@ -68,12 +68,12 @@ public class Cards extends System {
             public void onClick(View view) {
                 Content.clear();
                 Content.add("LAGIM CARDS");
-                Content.add("The symbol that represents the clan of each entity. The Archetype symbol is displayed beside a card’s ability and determines the pairing of character cards with their equip cards.\n" +
-                        "\n" +
-                        "FOREST CARDS of the same ARCHETYPE automatically stack together, increasing their total ENTITY LEVEL.");
+                Content.add("The symbol that represents the clan of each entity. The Archetype symbol is displayed beside a card’s ability and determines the pairing of character cards with their equip cards.");
+                Content.add("FOREST CARDS of the same ARCHETYPE automatically stack together, increasing their total ENTITY LEVEL.");
                 Intent intent = new Intent(Cards.this, BattleCardsArchetype.class);
                 intent.putExtra("Header",Content.get(0));
-                intent.putExtra("Text",Content.get(1));
+                intent.putExtra("Text1",Content.get(1));
+                intent.putExtra("Text2",Content.get(2));
                 startActivity(intent);
             }
         });
@@ -83,12 +83,12 @@ public class Cards extends System {
             public void onClick(View view) {
                 Content.clear();
                 Content.add("LAKAS CARDS");
-                Content.add("LAKAS CARDS of different ARCHETYPES can be played together during battle but each card can only equip KONTRA CARDS of the same Archetype (except for Special Kontra cards).\n" +
-                        "\n" +
-                        "Special Kontra cards can be identified by this symbol, and they can be paired with all Lakas Card Archetypes.");
+                Content.add("LAKAS CARDS of different ARCHETYPES can be played together during battle but each card can only equip KONTRA CARDS of the same Archetype (except for Special Kontra cards).");
+                Content.add("Special Kontra cards can be identified by this symbol, and they can be paired with all Lakas Card Archetypes.");
                 Intent intent = new Intent(Cards.this, BattleCardsArchetype.class);
                 intent.putExtra("Header",Content.get(0));
-                intent.putExtra("Text",Content.get(1));
+                intent.putExtra("Text1",Content.get(1));
+                intent.putExtra("Text2",Content.get(2));
                 startActivity(intent);
             }
         });

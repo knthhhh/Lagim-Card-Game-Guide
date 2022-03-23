@@ -221,6 +221,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:onClick="facebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp">
@@ -245,6 +246,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:onClick="instagram"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp">
@@ -269,6 +271,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:onClick="youtube"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp">
@@ -293,6 +296,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:onClick="kickstarter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp">

@@ -9,6 +9,190 @@
     android:background="@color/black"
     android:id="@+id/drawer_layout">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_gallery" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="The Lagim Gallery"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A collection of photos of Lagim Art"
+                android:fontFamily="@font/lusitana"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@id/title1"
+                android:layout_alignStart="@id/title1"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/title2"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:onClick="img1"
+                    android:id="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_giant" />
+
+                <ImageView
+                    android:onClick="img2"
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/ic_tigbanua" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/layout1"
+                android:layout_marginTop="-38dp">
+
+                <ImageView
+                    android:onClick="img3"
+                    android:id="@+id/img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mambabarang" />
+
+                <ImageView
+                    android:onClick="img4"
+                    android:id="@+id/img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="53dp"
+                    android:src="@drawable/ic_duwende" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/layout2"
+                android:layout_marginTop="7dp">
+
+                <ImageView
+                    android:onClick="img5"
+                    android:id="@+id/img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_kapre" />
+
+                <ImageView
+                    android:onClick="img6"
+                    android:id="@+id/img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_aswang" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/layout3"
+                android:layout_marginTop="-40dp">
+
+                <ImageView
+                    android:onClick="img7"
+                    android:id="@+id/img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_espiritsta"
+                    android:layout_marginTop="55dp"/>
+
+                <ImageView
+                    android:onClick="img8"
+                    android:id="@+id/img8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_torment" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignEnd="@id/layout4"
+                android:layout_below="@id/layout4"
+                android:layout_marginTop="-90dp">
+
+                <ImageView
+                    android:onClick="img9"
+                    android:id="@+id/img9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_albularyo" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/layout5"
+                android:layout_marginTop="30dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -33,21 +217,7 @@
             android:onClick="Menu"
             android:src="@drawable/ic_menu" />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            app:itemIconTint="@drawable/selector"
-            app:itemTextColor="@drawable/selector"
-            app:menu="@menu/bottom_navigation"
-            android:layout_alignParentBottom="true"
-            />
-
-
     </RelativeLayout>
-
-
 
     <RelativeLayout
         android:layout_width="250dp"

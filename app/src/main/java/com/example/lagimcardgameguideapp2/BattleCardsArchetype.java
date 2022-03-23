@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class BattleCardsArchetype extends System {
 
     ImageView imageView;
-    TextView header, text, Archetype1, Archetype2, Archetype3, Archetype4, Archetype5;
+    TextView header, text1, text2, Archetype1, Archetype2, Archetype3, Archetype4, Archetype5;
     ImageView img1, img2, img3, img4, img5;
 
     @Override
@@ -20,7 +20,8 @@ public class BattleCardsArchetype extends System {
 
         imageView = findViewById(R.id.bgimg);
         header = findViewById(R.id.Header1);
-        text = findViewById(R.id.TextContent);
+        text1 = findViewById(R.id.TextContent1);
+        text2 = findViewById(R.id.TextContent2);
         img1 = findViewById(R.id.btn1);
         img2 = findViewById(R.id.btn2);
         img3 = findViewById(R.id.btn3);
@@ -33,7 +34,8 @@ public class BattleCardsArchetype extends System {
         Archetype5 = findViewById(R.id.archetype5);
 
         header.setText(getIntent().getStringExtra("Header"));
-        text.setText(getIntent().getStringExtra("Text"));
+        text1.setText(getIntent().getStringExtra("Text1"));
+        text2.setText(getIntent().getStringExtra("Text2"));
 
         if(header.getText().equals("LAGIM CARDS")){
             imageView.setImageResource(R.drawable.bg_lagimarchetype);

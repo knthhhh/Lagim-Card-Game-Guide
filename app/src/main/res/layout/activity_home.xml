@@ -10,20 +10,6 @@
     android:orientation="vertical"
     android:id="@+id/drawer_layout">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bg_home"
-            android:scaleType="fitXY"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"/>
-
-    </RelativeLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -31,6 +17,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_home"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
 
             <TextView
                 android:id="@+id/text1"
@@ -51,8 +45,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/text1"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="100dp"
                 android:layout_marginEnd="30dp"
+                android:layout_marginTop="100dp"
                 android:onClick="Raiding"
                 android:src="@drawable/bg_home_btn" />
 
@@ -73,12 +67,13 @@
                 android:textSize="25sp" />
 
             <ImageView
+                android:id="@+id/raidingimg"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
                 android:layout_alignTop="@id/img1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="28dp"
+                android:layout_alignEnd="@+id/img1"
                 android:layout_marginTop="-20dp"
+                android:layout_marginEnd="225dp"
                 android:onClick="Raiding"
                 android:src="@drawable/img_home_raiding" />
 
@@ -113,9 +108,9 @@
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_alignTop="@id/img2"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="0dp"
+                android:layout_alignEnd="@+id/img2"
                 android:layout_marginTop="-40dp"
+                android:layout_marginEnd="193dp"
                 android:onClick="Defending"
                 android:src="@drawable/img_home_defending" />
 
@@ -149,9 +144,9 @@
                 android:layout_width="155dp"
                 android:layout_height="155dp"
                 android:layout_alignTop="@id/img3"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="15dp"
+                android:layout_alignEnd="@+id/img3"
                 android:layout_marginTop="-40dp"
+                android:layout_marginEnd="193dp"
                 android:onClick="Dwellers"
                 android:src="@drawable/img_home_dwellers" />
 
@@ -185,9 +180,9 @@
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_alignTop="@id/img4"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="25dp"
+                android:layout_alignEnd="@+id/img4"
                 android:layout_marginTop="-45dp"
+                android:layout_marginEnd="198dp"
                 android:onClick="LagimLimit"
                 android:src="@drawable/img_home_lagimlimit" />
 
@@ -222,9 +217,9 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignTop="@id/img5"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="15dp"
+                android:layout_alignEnd="@+id/img5"
                 android:layout_marginTop="-40dp"
+                android:layout_marginEnd="198dp"
                 android:onClick="TypesOfRaid"
                 android:src="@drawable/img_home_typesofraid" />
 
@@ -260,9 +255,9 @@
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_alignTop="@id/img6"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="15dp"
+                android:layout_alignEnd="@+id/img6"
                 android:layout_marginTop="-35dp"
+                android:layout_marginEnd="208dp"
                 android:onClick="TypesOfDefense"
                 android:src="@drawable/img_home_typesofdefense" />
 
@@ -273,6 +268,7 @@
                 android:textColor="@color/black"
                 android:layout_marginTop="1100dp"
                 />
+
 
         </RelativeLayout>
 

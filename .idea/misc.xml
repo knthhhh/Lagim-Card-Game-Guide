@@ -11,17 +11,22 @@
         <entry key="app/src/main/res/drawable/archetype_special.xml" value="0.202" />
         <entry key="app/src/main/res/drawable/archetype_warrior.xml" value="0.202" />
         <entry key="app/src/main/res/drawable/archetype_witch.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/bg_white_rounded.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/button_bg.xml" value="0.2475" />
         <entry key="app/src/main/res/drawable/ic_boardingscreen1_indicator.xml" value="0.202" />
         <entry key="app/src/main/res/drawable/ic_boardinscreen2_indicator.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/ic_download.xml" value="0.2475" />
         <entry key="app/src/main/res/drawable/ic_facebook.xml" value="0.202" />
         <entry key="app/src/main/res/drawable/ic_faq.xml" value="0.202" />
         <entry key="app/src/main/res/drawable/ic_fictionminds_gray.xml" value="0.202" />
         <entry key="app/src/main/res/drawable/ic_fictionminds_white.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/ic_gallery.xml" value="0.2475" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.202" />
         <entry key="app/src/main/res/drawable/ic_kickstarter.xml" value="0.202" />
         <entry key="app/src/main/res/drawable/ic_marker_text.xml" value="0.2075" />
         <entry key="app/src/main/res/drawable/ic_mechanics.xml" value="0.202" />
         <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.202" />
+        <entry key="app/src/main/res/drawable/image_layout.xml" value="0.248" />
         <entry key="app/src/main/res/drawable/selector.xml" value="0.202" />
         <entry key="app/src/main/res/layout/activity_about_us.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_additional_rules.xml" value="0.18662519440124417" />
@@ -34,7 +39,7 @@
         <entry key="app/src/main/res/layout/activity_card_anatomy.xml" value="0.19925742574257427" />
         <entry key="app/src/main/res/layout/activity_card_mechanics.xml" value="0.23414634146341465" />
         <entry key="app/src/main/res/layout/activity_cards.xml" value="0.2795138888888889" />
-        <entry key="app/src/main/res/layout/activity_cards_details.xml" value="0.2731535756154748" />
+        <entry key="app/src/main/res/layout/activity_cards_details.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_components.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_defending.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_dwellers.xml" value="0.2646397908528647" />
@@ -43,14 +48,15 @@
         <entry key="app/src/main/res/layout/activity_equip_cards_list.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_faqs.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_forest_card_details.xml" value="0.25157232704402516" />
-        <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.25364583333333335" />
+        <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_gallery_view.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_game_board.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_game_setup.xml" value="0.19583843329253367" />
         <entry key="app/src/main/res/layout/activity_hdefending.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_hdwellers.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_hiwaga.xml" value="0.2064102564102564" />
         <entry key="app/src/main/res/layout/activity_hlagim_limit.xml" value="0.25364583333333335" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_hraiding.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_htypes_of_raid.xml" value="0.25364583333333335" />
         <entry key="app/src/main/res/layout/activity_kontra.xml" value="0.2064102564102564" />
