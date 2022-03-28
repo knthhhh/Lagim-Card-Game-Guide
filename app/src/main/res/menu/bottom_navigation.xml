@@ -2,18 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/component"
-        android:title="Component"
-        android:icon="@drawable/ic_component"/>
-
-    <item
         android:id="@+id/home"
         android:title="Home"
         android:icon="@drawable/ic_home"/>
-
+    <item
+        android:id="@+id/component"
+        android:title="Component"
+        android:icon="@drawable/ic_component"/>
+    <item
+        android:id="@+id/cards"
+        android:title="Cards"
+        android:icon="@drawable/ic_cards"/>
     <item
         android:id="@+id/mechanics"
         android:title="Mechanics"
         android:icon="@drawable/ic_mechanics"/>
+
 
 </menu>

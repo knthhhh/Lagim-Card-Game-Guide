@@ -264,8 +264,9 @@
                 android:gravity="center"
                 android:onClick="Phase1ToPhase2"
                 android:text="Phase 2"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="17sp"
+                android:textStyle="bold"
                 tools:ignore="UsingOnClickInXml" />
 
             <TextView

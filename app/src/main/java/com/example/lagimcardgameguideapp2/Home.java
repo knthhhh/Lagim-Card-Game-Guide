@@ -50,6 +50,12 @@ public class Home extends System {
                         overridePendingTransition(0, 0);
                         finish();
                         return true;
+                    case R.id.cards:
+                        startActivity(new Intent(getApplicationContext()
+                                , Cards.class));
+                        overridePendingTransition(0, 0);
+                        finish();
+                        return true;
                 }
                 return false;
             }
@@ -90,6 +96,12 @@ public class Home extends System {
 
     public void ClickMechanics(View view) {
         Intent intent = new Intent(this, Mechanics.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void ClickCards(View view) {
+        Intent intent = new Intent(this, Cards.class);
         startActivity(intent);
         finish();
     }

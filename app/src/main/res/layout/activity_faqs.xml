@@ -14,18 +14,18 @@
         android:layout_height="wrap_content"
         android:fillViewport="true">
 
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/bg_gallery"
-                android:scaleType="fitXY"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"/>
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_gallery" />
 
             <TextView
                 android:id="@+id/title1"
@@ -41,7 +41,685 @@
                 android:textColor="@color/cream"
                 android:textSize="25sp" />
 
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <RelativeLayout
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1"
+                android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_margin="20dp"
+                app:boxCornerRadiusBottomEnd="5dp"
+                app:boxCornerRadiusBottomStart="5dp"
+                app:boxCornerRadiusTopEnd="5dp"
+                app:boxCornerRadiusTopStart="5dp"
+                app:boxStrokeErrorColor="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:boxStrokeWidth="1dp"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="@string/select"
+                app:endIconTint="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_txt"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/category"
+                android:layout_alignStart="@id/title1"
+                android:fontFamily="@font/lusitana"
+                android:text="Send us a message:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/text1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/lusitana"
+                android:gravity="top"
+                android:hint="Enter your question here"
+                android:padding="5dp"
+                android:textColorHint="@color/lightGray"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/sendbg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message"
+                android:layout_alignEnd="@id/message"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/bg_details_button" />
+
+            <TextView
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/sendbg"
+                android:layout_alignTop="@+id/sendbg"
+                android:layout_alignEnd="@id/sendbg"
+                android:layout_alignBottom="@id/sendbg"
+                android:drawableEnd="@drawable/ic_send"
+                android:fontFamily="@font/lusitana"
+                android:gravity="center"
+                android:paddingStart="25dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="25dp"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/send"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="Gameplay"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="01. How does the celestial phase work within the game?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/title2"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question1"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question1"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="The Celestial phase is located at the top of the card and is divided into 2 types, Moon alignment and Sun alignment. Certain Ghoul cards have a Full Moon alignment. When a player has 2 cards with a Full Moon alignment, they gain the special ability to summon a Lagim card from the deck. To play, the player declares the action and shows 2 cards with Full Moon alignment. The player then draws from the top of the Lagim card deck. The 2 cards with the Full Moon alignment that has been used to summon a Lagim card stays in player’s hand. The player’s turn ends. Note that this special ability can only be activated once per game."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="02. How can I gain Lagim Cards at the start of the game?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer1"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question2"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question2"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question2"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="At the start of the game, each player is handed with 4 Baryo cards. In order to gain Lagim cards, the active player can choose 1 move from the following actions:\n\nDraw a Lagim card from the Lagim deck and battle it –  If the player wins the battle by surpassing the card’s Entity Level, the Lagim card is captured. However, if the player does not have the necessary cards to defeat the Lagim card, they lose the battle and consequently lose a Soul coin to the Forest, and must replenish with a new set of cards.\n\nPlay the Dark Soul coin – Playing the Dark Soul coin instantly grants the player 2 cards from the Lagim deck.\n\nPlay Card Abilities – Certain standalone Baryo cards such as Altar ng Kulam (Witch’s altar) card has a special ability to summon a Mangkukulam (Witch/Warlock) card from the Lagim deck.\n\nSacrifice a Soul Coin – If for any reason the player wishes for a new set of cards, they can voluntarily sacrifice a Soul coin to discard their hand and draw 4 new cards from the Baryo deck.\n\nPlaying Lagim is all about strategy: using the cards at your disposal, outplay your enemies by weighing the risks and deciding which course of action gives you the best possible chance of winning. (Please see the Actions section of the mechanics for a more detailed explanation of game actions.)"
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="03. Do you have a gameplay video?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer2"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question3"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question3"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question3"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Lagim card gameplay tutorial is available in our Youtube channel.\n\nFollow our Youtube channel for exclusive game updates and new game strategy releases."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="04. If a player puts and plays an altar ng mangkukulam; and draws a witch card to attack a player, can that which card be stacked with another witch card + hiwaga card?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer3"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question4"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question4"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question4"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="The Active Player may only play a maximum of 1 Lagim card per attack, unless they are of the same archetype, in which case they can play a maximum of 2. They may play as many Hiwaga cards with the Lagim cards as applicable.\n\nIn the given scenario, the player may stack a maximum of 2 Witch cards, plus any number of appropriate Hiwaga cards they wish to play."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="05. Can I combine Agimat necklace and Agimat card abilities for the duration of the game?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer4"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question5"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question5"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question5"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="The Agimat card is a Kontra card and can only be used defensively. Its ability only takes effect during the turn it is used, and is discarded/restacked afterwards along with the rest of the other cards used during the turn.\n\nThe collector’s item Agimat is a limited-edition necklace that is sold separately soon. It functions as a reward for the player that wins a game of Lagim. Whoever wears the Agimat will be immune from all card abilities and status effects for the duration of the next game."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="06. Can Sigbin card be used for defending a Baryo?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer5"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question6"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question6"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question6"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="The Sigbin card is a Lagim card but it hides among the Baryo cards; it is used offensively and cannot be used to defend. It can be played anytime, which means that at any point in the game— even outside of their turn—a player can use the card to attack another player. This can be useful as a strategy to quickly eliminate other players by launching a surprise assault."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="07. How to use the Tikbalang card summon ability?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer6"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question7"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question7"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question7"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="To use the Tikbalang’s Summon ability, the player must sacrifice the Tikbalang card to the Graveyard to summon an Agimat card from the Baryo deck. This ability can be played by itself outside of an attack, and counts as one action."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="08. Gasera, can the gasera be used to stack up the attack or defence of the player?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer7"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question8"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question8"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question8"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Outside of its standalone ability, the Gasera card can be played with the Mortal Lakas cards during a defense."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="09. Can players draw from the Lagim deck and perform hasik directly on another player?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer8"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question9"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question9"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question9"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Drawing from the Lagim deck means to battle the Lagim card that has been drawn. This is one way for players to obtain or capture Lagim cards. If the player wins the battle by surpassing the Entity Level of the Lagim card, the card is captured and the player may keep it. If the player only matches the Entity Level, or loses the battle entirely, they may not keep the Lagim card."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="10. What happens to the winning Lakas card after battling a Lagim card from the deck?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer8"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question10"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question10"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question10"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Drawing from the Lagim deck means to battle the Lagim card that has been drawn. This is one way for players to obtain or capture Lagim cards. If the player wins the battle by surpassing the Entity Level of the Lagim card, the card is captured and the player may keep it. If the player only matches the Entity Level, or loses the battle entirely, they may not keep the Lagim card.\n\nTechnically Lakas cards power are consumed because of the battle, they will be placed at the bottom part of the Baryo deck to rest once won the battle with the Lagim card in the forest (page 23)"
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/title3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/answer2"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:fontFamily="@font/oldstyle"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="Card Sleeves"-->
+<!--                android:textColor="@color/cream"-->
+<!--                android:textSize="25sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/question18"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/title3"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:layout_toStartOf="@id/button1"-->
+<!--                android:fontFamily="@font/lusitana"-->
+<!--                android:text="01. Where can I buy card protectors?"-->
+<!--                android:textColor="@color/TextColor"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/button18"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignTop="@id/question18"-->
+<!--                android:layout_alignEnd="@id/send"-->
+<!--                android:layout_alignBottom="@id/question18"-->
+<!--                android:src="@drawable/ic_down"-->
+<!--                android:background="@android:color/transparent"/>-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/answer18"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/question18"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:visibility="gone">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:fontFamily="@font/lusitana"-->
+<!--                    android:text="Lagim card sleeves are available in our shop, for Php395. Each pack contains 65 sleeves."-->
+<!--                    android:textColor="@color/lightGray"-->
+<!--                    android:textSize="16sp" />-->
+
+<!--            </RelativeLayout>-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/title4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/cardsleeves1"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:fontFamily="@font/oldstyle"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="Standard Card Deck"-->
+<!--                android:textColor="@color/cream"-->
+<!--                android:textSize="25sp" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/title5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/standardcarddeck1"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:fontFamily="@font/oldstyle"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="Shop &amp; Shipping"-->
+<!--                android:textColor="@color/cream"-->
+<!--                android:textSize="25sp" />-->
+
+
+        </RelativeLayout>
 
     </ScrollView>
 
@@ -69,21 +747,7 @@
             android:onClick="Menu"
             android:src="@drawable/ic_menu" />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            app:itemIconTint="@drawable/selector"
-            app:itemTextColor="@drawable/selector"
-            app:menu="@menu/bottom_navigation"
-            android:layout_alignParentBottom="true"
-            />
-
-
     </RelativeLayout>
-
-
 
     <RelativeLayout
         android:layout_width="250dp"

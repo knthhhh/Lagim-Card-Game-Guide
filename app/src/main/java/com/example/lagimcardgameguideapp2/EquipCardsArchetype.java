@@ -42,15 +42,15 @@ public class EquipCardsArchetype extends System {
 
         if (header.getText().equals("HIWAGA CARDS")){
             img1.setImageResource(R.drawable.hiwaga_witch);
-            img2.setImageResource(R.drawable.lagim_bestial);
-            img3.setImageResource(R.drawable.hiwaga_ghoul);
-            img4.setImageResource(R.drawable.hiwaga_giant);
-            img5.setImageResource(R.drawable.hiwaga_dwarf);
+            img2.setImageResource(R.drawable.hiwaga_ghoul);
+            img3.setImageResource(R.drawable.hiwaga_giant);
+            img4.setImageResource(R.drawable.hiwaga_dwarf);
             Archetype1.setText("Witch");
-            Archetype2.setText("Bestial");
-            Archetype3.setText("Ghoul");
-            Archetype4.setText("Giant");
-            Archetype5.setText("Dwarf");
+            Archetype2.setText("Ghoul");
+            Archetype3.setText("Giant");
+            Archetype4.setText("Dwarf");
+            img5.setImageDrawable(null);
+            Archetype5.setText("");
         }else{
             img1.setImageResource(R.drawable.kontra_medium);
             img2.setImageResource(R.drawable.kontra_mortal);
@@ -89,12 +89,14 @@ public class EquipCardsArchetype extends System {
             public void onClick(View view) {
                 if (header.getText().equals("HIWAGA CARDS")){
                     Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
-                    lagim.putExtra("Archetype","Bestial Archetype");
+                    lagim.putExtra("Archetype","Ghoul Archetype");
+                    lagim.putExtra("card1", R.drawable.card_tiktikatbuwan);
+                    lagim.putExtra("card2", R.drawable.card_dugo_at_langis);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Mortal Archetype");
-                    lakas.putExtra("card1", R.drawable.card_tabakbawangatasin);
+                    lakas.putExtra("card4", R.drawable.card_tabakbawangatasin);
                     startActivity(lakas);
                 }
             }
@@ -105,14 +107,13 @@ public class EquipCardsArchetype extends System {
             public void onClick(View view) {
                 if (header.getText().equals("HIWAGA CARDS")){
                     Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
-                    lagim.putExtra("Archetype","Ghoul Archetype");
-                    lagim.putExtra("card1", R.drawable.card_tiktikatbuwan);
-                    lagim.putExtra("card2", R.drawable.card_dugo_at_langis);
+                    lagim.putExtra("Archetype","Giant Archetype");
+                    lagim.putExtra("card4", R.drawable.card_punongacacia);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Warrior Archetype");
-                    lakas.putExtra("card1", R.drawable.card_sibatatsulo);
+                    lakas.putExtra("card4", R.drawable.card_sibatatsulo);
                     startActivity(lakas);
                 }
             }
@@ -123,8 +124,8 @@ public class EquipCardsArchetype extends System {
             public void onClick(View view) {
                 if (header.getText().equals("HIWAGA CARDS")){
                     Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
-                    lagim.putExtra("Archetype","Giant Archetype");
-                    lagim.putExtra("card1", R.drawable.card_punongacacia);
+                    lagim.putExtra("Archetype","Dwarf Archetype");
+                    lagim.putExtra("card4", R.drawable.card_bungo_at_tungkod);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
@@ -137,12 +138,7 @@ public class EquipCardsArchetype extends System {
         img5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (header.getText().equals("HIWAGA CARDS")){
-                    Intent lagim = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
-                    lagim.putExtra("Archetype","Dwarf Archetype");
-                    lagim.putExtra("card1", R.drawable.card_bungo_at_tungkod);
-                    startActivity(lagim);
-                } else {
+                if (header.getText().equals("KONTRA CARDS")){
                     Intent lakas = new Intent(EquipCardsArchetype.this, EquipCardsList.class);
                     lakas.putExtra("Archetype","Special Archetype");
                     lakas.putExtra("card1", R.drawable.card_agimat);

@@ -27,77 +27,106 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_mechanics" />
 
-            <ImageView
-                android:id="@+id/indicator"
+            <LinearLayout
+                android:id="@+id/buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="125dp"
-                android:layout_marginStart="75dp"
-                android:src="@drawable/indicator" />
-
-            <TextView
-                android:id="@+id/mechanics"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@id/indicator"
-                android:layout_alignEnd="@id/indicator"
-                android:layout_alignBottom="@id/indicator"
-                android:layout_marginBottom="5dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="@font/opensans"
-                android:gravity="center_horizontal"
-                android:text="Mechanics"
-                android:textAllCaps="false"
-                android:textColor="@color/TextColor"
-                android:textSize="15sp"
-                android:layout_alignBaseline="@id/story"
-                tools:ignore="UsingOnClickInXml" />
-
-            <TextView
-                android:id="@+id/story"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="100dp"
-                android:layout_marginEnd="94dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="@font/opensans"
-                android:onClick="MechanicsToStory"
-                android:text="Story"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/lightGray"
-                android:textSize="15sp"
-                tools:ignore="UsingOnClickInXml" />
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Components"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/opensans"
+                        android:onClick="ClickComponents"
+                        android:text="Mechanics"
+                        android:textColor="@color/TextColor"
+                        android:textSize="15sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageView
+                        android:id="@+id/indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/Components"
+                        android:layout_alignEnd="@id/Components"
+                        android:layout_alignBottom="@id/Components"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/ic_indicator_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="MechanicsToStory">
+
+                    <TextView
+                        android:id="@+id/CardAnatomy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="     Story     "
+                        android:textColor="@color/lightGray"
+                        android:textSize="15sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
 
             <ImageView
-                android:id="@+id/bgtext1"
+                android:id="@+id/bgtext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/setup"
-                android:layout_alignBottom="@id/firstfooter"
+                android:layout_below="@+id/buttons"
+                android:layout_alignBottom="@id/footer"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="00dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_text1" />
+                android:src="@drawable/bg_mechanics_text" />
+
+            <ImageView
+                android:id="@+id/setupbg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttons"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/bg_settingupthegame" />
 
             <TextView
                 android:id="@+id/setup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/story"
-                android:layout_alignParentStart="true"
+                android:layout_alignStart="@id/setupbg"
+                android:layout_alignTop="@id/setupbg"
+                android:layout_alignEnd="@id/setupbg"
+                android:layout_alignBottom="@id/setupbg"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
                 android:fontFamily="@font/oldstyle"
                 android:gravity="center_vertical"
                 android:text="Setting Up The Game"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="22sp" />
 
             <ImageView
                 android:id="@+id/bgstep"
@@ -106,7 +135,7 @@
                 android:src="@drawable/bg_step"
                 android:layout_alignTop="@id/setup"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="120dp"
                 android:layout_marginStart="20dp"/>
 
             <TextView
@@ -134,7 +163,7 @@
                 android:text="PREPARE THE\nGAMEBOARD"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/text1"
@@ -183,36 +212,19 @@
                 android:gravity="center"
                 android:onClick="MechanicsToGameSetup"
                 android:text="Details"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
 
-            <TextView
-                android:id="@+id/firstfooter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:layout_below="@id/details1"
-                android:layout_marginTop="50dp"/>
-
-            <ImageView
-                android:id="@+id/bgtext2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/divider1"
-                android:layout_alignBottom="@id/secondfooter"
-                android:layout_marginTop="-30dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_text2" />
-
             <ImageView
                 android:id="@+id/divider1"
-                android:layout_width="match_parent"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/bgtext1"
-                android:layout_marginTop="-25dp"
+                android:layout_below="@+id/details1"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_divider1" />
+                android:src="@drawable/bg_positionsandarrangement" />
 
             <TextView
                 android:id="@+id/position"
@@ -227,7 +239,7 @@
                 android:gravity="center_vertical"
                 android:text="Positions &amp; Arrangement"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/player"
@@ -236,7 +248,7 @@
                 android:layout_alignTop="@id/position"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="135dp"
+                android:layout_marginTop="120dp"
                 android:fontFamily="@font/lusitana"
                 android:text="PLAYER’S BARYO"
                 android:textColor="@color/black"
@@ -290,36 +302,19 @@
                 android:gravity="center"
                 android:onClick="MechanicsToPositions"
                 android:text="Details"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
 
-            <TextView
-                android:id="@+id/secondfooter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:layout_below="@id/details2"
-                android:layout_marginTop="60dp"/>
-
-            <ImageView
-                android:id="@+id/bgtext3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/divider2"
-                android:layout_alignBottom="@id/thirdfooter"
-                android:layout_marginTop="-45dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_text3" />
-
             <ImageView
                 android:id="@+id/divider2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/bgtext2"
-                android:layout_marginTop="-25dp"
+                android:layout_below="@+id/details2"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_divider2" />
+                android:src="@drawable/bg_thegameplay" />
 
             <TextView
                 android:id="@+id/gameplay"
@@ -334,17 +329,17 @@
                 android:gravity="center_vertical"
                 android:text="The Gameplay"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/text3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gameplay"
+                android:layout_alignTop="@id/gameplay"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="120dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:lineSpacingExtra="5dp"
@@ -363,7 +358,6 @@
                 android:src="@drawable/bg_phase" />
 
             <TextView
-                android:onClick="Phase1"
                 android:id="@+id/phase1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -374,9 +368,11 @@
                 android:layout_marginStart="20dp"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center_vertical"
+                android:onClick="Phase1"
                 android:paddingTop="5dp"
                 android:text="PHASE 1 : TAKIPSILIM (TWILIGHT)"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="13sp" />
 
             <ImageView
@@ -403,7 +399,8 @@
                 android:gravity="center_vertical"
                 android:paddingTop="5dp"
                 android:text="PHASE 2 : HATING-GABI MIDNIGHT"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="13sp" />
 
             <ImageView
@@ -430,36 +427,18 @@
                 android:gravity="center_vertical"
                 android:paddingTop="5dp"
                 android:text="PHASE 3 : BUKANG-LIWAYWAY (DAWN)"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="13sp" />
-
-            <TextView
-                android:id="@+id/thirdfooter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:layout_below="@id/phase3"
-                android:layout_marginTop="50dp"/>
-
-            <ImageView
-                android:id="@+id/bgtext4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/divider3"
-                android:layout_alignBottom="@id/fourthfooter"
-                android:layout_marginTop="-50dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_text4" />
-
 
             <ImageView
                 android:id="@+id/divider3"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/bgtext3"
-                android:layout_marginTop="-25dp"
+                android:layout_below="@+id/phase3"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_divider3" />
+                android:src="@drawable/bg_cardmechanics_title" />
 
             <TextView
                 android:id="@+id/cardmechanics"
@@ -474,16 +453,16 @@
                 android:gravity="center_vertical"
                 android:text="Card Mechanics"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/cardmechanicstitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cardmechanics"
+                android:layout_alignTop="@id/cardmechanics"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="120dp"
                 android:fontFamily="@font/lusitana"
                 android:text="ENTITY LEVEL"
                 android:textColor="@color/black"
@@ -538,36 +517,19 @@
                 android:gravity="center"
                 android:onClick="MechanicsToCardMechanics"
                 android:text="Details"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
 
-            <TextView
-                android:id="@+id/fourthfooter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:layout_below="@id/details3"
-                android:layout_marginTop="60dp"/>
-
-            <ImageView
-                android:id="@+id/bgtext5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/divider4"
-                android:layout_marginTop="-35dp"
-                android:layout_alignBottom="@id/fifthfooter"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_text5" />
-
             <ImageView
                 android:id="@+id/divider4"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/bgtext4"
-                android:layout_marginTop="-30dp"
+                android:layout_below="@+id/details3"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_mechanics_divider4" />
+                android:src="@drawable/bg_additionalrules_title" />
 
             <TextView
                 android:id="@+id/rules"
@@ -583,16 +545,16 @@
                 android:paddingBottom="5dp"
                 android:text="Additional Rules"
                 android:textColor="@color/cream"
-                android:textSize="25sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/shuffling"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/rules"
+                android:layout_alignTop="@id/rules"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="120dp"
                 android:fontFamily="@font/lusitana"
                 android:text="SHUFFLING"
                 android:textColor="@color/black"
@@ -647,61 +609,58 @@
                 android:gravity="center"
                 android:onClick="MechanicsToAdditionalRules"
                 android:text="Details"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
 
             <TextView
-                android:id="@+id/fifthfooter"
+                android:id="@+id/footer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
                 android:layout_below="@id/details4"
                 android:layout_marginTop="100dp"/>
 
-
         </RelativeLayout>
 
     </ScrollView>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_lagim_white" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_lagim_white" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@android:color/transparent"
-            android:onClick="Menu"
-            android:src="@drawable/ic_menu" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="Menu"
+                    android:src="@drawable/ic_menu" />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            app:itemIconTint="@drawable/selector"
-            app:itemTextColor="@drawable/selector"
-            app:menu="@menu/bottom_navigation"
-            android:layout_alignParentBottom="true"
-            />
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black"
+                    app:itemIconTint="@drawable/selector"
+                    app:itemTextColor="@drawable/selector"
+                    app:menu="@menu/bottom_navigation" />
 
-
-    </RelativeLayout>
-
+            </RelativeLayout>
 
 
     <RelativeLayout

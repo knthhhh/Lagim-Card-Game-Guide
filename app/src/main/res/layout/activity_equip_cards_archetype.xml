@@ -141,7 +141,7 @@
             android:text="Witch"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/btn3"

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class BattleCardsList extends System {
 
     TextView textView;
-    ImageView imageView1, imageView2, imageView3, bgimg, Header;
+    ImageView imageView1, imageView2, imageView3, imageView4, bgimg, Header;
     ArrayList<String> ArrayList;
 
     @Override
@@ -27,6 +27,7 @@ public class BattleCardsList extends System {
         imageView1 = findViewById(R.id.card1);
         imageView2 = findViewById(R.id.card2);
         imageView3 = findViewById(R.id.card3);
+        imageView4 = findViewById(R.id.card4);
         Header = findViewById(R.id.titlebg);
         bgimg = findViewById(R.id.bgimg);
 
@@ -35,10 +36,12 @@ public class BattleCardsList extends System {
         int card1 = bundle.getInt("card1");
         int card2 = bundle.getInt("card2");
         int card3 = bundle.getInt("card3");
+        int card4 = bundle.getInt("card4");
 
         imageView1.setImageResource(card1);
         imageView2.setImageResource(card2);
         imageView3.setImageResource(card3);
+        imageView4.setImageResource(card4);
 
 
         if (textView.getText().equals("Witch Archetype") ||
@@ -72,12 +75,11 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_mambabarang);
-                    intent.putExtra("Pair1", R.drawable.card_mangkukulam);
+                    intent.putExtra("Pair1", R.drawable.card_altar_ng_kulam);
                     intent.putExtra("Pair2", R.drawable.card_alakdan_at_alupihan);
                     intent.putExtra("Pair3", R.drawable.card_sumpangmanika);
-                    intent.putExtra("Pair4", R.drawable.card_altar_ng_kulam);
-                    intent.putExtra("Level", R.drawable.level_five);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_five_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Medium Archetype")){
                     ArrayList.clear();
@@ -95,13 +97,12 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_albularyo);
-                    intent.putExtra("Pair1", R.drawable.card_espiritista);
-                    intent.putExtra("Pair2", R.drawable.card_orasyonatinsenso);
-                    intent.putExtra("Pair3", R.drawable.card_buntot_pagi);
-                    intent.putExtra("Pair4", R.drawable.card_agimat);
-                    intent.putExtra("Pair6", R.drawable.card_gasera);
-                    intent.putExtra("Level", R.drawable.level_five);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_large);
+                    intent.putExtra("Pair1", R.drawable.card_orasyonatinsenso);
+                    intent.putExtra("Pair2", R.drawable.card_buntot_pagi);
+                    intent.putExtra("Pair3", R.drawable.card_agimat);
+                    intent.putExtra("Pair4", R.drawable.card_gasera);
+                    intent.putExtra("Level", R.drawable.level_five_sun);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Ghoul Archetype")){
                     ArrayList.clear();
@@ -119,34 +120,10 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_manananggal);
-                    intent.putExtra("Pair1", R.drawable.card_aswang);
+                    intent.putExtra("Pair1", R.drawable.card_tiktikatbuwan);
                     intent.putExtra("Pair2", R.drawable.card_dugo_at_langis);
-                    intent.putExtra("Pair5", R.drawable.card_tiktikatbuwan);
-                    intent.putExtra("Level", R.drawable.level_four);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
-                    startActivity(intent);
-                }else if (textView.getText().equals("Mortal Archetype")){
-                    ArrayList.clear();
-                    ArrayList.add("Amihan");
-                    ArrayList.add("(Lightbringer)");
-                    ArrayList.add("Lakas Card");
-                    ArrayList.add("Mortal");
-                    ArrayList.add("Fair and gentle lady of the Barrio, Amihan's radiant beauty is known far and wide; alluring all, from the noblest of men to even the most hideous of giants.");
-                    ArrayList.add("ENCHANT: After successful defense, sacrifice any 1 Hiwaga card from hand to the Graveyard pile to enchant (aquire) a Giant card from the deck to the dwell on another Baryo.");
-                    Intent intent = new Intent(BattleCardsList.this, CardsDetails.class);
-                    intent.putExtra("CardName",ArrayList.get(0));
-                    intent.putExtra("SubName",ArrayList.get(1));
-                    intent.putExtra("CardType",ArrayList.get(2));
-                    intent.putExtra("Archetype",ArrayList.get(3));
-                    intent.putExtra("Traits",ArrayList.get(4));
-                    intent.putExtra("Ability",ArrayList.get(5));
-                    intent.putExtra("Card", R.drawable.card_amihan);
-                    intent.putExtra("Pair1", R.drawable.card_tabakbawangatasin);
-                    intent.putExtra("Pair2", R.drawable.card_sibatatsulo);
-                    intent.putExtra("Pair3", R.drawable.card_agimat);
-                    intent.putExtra("Pair4", R.drawable.card_gasera);
-                    intent.putExtra("Level", R.drawable.level_three);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_four_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Giant Archetype")){
                     ArrayList.clear();
@@ -164,34 +141,9 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_kapre);
-                    intent.putExtra("Pair1", R.drawable.card_tikbalang);
-                    intent.putExtra("Pair2", R.drawable.card_bungisngis);
                     intent.putExtra("Pair5", R.drawable.card_punongacacia);
-                    intent.putExtra("Level", R.drawable.level_three);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
-                    startActivity(intent);
-                }else if (textView.getText().equals("Warrior Archetype")){
-                    ArrayList.clear();
-                    ArrayList.add("Dante");
-                    ArrayList.add("(Woodsman)");
-                    ArrayList.add("Lakas Card");
-                    ArrayList.add("Warrior");
-                    ArrayList.add("A young man known for his courage and devotion, Dante has sworn to use his strength and skill to defeat the vicious enitites of Lagim forest.");
-                    ArrayList.add("BOOST: Dante’s entity level is increased by 3 when  equipped with Amihan.");
-                    Intent intent = new Intent(BattleCardsList.this, CardsDetails.class);
-                    intent.putExtra("CardName",ArrayList.get(0));
-                    intent.putExtra("SubName",ArrayList.get(1));
-                    intent.putExtra("CardType",ArrayList.get(2));
-                    intent.putExtra("Archetype",ArrayList.get(3));
-                    intent.putExtra("Traits",ArrayList.get(4));
-                    intent.putExtra("Ability",ArrayList.get(5));
-                    intent.putExtra("Card", R.drawable.card_dante);
-                    intent.putExtra("Pair1", R.drawable.card_sibatatsulo);
-                    intent.putExtra("Pair2", R.drawable.card_tabakbawangatasin);
-                    intent.putExtra("Pair3", R.drawable.card_gasera);
-                    intent.putExtra("Pair4", R.drawable.card_agimat);
-                    intent.putExtra("Level", R.drawable.level_three);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_three_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Dwarf Archetype")){
                     ArrayList.clear();
@@ -209,29 +161,9 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_duwende);
-                    intent.putExtra("Pair1", R.drawable.card_nunosapunso);
-                    intent.putExtra("Pair2", R.drawable.card_bungo_at_tungkod);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_small);
-                    startActivity(intent);
-                }else if (textView.getText().equals("Bestial Archetype")){
-                    ArrayList.clear();
-                    ArrayList.add("Sigbin");
-                    ArrayList.add("(Mule)");
-                    ArrayList.add("Lagim Card");
-                    ArrayList.add("Bestial");
-                    ArrayList.add("A nocturnal creature that walks in reverse, the Sigbin can turn invisible and suck the blood of its victims from the shadows, unseen.");
-                    ArrayList.add("STEALTH: Reduces defense entity level by 3. Can be played as an active card anytime.");
-                    Intent intent = new Intent(BattleCardsList.this, CardsDetails.class);
-                    intent.putExtra("CardName",ArrayList.get(0));
-                    intent.putExtra("SubName",ArrayList.get(1));
-                    intent.putExtra("CardType",ArrayList.get(2));
-                    intent.putExtra("Archetype",ArrayList.get(3));
-                    intent.putExtra("Traits",ArrayList.get(4));
-                    intent.putExtra("Ability",ArrayList.get(5));
-                    intent.putExtra("Card", R.drawable.card_sigbin);
-                    intent.putExtra("Level", R.drawable.level_five);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_small);
+                    intent.putExtra("Pair5", R.drawable.card_bungo_at_tungkod);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }
             }
@@ -256,12 +188,11 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_mangkukulam);
-                    intent.putExtra("Pair1", R.drawable.card_mambabarang);
-                    intent.putExtra("Pair2", R.drawable.card_alakdan_at_alupihan);
-                    intent.putExtra("Pair3", R.drawable.card_sumpangmanika);
-                    intent.putExtra("Pair4", R.drawable.card_altar_ng_kulam);
-                    intent.putExtra("Level", R.drawable.level_five);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Pair1", R.drawable.card_sumpangmanika);
+                    intent.putExtra("Pair2", R.drawable.card_altar_ng_kulam);
+                    intent.putExtra("Pair3", R.drawable.card_alakdan_at_alupihan);
+                    intent.putExtra("Level", R.drawable.level_five_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
                     startActivity(intent);
             }else if (textView.getText().equals("Medium Archetype")){
                     ArrayList.clear();
@@ -279,13 +210,12 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_espiritista);
-                    intent.putExtra("Pair1", R.drawable.card_albularyo);
+                    intent.putExtra("Pair1", R.drawable.card_orasyonatinsenso);
                     intent.putExtra("Pair2", R.drawable.card_buntot_pagi);
-                    intent.putExtra("Pair3", R.drawable.card_orasyonatinsenso);
-                    intent.putExtra("Pair4", R.drawable.card_gasera);
-                    intent.putExtra("Pair6", R.drawable.card_agimat);
-                    intent.putExtra("Level", R.drawable.level_five);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_large);
+                    intent.putExtra("Pair3", R.drawable.card_gasera);
+                    intent.putExtra("Pair4", R.drawable.card_agimat);
+                    intent.putExtra("Level", R.drawable.level_five_sun);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Ghoul Archetype")){
                     ArrayList.clear();
@@ -303,11 +233,10 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_aswang);
-                    intent.putExtra("Pair1", R.drawable.card_manananggal);
-                    intent.putExtra("Pair2", R.drawable.card_dugo_at_langis);
-                    intent.putExtra("Pair5", R.drawable.card_tiktikatbuwan);
-                    intent.putExtra("Level", R.drawable.level_four);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Pair1", R.drawable.card_dugo_at_langis);
+                    intent.putExtra("Pair2", R.drawable.card_tiktikatbuwan);
+                    intent.putExtra("Level", R.drawable.level_four_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Giant Archetype")){
                     ArrayList.clear();
@@ -325,11 +254,9 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_tikbalang);
-                    intent.putExtra("Pair1", R.drawable.card_kapre);
-                    intent.putExtra("Pair2", R.drawable.card_bungisngis);
                     intent.putExtra("Pair5", R.drawable.card_punongacacia);
-                    intent.putExtra("Level", R.drawable.level_three);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_three_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Dwarf Archetype")){
                     ArrayList.clear();
@@ -347,10 +274,9 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_nunosapunso);
-                    intent.putExtra("Pair1", R.drawable.card_duwende);
-                    intent.putExtra("Pair2", R.drawable.card_bungo_at_tungkod);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_small);
+                    intent.putExtra("Pair5", R.drawable.card_bungo_at_tungkod);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }
             }
@@ -375,11 +301,81 @@ public class BattleCardsList extends System {
                     intent.putExtra("Traits",ArrayList.get(4));
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_bungisngis);
-                    intent.putExtra("Pair1", R.drawable.card_tikbalang);
-                    intent.putExtra("Pair2", R.drawable.card_kapre);
                     intent.putExtra("Pair5", R.drawable.card_punongacacia);
-                    intent.putExtra("Level", R.drawable.level_three);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_three_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    startActivity(intent);
+                }
+            }
+        });
+
+        imageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (textView.getText().equals("Bestial Archetype")){
+                    ArrayList.clear();
+                    ArrayList.add("Sigbin");
+                    ArrayList.add("(Mule)");
+                    ArrayList.add("Lagim Card");
+                    ArrayList.add("Bestial");
+                    ArrayList.add("A nocturnal creature that walks in reverse, the Sigbin can turn invisible and suck the blood of its victims from the shadows, unseen.");
+                    ArrayList.add("STEALTH: Reduces defense entity level by 3. Can be played as an active card anytime.");
+                    Intent intent = new Intent(BattleCardsList.this, CardsDetails.class);
+                    intent.putExtra("CardName",ArrayList.get(0));
+                    intent.putExtra("SubName",ArrayList.get(1));
+                    intent.putExtra("CardType",ArrayList.get(2));
+                    intent.putExtra("Archetype",ArrayList.get(3));
+                    intent.putExtra("Traits",ArrayList.get(4));
+                    intent.putExtra("Ability",ArrayList.get(5));
+                    intent.putExtra("Card", R.drawable.card_sigbin);
+                    intent.putExtra("Level", R.drawable.level_five_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_sigbin_text);
+                    startActivity(intent);
+                } else if (textView.getText().equals("Mortal Archetype")){
+                    ArrayList.clear();
+                    ArrayList.add("Amihan");
+                    ArrayList.add("(Lightbringer)");
+                    ArrayList.add("Lakas Card");
+                    ArrayList.add("Mortal");
+                    ArrayList.add("Fair and gentle lady of the Barrio, Amihan's radiant beauty is known far and wide; alluring all, from the noblest of men to even the most hideous of giants.");
+                    ArrayList.add("ENCHANT: After successful defense, sacrifice any 1 Hiwaga card from hand to the Graveyard pile to enchant (aquire) a Giant card from the deck to the dwell on another Baryo.");
+                    Intent intent = new Intent(BattleCardsList.this, CardsDetails.class);
+                    intent.putExtra("CardName",ArrayList.get(0));
+                    intent.putExtra("SubName",ArrayList.get(1));
+                    intent.putExtra("CardType",ArrayList.get(2));
+                    intent.putExtra("Archetype",ArrayList.get(3));
+                    intent.putExtra("Traits",ArrayList.get(4));
+                    intent.putExtra("Ability",ArrayList.get(5));
+                    intent.putExtra("Card", R.drawable.card_amihan);
+                    intent.putExtra("Pair1", R.drawable.card_tabakbawangatasin);
+                    intent.putExtra("Pair2", R.drawable.card_sibatatsulo);
+                    intent.putExtra("Pair3", R.drawable.card_agimat);
+                    intent.putExtra("Pair4", R.drawable.card_gasera);
+                    intent.putExtra("Level", R.drawable.level_three_sun );
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
+                    startActivity(intent);
+                }else if (textView.getText().equals("Warrior Archetype")){
+                    ArrayList.clear();
+                    ArrayList.add("Dante");
+                    ArrayList.add("(Woodsman)");
+                    ArrayList.add("Lakas Card");
+                    ArrayList.add("Warrior");
+                    ArrayList.add("A young man known for his courage and devotion, Dante has sworn to use his strength and skill to defeat the vicious enitites of Lagim forest.");
+                    ArrayList.add("BOOST: Dante’s entity level is increased by 3 when  equipped with Amihan.");
+                    Intent intent = new Intent(BattleCardsList.this, CardsDetails.class);
+                    intent.putExtra("CardName",ArrayList.get(0));
+                    intent.putExtra("SubName",ArrayList.get(1));
+                    intent.putExtra("CardType",ArrayList.get(2));
+                    intent.putExtra("Archetype",ArrayList.get(3));
+                    intent.putExtra("Traits",ArrayList.get(4));
+                    intent.putExtra("Ability",ArrayList.get(5));
+                    intent.putExtra("Card", R.drawable.card_dante);
+                    intent.putExtra("Pair1", R.drawable.card_sibatatsulo);
+                    intent.putExtra("Pair2", R.drawable.card_tabakbawangatasin);
+                    intent.putExtra("Pair3", R.drawable.card_gasera);
+                    intent.putExtra("Pair4", R.drawable.card_agimat);
+                    intent.putExtra("Level", R.drawable.level_three_sun);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
                     startActivity(intent);
                 }
             }

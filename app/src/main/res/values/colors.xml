@@ -13,5 +13,7 @@
     <color name="gray">#232222</color>
     <color name="lightGray">#808080</color>
     <color name="red">#AE0504</color>
+    <color name="faqcolor">#C1C1C1</color>
+    <color name="maroon">#3C0000</color>
 
 </resources>

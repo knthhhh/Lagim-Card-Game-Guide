@@ -37,7 +37,7 @@ public class Cards extends System {
         drawerLayout = findViewById(R.id.drawer_layout);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        bottomNavigationView.setSelectedItemId(R.id.component);
+        bottomNavigationView.setSelectedItemId(R.id.cards);
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
         @Override
@@ -56,6 +56,11 @@ public class Cards extends System {
                 case R.id.mechanics:
                     startActivity(new Intent(getApplicationContext()
                             , Mechanics.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                case R.id.cards:
+                    startActivity(new Intent(getApplicationContext()
+                            , Cards.class));
                     overridePendingTransition(0, 0);
                     return true;
             }
@@ -143,12 +148,17 @@ public class Cards extends System {
     }
 
     public void ClickComponents(View view) {
-        recreate();
+        Intent intent = new Intent(this, Components.class);
+        startActivity(intent);
     }
 
     public void ClickMechanics(View view) {
         Intent intent = new Intent(this, Mechanics.class);
         startActivity(intent);
+    }
+
+    public void ClickCards(View view) {
+        closeDrawer(drawerLayout);
     }
 
     public void ClickGallery(View view) {
@@ -171,16 +181,5 @@ public class Cards extends System {
         super.onPause();
         closeDrawer((drawerLayout));
         overridePendingTransition(0, 0);
-    }
-
-    //Components
-    public void CardsToCardAnatomy(View view) {
-        Intent intent = new Intent(this, CardAnatomy.class);
-        startActivity(intent);
-    }
-
-    public void CardsToComponents(View view) {
-        Intent intent = new Intent(this, Components.class);
-        startActivity(intent);
     }
 }

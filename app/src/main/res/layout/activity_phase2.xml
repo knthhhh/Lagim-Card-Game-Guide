@@ -827,7 +827,8 @@
                 android:gravity="center"
                 android:onClick="Phase2ToPhase1"
                 android:text="Phase 1"
-                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
 
@@ -854,7 +855,8 @@
                 android:gravity="center"
                 android:onClick="Phase2ToPhase3"
                 android:text="Phase 3"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
 

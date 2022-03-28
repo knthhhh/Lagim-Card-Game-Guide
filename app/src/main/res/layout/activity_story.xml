@@ -26,57 +26,76 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_story1" />
 
-            <ImageView
-                android:id="@+id/indicator"
+            <LinearLayout
+                android:id="@+id/buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="125dp"
-                android:layout_marginEnd="63dp"
-                android:src="@drawable/indicator" />
-
-            <TextView
-                android:id="@+id/mechanics"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="94dp"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="100dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="@font/opensans"
-                android:gravity="center_horizontal"
-                android:onClick="StoryToMechanics"
-                android:text="Mechanics"
-                android:textAllCaps="false"
-                android:textColor="@color/lightGray"
-                android:textSize="16sp"
-                tools:ignore="UsingOnClickInXml" />
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/story"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@id/indicator"
-                android:layout_alignEnd="@id/indicator"
-                android:layout_alignBottom="@id/indicator"
-                android:layout_marginBottom="5dp"
-                android:layout_alignBaseline="@id/mechanics"
-                android:background="@android:color/transparent"
-                android:fontFamily="@font/opensans"
-                android:text="Story"
-                android:textAlignment="center"
-                android:textColor="@color/TextColor"
-                android:textSize="16sp"
-                tools:ignore="UsingOnClickInXml" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="StoryToMechanics">
+
+                    <TextView
+                        android:id="@+id/Components"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="Mechanics"
+                        android:textColor="@color/lightGray"
+                        android:textSize="15sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/CardAnatomy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/opensans"
+                        android:text="     Story     "
+                        android:textColor="@color/TextColor"
+                        android:textSize="15sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageView
+                        android:id="@+id/indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/CardAnatomy"
+                        android:layout_alignEnd="@id/CardAnatomy"
+                        android:layout_alignBottom="@id/CardAnatomy"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/ic_indicator_medium" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
 
             <ImageView
                 android:id="@+id/premisebg"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/buttons"
                 android:layout_alignParentStart="true"
-                android:layout_below="@id/story"
                 android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_premise_title" />
@@ -111,25 +130,15 @@
                 android:textColor="@color/TextColor"
                 android:textSize="16sp" />
 
-            <ImageView
-                android:id="@+id/img1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_story2"
-                android:layout_below="@id/premisetext1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"/>
-
             <TextView
                 android:id="@+id/premisetext2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/img1"
+                android:layout_below="@+id/premisetext1"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="-70dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
                 android:text="However, such darkness inevitably seeps into the hearts of men.\n\nBaryos quickly turn on each other, unleashing dark magic and foul creatures against their neighbors.\n\nAs each Baryo races to claim more Soul Coins, who will survive and forge a path towards the greater power hidden within the depths of  the forest."
@@ -150,9 +159,9 @@
                 android:id="@+id/gamebg"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/img2"
                 android:layout_alignParentStart="true"
-                android:layout_alignTop="@id/img2"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="-90dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_thegame_title" />
 
@@ -201,9 +210,9 @@
                 android:id="@+id/goalbg"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/img3"
                 android:layout_alignParentStart="true"
-                android:layout_alignTop="@id/img3"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="0dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_thegoal_title" />
 
@@ -243,6 +252,10 @@
                 android:layout_below="@id/goaltext"
                 android:layout_marginTop="100dp"/>
 
+        </RelativeLayout>
+
+    </ScrollView>
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -279,11 +292,6 @@
 
 
             </RelativeLayout>
-
-        </RelativeLayout>
-
-    </ScrollView>
-
 
     <RelativeLayout
         android:layout_width="250dp"

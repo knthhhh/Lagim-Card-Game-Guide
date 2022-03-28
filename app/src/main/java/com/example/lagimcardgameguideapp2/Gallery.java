@@ -60,6 +60,12 @@ public class Gallery extends System {
         startActivity(intent);
     }
 
+    public void ClickCards(View view) {
+        Intent intent = new Intent(this, Cards.class);
+        startActivity(intent);
+        finish();
+    }
+
     public void ClickGallery(View view) {
         closeDrawer(drawerLayout);
     }

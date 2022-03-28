@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class EquipCardsList extends System {
 
     TextView textView;
-    ImageView imageView1, imageView2, imageView3, bgimg, Header;
+    ImageView imageView1, imageView2, imageView3, imageView4, bgimg, Header;
     ArrayList<String> ArrayList;
 
     @Override
@@ -27,6 +27,7 @@ public class EquipCardsList extends System {
         imageView1 = findViewById(R.id.card1);
         imageView2 = findViewById(R.id.card2);
         imageView3 = findViewById(R.id.card3);
+        imageView4 = findViewById(R.id.card4);
         Header = findViewById(R.id.titlebg);
         bgimg = findViewById(R.id.bgimg);
 
@@ -34,10 +35,12 @@ public class EquipCardsList extends System {
         int card1 = bundle.getInt("card1");
         int card2 = bundle.getInt("card2");
         int card3 = bundle.getInt("card3");
+        int card4 = bundle.getInt("card4");
 
         imageView1.setImageResource(card1);
         imageView2.setImageResource(card2);
         imageView3.setImageResource(card3);
+        imageView4.setImageResource(card4);
 
         if (textView.getText().equals("Witch Archetype") ||
                 (textView.getText().equals("Ghoul Archetype") ||
@@ -72,10 +75,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_sumpangmanika);
                     intent.putExtra("Pair1", R.drawable.card_mambabarang);
                     intent.putExtra("Pair2", R.drawable.card_mangkukulam);
-                    intent.putExtra("Pair3", R.drawable.card_alakdan_at_alupihan);
-                    intent.putExtra("Pair4", R.drawable.card_altar_ng_kulam);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Medium Archetype")){
                     ArrayList.clear();
@@ -95,9 +96,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_buntot_pagi);
                     intent.putExtra("Pair1", R.drawable.card_espiritista);
                     intent.putExtra("Pair2", R.drawable.card_albularyo);
-                    intent.putExtra("Pair5", R.drawable.card_orasyonatinsenso);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_sun);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Ghoul Archetype")){
                     ArrayList.clear();
@@ -117,9 +117,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_tiktikatbuwan);
                     intent.putExtra("Pair1", R.drawable.card_aswang);
                     intent.putExtra("Pair2", R.drawable.card_manananggal);
-                    intent.putExtra("Pair5", R.drawable.card_dugo_at_langis);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Mortal Archetype")){
                     ArrayList.clear();
@@ -139,10 +138,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_tabakbawangatasin);
                     intent.putExtra("Pair1", R.drawable.card_dante);
                     intent.putExtra("Pair2", R.drawable.card_amihan);
-                    intent.putExtra("Pair3", R.drawable.card_tabakbawangatasin);
-                    intent.putExtra("Pair4", R.drawable.card_sibatatsulo);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_sun);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Giant Archetype")){
                     ArrayList.clear();
@@ -162,9 +159,9 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_punongacacia);
                     intent.putExtra("Pair1", R.drawable.card_tikbalang);
                     intent.putExtra("Pair2", R.drawable.card_kapre);
-                    intent.putExtra("Pair5", R.drawable.card_bungisngis);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Pair3", R.drawable.card_bungisngis);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
                     startActivity(intent);
                 }else if (textView.getText().equals("Warrior Archetype")){
                     ArrayList.clear();
@@ -184,10 +181,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_sibatatsulo);
                     intent.putExtra("Pair1", R.drawable.card_dante);
                     intent.putExtra("Pair2", R.drawable.card_amihan);
-                    intent.putExtra("Pair3", R.drawable.card_tabakbawangatasin);
-                    intent.putExtra("Pair4", R.drawable.card_sibatatsulo);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_sun);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Dwarf Archetype")){
                     ArrayList.clear();
@@ -207,8 +202,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_bungo_at_tungkod);
                     intent.putExtra("Pair1", R.drawable.card_nunosapunso);
                     intent.putExtra("Pair2", R.drawable.card_duwende);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_small);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Special Archetype")){
                     ArrayList.clear();
@@ -230,8 +225,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Pair2", R.drawable.card_amihan);
                     intent.putExtra("Pair3", R.drawable.card_albularyo);
                     intent.putExtra("Pair4", R.drawable.card_espiritista);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_sun);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
                     startActivity(intent);
                 }
             }
@@ -258,10 +253,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_alakdan_at_alupihan);
                     intent.putExtra("Pair1", R.drawable.card_mambabarang);
                     intent.putExtra("Pair2", R.drawable.card_mangkukulam);
-                    intent.putExtra("Pair3", R.drawable.card_sumpangmanika);
-                    intent.putExtra("Pair4", R.drawable.card_altar_ng_kulam);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Medium Archetype")){
                     ArrayList.clear();
@@ -281,9 +274,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_orasyonatinsenso);
                     intent.putExtra("Pair1", R.drawable.card_albularyo);
                     intent.putExtra("Pair2", R.drawable.card_espiritista);
-                    intent.putExtra("Pair5", R.drawable.card_buntot_pagi);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_sun );
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Ghoul Archetype")){
                     ArrayList.clear();
@@ -303,9 +295,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_dugo_at_langis);
                     intent.putExtra("Pair1", R.drawable.card_aswang);
                     intent.putExtra("Pair2", R.drawable.card_manananggal);
-                    intent.putExtra("Pair3", R.drawable.card_tiktikatbuwan);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Special Archetype")){
                     ArrayList.clear();
@@ -327,8 +318,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Pair2", R.drawable.card_amihan);
                     intent.putExtra("Pair3", R.drawable.card_albularyo);
                     intent.putExtra("Pair4", R.drawable.card_espiritista);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_sun);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
                     startActivity(intent);
                 }
             }
@@ -355,10 +346,8 @@ public class EquipCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_altar_ng_kulam);
                     intent.putExtra("Pair1", R.drawable.card_mambabarang);
                     intent.putExtra("Pair2", R.drawable.card_mangkukulam);
-                    intent.putExtra("Pair3", R.drawable.card_alakdan_at_alupihan);
-                    intent.putExtra("Pair4", R.drawable.card_sumpangmanika);
-                    intent.putExtra("Level", R.drawable.level_two);
-                    intent.putExtra("bgtext", R.drawable.bg_card_text_medium);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }
             }

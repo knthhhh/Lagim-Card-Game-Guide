@@ -92,12 +92,12 @@ public class BattleCardsArchetype extends System {
                 if (header.getText().equals("LAGIM CARDS")){
                     Intent lagim = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lagim.putExtra("Archetype","Bestial Archetype");
-                    lagim.putExtra("card1", R.drawable.card_sigbin);
+                    lagim.putExtra("card4", R.drawable.card_sigbin);
                     startActivity(lagim);
                 } else {
                     Intent lakas = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lakas.putExtra("Archetype","Mortal Archetype");
-                    lakas.putExtra("card1", R.drawable.card_amihan);
+                    lakas.putExtra("card4", R.drawable.card_amihan);
                     startActivity(lakas);
                 }
             }
@@ -115,7 +115,7 @@ public class BattleCardsArchetype extends System {
                 } else {
                     Intent lakas = new Intent(BattleCardsArchetype.this, BattleCardsList.class);
                     lakas.putExtra("Archetype","Warrior Archetype");
-                    lakas.putExtra("card1", R.drawable.card_dante);
+                    lakas.putExtra("card4", R.drawable.card_dante);
                     startActivity(lakas);
                 }
             }

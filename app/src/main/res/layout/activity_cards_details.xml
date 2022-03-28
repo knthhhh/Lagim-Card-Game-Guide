@@ -19,8 +19,19 @@
                 android:id="@+id/bgimg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/footer"
+                android:layout_alignParentTop="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_lagim_card_details" />
+                android:src="@drawable/bg_lagimcards" />
+
+            <ImageView
+                android:id="@+id/bgtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card"
+                android:layout_marginTop="-30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_carddetails_text_medium" />
 
             <ImageView
                 android:id="@+id/card"
@@ -32,14 +43,13 @@
                 android:paddingEnd="30dp"
                 android:src="@drawable/card_mambabarang" />
 
-            <ImageView
-                android:id="@+id/bgtext"
+            <TextView
+                android:id="@+id/footer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:text=""
                 android:layout_below="@id/card"
-                android:layout_marginTop="0dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_card_text_large" />
+                android:layout_marginTop="20dp"/>
 
             <TextView
                 android:id="@+id/card_name"
@@ -48,10 +58,10 @@
                 android:layout_alignTop="@id/bgtext"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="25dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="110dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="Mambabarang"
-                android:textColor="@color/black"
+                android:textColor="@color/maroon"
                 android:textSize="25sp" />
 
             <TextView
@@ -63,8 +73,18 @@
                 android:layout_marginTop="0dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="(Hex-Bringer)"
-                android:textColor="@color/black"
+                android:textColor="@color/maroon"
                 android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/breakpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/breakpoint" />
 
             <TextView
                 android:id="@+id/sub1"
@@ -74,10 +94,10 @@
                 android:layout_alignBaseline="@id/card_name"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="0dp"
-                android:layout_marginEnd="70dp"
+                android:layout_marginEnd="80dp"
                 android:fontFamily="sans-serif"
                 android:text="Entity Level"
-                android:textColor="#62533E"
+                android:textColor="@color/black"
                 android:textSize="13sp" />
 
             <ImageView
@@ -86,18 +106,19 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/sub1"
                 android:layout_alignStart="@id/sub1"
-                android:src="@drawable/level_five" />
+                android:layout_marginStart="-10dp"
+                android:src="@drawable/level_five_sun" />
 
             <TextView
                 android:id="@+id/sub2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/sub_name"
+                android:layout_below="@id/breakpoint"
                 android:layout_alignStart="@id/card_name"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif"
                 android:text="Card Type"
-                android:textColor="#62533E"
+                android:textColor="@color/black"
                 android:textSize="15sp" />
 
             <TextView
@@ -109,7 +130,7 @@
                 android:layout_marginTop="0dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="Lagim Card"
-                android:textColor="@color/black"
+                android:textColor="@color/maroon"
                 android:textSize="20sp" />
 
             <TextView
@@ -120,7 +141,7 @@
                 android:layout_alignStart="@id/sub1"
                 android:fontFamily="sans-serif"
                 android:text="Archetype"
-                android:textColor="#62533E"
+                android:textColor="@color/black"
                 android:textSize="13sp" />
 
             <TextView
@@ -132,7 +153,7 @@
                 android:layout_marginTop="0dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="Witch"
-                android:textColor="@color/black"
+                android:textColor="@color/maroon"
                 android:textSize="20sp" />
 
             <TextView
@@ -144,7 +165,7 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="sans-serif"
                 android:text="Traits"
-                android:textColor="#62533E"
+                android:textColor="@color/black"
                 android:textSize="13sp" />
 
             <TextView
@@ -159,7 +180,7 @@
                 android:layout_marginEnd="25dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="Hailing form a highborn bloodline of witches, the evil Mambabarang uses insects as a medium to torture, kill, or inflict hexes upon their victims."
-                android:textColor="@color/black"
+                android:textColor="@color/maroon"
                 android:textSize="16sp" />
 
             <TextView
@@ -171,7 +192,7 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="sans-serif"
                 android:text="Abilities"
-                android:textColor="#62533E"
+                android:textColor="@color/black"
                 android:textSize="13sp" />
 
             <TextView
@@ -186,7 +207,7 @@
                 android:layout_marginEnd="25dp"
                 android:fontFamily="@font/oldstyle"
                 android:text="SOULREAPER: Defending player automatically lose 1 soul coin."
-                android:textColor="@color/black"
+                android:textColor="@color/maroon"
                 android:textSize="16sp" />
 
             <TextView
@@ -198,71 +219,75 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="sans-serif"
                 android:text="Increase Total Entity Level when paired to: "
-                android:textColor="#62533E"
+                android:textColor="@color/black"
                 android:textSize="13sp" />
 
-            <ImageView
-                android:id="@+id/pair1"
+            <LinearLayout
+                android:id="@+id/set1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/sub6"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/card_mangkukulam" />
-
-
-            <ImageView
-                android:id="@+id/pair2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sub6"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="20dp"
-                android:src="@drawable/card_alakdan_at_alupihan" />
-
-            <ImageView
-                android:id="@+id/pair3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/pair1"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="-30dp"
-                android:src="@drawable/card_alakdan_at_alupihan" />
-
-            <ImageView
-                android:id="@+id/pair4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/pair2"
-                android:layout_alignBaseline="@id/pair3"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="-30dp"
-                android:layout_marginEnd="20dp"
-                android:src="@drawable/card_alakdan_at_alupihan"
-                />
-
-            <ImageView
-                android:id="@+id/pair5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/pair2"
+                android:layout_marginTop="10dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="-30dp"
-                android:layout_marginEnd="25dp"
-                android:src="@drawable/card_alakdan_at_alupihan" />
+                android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/pair6"
+                <ImageView
+                    android:id="@+id/pair1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/card_mangkukulam" />
+
+
+                <ImageView
+                    android:id="@+id/pair2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-18dp"
+                    android:src="@drawable/card_alakdan_at_alupihan" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_marginTop="-42dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/pair4"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="-30dp"
-                android:layout_marginEnd="25dp"
-                android:src="@drawable/card_alakdan_at_alupihan" />
+                android:layout_alignStart="@id/set1"
+                android:layout_below="@+id/set1">
+
+                <ImageView
+                    android:id="@+id/pair3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/card_alakdan_at_alupihan" />
+
+                <ImageView
+                    android:id="@+id/pair4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-18dp"
+                    android:src="@drawable/card_alakdan_at_alupihan"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/sub6">
+
+                <ImageView
+                    android:id="@+id/pair5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+
 
 
         </RelativeLayout>

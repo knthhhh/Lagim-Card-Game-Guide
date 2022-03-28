@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="150dp"
                 android:fontFamily="@font/lusitana"
                 android:text="UNDERSTAND THE BATTLE\nMECHANICS TO SURVIVE"
                 android:textAlignment="center"

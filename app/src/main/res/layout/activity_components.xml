@@ -25,54 +25,76 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_components" />
 
-            <TextView
-                android:id="@+id/ComponentText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/text"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/opensans"
-                android:onClick="ClickComponents"
-                android:text="Components"
-                android:textAlignment="center"
-                android:textColor="@color/TextColor"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:drawableBottomCompat="@drawable/indicator" />
-
-            <TextView
-                android:id="@+id/text"
+            <LinearLayout
+                android:id="@+id/buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="100dp"
-                android:fontFamily="@font/opensans"
-                android:onClick="ComponentsToCards"
-                android:text="Cards"
-                android:textColor="@color/lightGray"
-                android:textSize="15sp"
-                tools:ignore="UsingOnClickInXml" />
+                android:orientation="horizontal">
 
-            <TextView
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Components"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/opensans"
+                        android:layout_centerInParent="true"
+                        android:onClick="ClickComponents"
+                        android:text="Components"
+                        android:textColor="@color/TextColor"
+                        android:textSize="15sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageView
+                        android:id="@+id/indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/Components"
+                        android:layout_alignEnd="@id/Components"
+                        android:layout_alignBottom="@id/Components"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/ic_indicator_medium" />
+
+                </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/text"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="20dp"
-                android:fontFamily="@font/opensans"
-                android:onClick="ComponentsToCardAnatomy"
-                android:text="Card Anatomy"
-                android:textColor="@color/lightGray"
-                android:textSize="15sp"
-                tools:ignore="UsingOnClickInXml" />
+                android:onClick="ComponentsToCardAnatomy">
+
+                <TextView
+                    android:id="@+id/CardAnatomy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/opensans"
+                    android:text="Card Anatomy"
+                    android:textColor="@color/lightGray"
+                    android:textSize="15sp"
+                    tools:ignore="UsingOnClickInXml" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
 
             <ImageView
                 android:id="@+id/titlebg"
                 android:layout_width="185dp"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/buttons"
                 android:layout_alignParentStart="true"
-                android:layout_below="@id/ComponentText"
                 android:layout_marginTop="50dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_title" />
@@ -602,7 +624,7 @@
         android:layout_gravity="start"
         android:background="@color/gray">
 
-        <include layout="@layout/navigation_drawer" />
+          <include layout="@layout/navigation_drawer" />
 
     </RelativeLayout>
 

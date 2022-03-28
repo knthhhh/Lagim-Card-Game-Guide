@@ -50,6 +50,12 @@ public class Components extends System {
                         overridePendingTransition(0, 0);
                         finish();
                         return true;
+                    case R.id.cards:
+                        startActivity(new Intent(getApplicationContext()
+                                , Cards.class));
+                        overridePendingTransition(0, 0);
+                        finish();
+                        return true;
                 }
                 return false;
             }
@@ -91,6 +97,12 @@ public class Components extends System {
         startActivity(intent);
     }
 
+    public void ClickCards(View view) {
+        Intent intent = new Intent(this, Cards.class);
+        startActivity(intent);
+        finish();
+    }
+
     public void ClickGallery(View view) {
         Intent intent = new Intent(this, Gallery.class);
         startActivity(intent);
@@ -113,11 +125,6 @@ public class Components extends System {
     }
 
     //Components
-    public void ComponentsToCards(View view) {
-        Intent intent = new Intent(this, Cards.class);
-        startActivity(intent);
-    }
-
     public void ComponentsToCardAnatomy(View view) {
         Intent intent = new Intent(this, CardAnatomy.class);
         startActivity(intent);

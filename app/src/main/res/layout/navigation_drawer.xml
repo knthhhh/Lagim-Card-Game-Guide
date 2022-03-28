@@ -16,11 +16,11 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:background="#4D4C4C"/>
 
     <RelativeLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -82,6 +82,36 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:onClick="ClickCards"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/ic_cards" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/opensans"
+            android:text="Cards"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
         android:onClick="ClickMechanics"
         >
 
@@ -90,8 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_marginStart="30dp"
-            android:src="@drawable/ic_mechanics"
-            />
+            android:src="@drawable/ic_mechanics" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -200,23 +229,23 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:background="#4D4C4C"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="30dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Follow Us"
-            android:textSize="16sp"
-            android:textColor="@color/white"
-            android:fontFamily="@font/opensans"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="25dp"/>
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/opensans"
+            android:text="Follow Us"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
     </RelativeLayout>
 
@@ -224,7 +253,7 @@
         android:onClick="facebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -249,7 +278,7 @@
         android:onClick="instagram"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -274,7 +303,7 @@
         android:onClick="youtube"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -299,7 +328,7 @@
         android:onClick="kickstarter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -329,7 +358,7 @@
         android:textAlignment="center"
         android:fontFamily="@font/opensans"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         />
 
     <ImageView

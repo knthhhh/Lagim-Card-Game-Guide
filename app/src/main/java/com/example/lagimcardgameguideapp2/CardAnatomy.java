@@ -47,6 +47,11 @@ public class CardAnatomy extends System {
                                 , Mechanics.class));
                         overridePendingTransition(0, 0);
                         return true;
+                    case R.id.cards:
+                        startActivity(new Intent(getApplicationContext()
+                                , Cards.class));
+                        overridePendingTransition(0, 0);
+                        return true;
                 }
                 return false;
             }
@@ -79,12 +84,19 @@ public class CardAnatomy extends System {
     }
 
     public void ClickComponents(View view) {
-        recreate();
+        Intent intent = new Intent(this, Components.class);
+        startActivity(intent);
     }
 
     public void ClickMechanics(View view) {
         Intent intent = new Intent(this, Mechanics.class);
         startActivity(intent);
+    }
+
+    public void ClickCards(View view) {
+        Intent intent = new Intent(this, Cards.class);
+        startActivity(intent);
+        finish();
     }
 
     public void ClickGallery(View view) {
@@ -110,12 +122,6 @@ public class CardAnatomy extends System {
     }
 
     //Components
-
-    public void CardAnatomyToCards(View view) {
-        Intent intent = new Intent(this, Cards.class);
-        startActivity(intent);
-    }
-
     public void CardAnatomyToComponents(View view) {
         Intent intent = new Intent(this, Components.class);
         startActivity(intent);
