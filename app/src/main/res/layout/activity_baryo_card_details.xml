@@ -163,11 +163,12 @@
                 android:textSize="13sp" />
 
             <ImageView
+                android:id="@+id/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt3"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_marginStart="120dp"
+                android:layout_toEndOf="@id/txt3"
                 android:src="@drawable/archetype_medium" />
 
             <TextView
@@ -199,9 +200,8 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignStart="@id/medium"
                 android:layout_alignTop="@id/txt5"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
                 android:src="@drawable/archetype_mortal" />
 
             <TextView
@@ -234,8 +234,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt7"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_alignStart="@id/medium"
                 android:src="@drawable/archetype_warrior" />
 
             <ImageView
@@ -307,8 +306,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt10"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_alignStart="@+id/medium"
                 android:src="@drawable/archetype_medium" />
 
             <TextView
@@ -341,8 +339,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt12"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_alignStart="@id/medium"
                 android:src="@drawable/archetype_mortal" />
 
             <TextView
@@ -375,8 +372,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt14"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_alignStart="@id/medium"
                 android:src="@drawable/archetype_special" />
 
         </RelativeLayout>

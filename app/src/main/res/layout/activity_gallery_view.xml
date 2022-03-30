@@ -37,11 +37,12 @@
             android:src="@drawable/ic_share" />
 
         <ImageView
+            android:id="@+id/download"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/share"
-            android:layout_alignBottom="@id/share"
             android:layout_alignEnd="@id/img"
+            android:layout_alignBottom="@id/share"
             android:src="@drawable/ic_download" />
 
 

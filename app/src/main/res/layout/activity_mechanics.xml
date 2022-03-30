@@ -51,7 +51,7 @@
                         android:layout_marginBottom="20dp"
                         android:fontFamily="@font/opensans"
                         android:onClick="ClickComponents"
-                        android:text="Mechanics"
+                        android:text=" Mechanics "
                         android:textColor="@color/TextColor"
                         android:textSize="15sp"
                         tools:ignore="UsingOnClickInXml" />
@@ -64,7 +64,7 @@
                         android:layout_alignEnd="@id/Components"
                         android:layout_alignBottom="@id/Components"
                         android:layout_marginBottom="-5dp"
-                        android:src="@drawable/ic_indicator_medium" />
+                        android:src="@drawable/indicator" />
 
                 </RelativeLayout>
 
@@ -83,7 +83,7 @@
                         android:layout_marginEnd="25dp"
                         android:layout_marginBottom="20dp"
                         android:fontFamily="@font/opensans"
-                        android:text="     Story     "
+                        android:text="          Story          "
                         android:textColor="@color/lightGray"
                         android:textSize="15sp"
                         tools:ignore="UsingOnClickInXml" />

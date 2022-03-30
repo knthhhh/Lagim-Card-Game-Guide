@@ -6,6 +6,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -47,21 +48,25 @@ public class Cards extends System {
                     startActivity(new Intent(getApplicationContext()
                             , Home.class));
                     overridePendingTransition(0, 0);
+                    finish();
                     return true;
                 case R.id.component:
                     startActivity(new Intent(getApplicationContext()
                             , Components.class));
                     overridePendingTransition(0, 0);
+                    finish();
                     return true;
                 case R.id.mechanics:
                     startActivity(new Intent(getApplicationContext()
                             , Mechanics.class));
                     overridePendingTransition(0, 0);
+                    finish();
                     return true;
                 case R.id.cards:
                     startActivity(new Intent(getApplicationContext()
                             , Cards.class));
                     overridePendingTransition(0, 0);
+                    finish();
                     return true;
             }
             return false;
@@ -86,10 +91,11 @@ public class Cards extends System {
         lakas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Content.clear();
                 Content.add("LAKAS CARDS");
                 Content.add("LAKAS CARDS of different ARCHETYPES can be played together during battle but each card can only equip KONTRA CARDS of the same Archetype (except for Special Kontra cards).");
-                Content.add("Special Kontra cards can be identified by this symbol, and they can be paired with all Lakas Card Archetypes.");
+                Content.add("            Special Kontra cards can be identified by this symbol, and they can be paired with all Lakas Card Archetypes.");
                 Intent intent = new Intent(Cards.this, BattleCardsArchetype.class);
                 intent.putExtra("Header",Content.get(0));
                 intent.putExtra("Text1",Content.get(1));

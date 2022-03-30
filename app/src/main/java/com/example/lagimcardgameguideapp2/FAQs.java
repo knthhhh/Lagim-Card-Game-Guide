@@ -44,6 +44,23 @@ public class FAQs extends System {
         a8 = findViewById(R.id.answer8);
         a9 = findViewById(R.id.answer9);
         a10 = findViewById(R.id.answer10);
+        a11 = findViewById(R.id.answer11);
+        a12 = findViewById(R.id.answer12);
+        a13 = findViewById(R.id.answer13);
+        a14 = findViewById(R.id.answer14);
+        a15 = findViewById(R.id.answer15);
+        a16 = findViewById(R.id.answer16);
+        a17 = findViewById(R.id.answer17);
+        a18 = findViewById(R.id.answer18);
+        a19 = findViewById(R.id.answer19);
+        a20 = findViewById(R.id.answer20);
+        a21 = findViewById(R.id.answer21);
+        a22 = findViewById(R.id.answer22);
+        a23 = findViewById(R.id.answer23);
+        a24 = findViewById(R.id.answer24);
+        a25 = findViewById(R.id.answer25);
+        a26 = findViewById(R.id.answer26);
+        a27 = findViewById(R.id.answer27);
         b1 = findViewById(R.id.button1);
         b2 = findViewById(R.id.button2);
         b3 = findViewById(R.id.button3);
@@ -54,6 +71,23 @@ public class FAQs extends System {
         b8 = findViewById(R.id.button8);
         b9 = findViewById(R.id.button9);
         b10 = findViewById(R.id.button10);
+        b11 = findViewById(R.id.button11);
+        b12 = findViewById(R.id.button12);
+        b13 = findViewById(R.id.button13);
+        b14 = findViewById(R.id.button14);
+        b15 = findViewById(R.id.button15);
+        b16 = findViewById(R.id.button16);
+        b17 = findViewById(R.id.button17);
+        b18 = findViewById(R.id.button18);
+        b19 = findViewById(R.id.button19);
+        b20 = findViewById(R.id.button20);
+        b21 = findViewById(R.id.button21);
+        b22 = findViewById(R.id.button22);
+        b23 = findViewById(R.id.button23);
+        b24 = findViewById(R.id.button24);
+        b25 = findViewById(R.id.button25);
+        b26 = findViewById(R.id.button26);
+        b27 = findViewById(R.id.button27);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -196,20 +230,244 @@ public class FAQs extends System {
                 }
             }
         });
-//        b18.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                if (a18.getVisibility() == View.GONE){
-//                    expand(a18);
-//                    a18.setVisibility(View.VISIBLE);
-//                    b18.setImageResource(R.drawable.ic_up);
-//                } else{
-//                    collapse(a18);
-//                    a18.setVisibility(View.GONE);
-//                    b18.setImageResource(R.drawable.ic_down);
-//                }
-//            }
-//        });
+        b11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a11.getVisibility() == View.GONE){
+                    expand(a11);
+                    a11.setVisibility(View.VISIBLE);
+                    b11.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a11);
+                    a11.setVisibility(View.GONE);
+                    b11.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a12.getVisibility() == View.GONE){
+                    expand(a12);
+                    a12.setVisibility(View.VISIBLE);
+                    b12.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a12);
+                    a12.setVisibility(View.GONE);
+                    b12.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a13.getVisibility() == View.GONE){
+                    expand(a13);
+                    a13.setVisibility(View.VISIBLE);
+                    b13.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a13);
+                    a13.setVisibility(View.GONE);
+                    b13.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a14.getVisibility() == View.GONE){
+                    expand(a14);
+                    a14.setVisibility(View.VISIBLE);
+                    b14.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a14);
+                    a14.setVisibility(View.GONE);
+                    b14.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a15.getVisibility() == View.GONE){
+                    expand(a15);
+                    a15.setVisibility(View.VISIBLE);
+                    b15.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a15);
+                    a15.setVisibility(View.GONE);
+                    b15.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a16.getVisibility() == View.GONE){
+                    expand(a16);
+                    a16.setVisibility(View.VISIBLE);
+                    b16.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a16);
+                    a16.setVisibility(View.GONE);
+                    b16.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a17.getVisibility() == View.GONE){
+                    expand(a17);
+                    a17.setVisibility(View.VISIBLE);
+                    b17.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a17);
+                    a17.setVisibility(View.GONE);
+                    b17.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a18.getVisibility() == View.GONE){
+                    expand(a18);
+                    a18.setVisibility(View.VISIBLE);
+                    b18.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a18);
+                    a18.setVisibility(View.GONE);
+                    b18.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a19.getVisibility() == View.GONE){
+                    expand(a19);
+                    a19.setVisibility(View.VISIBLE);
+                    b19.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a19);
+                    a19.setVisibility(View.GONE);
+                    b19.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a20.getVisibility() == View.GONE){
+                    expand(a20);
+                    a20.setVisibility(View.VISIBLE);
+                    b20.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a20);
+                    a20.setVisibility(View.GONE);
+                    b20.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a21.getVisibility() == View.GONE){
+                    expand(a21);
+                    a21.setVisibility(View.VISIBLE);
+                    b21.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a21);
+                    a21.setVisibility(View.GONE);
+                    b21.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a22.getVisibility() == View.GONE){
+                    expand(a22);
+                    a22.setVisibility(View.VISIBLE);
+                    b22.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a22);
+                    a22.setVisibility(View.GONE);
+                    b22.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b23.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a23.getVisibility() == View.GONE){
+                    expand(a23);
+                    a23.setVisibility(View.VISIBLE);
+                    b23.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a23);
+                    a23.setVisibility(View.GONE);
+                    b23.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b24.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a24.getVisibility() == View.GONE){
+                    expand(a24);
+                    a24.setVisibility(View.VISIBLE);
+                    b24.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a24);
+                    a24.setVisibility(View.GONE);
+                    b24.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b25.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a25.getVisibility() == View.GONE){
+                    expand(a25);
+                    a25.setVisibility(View.VISIBLE);
+                    b25.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a25);
+                    a25.setVisibility(View.GONE);
+                    b25.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b26.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a26.getVisibility() == View.GONE){
+                    expand(a26);
+                    a26.setVisibility(View.VISIBLE);
+                    b26.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a26);
+                    a26.setVisibility(View.GONE);
+                    b26.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
+        b27.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (a27.getVisibility() == View.GONE){
+                    expand(a27);
+                    a27.setVisibility(View.VISIBLE);
+                    b27.setImageResource(R.drawable.ic_up);
+                } else{
+                    collapse(a27);
+                    a27.setVisibility(View.GONE);
+                    b27.setImageResource(R.drawable.ic_down);
+                }
+            }
+        });
 
         drawerLayout = findViewById(R.id.drawer_layout);
         autoCompleteTextView = findViewById(R.id.auto_complete_txt);
@@ -228,7 +486,7 @@ public class FAQs extends System {
             public void onClick(View view) {
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
-                i.putExtra(Intent.EXTRA_EMAIL, new String[]{"angelmislang18@gmail.com"});
+                i.putExtra(Intent.EXTRA_EMAIL, new String[]{"support@lagimcardgame.com"});
                 i.putExtra(Intent.EXTRA_SUBJECT, autoCompleteTextView.getText().toString());
                 i.putExtra(Intent.EXTRA_TEXT, Message.getText().toString());
                 try {

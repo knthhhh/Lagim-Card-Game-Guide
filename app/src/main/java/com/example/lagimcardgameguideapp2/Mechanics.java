@@ -93,6 +93,7 @@ public class Mechanics extends System {
     public void ClickComponents(View view) {
         Intent intent = new Intent(this, Components.class);
         startActivity(intent);
+        finish();
     }
 
     public void ClickMechanics(View view) {

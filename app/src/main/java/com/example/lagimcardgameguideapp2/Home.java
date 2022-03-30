@@ -91,37 +91,31 @@ public class Home extends System {
     public void ClickComponents(View view) {
         Intent intent = new Intent(this, Components.class);
         startActivity(intent);
-        finish();
     }
 
     public void ClickMechanics(View view) {
         Intent intent = new Intent(this, Mechanics.class);
         startActivity(intent);
-        finish();
     }
 
     public void ClickCards(View view) {
         Intent intent = new Intent(this, Cards.class);
         startActivity(intent);
-        finish();
     }
 
     public void ClickGallery(View view) {
         Intent intent = new Intent(this, Gallery.class);
         startActivity(intent);
-        finish();
     }
 
     public void ClickAboutUs(View view) {
         Intent intent = new Intent(this, AboutUs.class);
         startActivity(intent);
-        finish();
     }
 
     public void ClickFAQs(View view) {
         Intent intent = new Intent(this, FAQs.class);
         startActivity(intent);
-        finish();
     }
     @Override
     protected void onPause() {

@@ -41,14 +41,14 @@
                         android:id="@+id/Components"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="25dp"
                         android:layout_marginBottom="20dp"
                         android:fontFamily="@font/opensans"
-                        android:layout_centerInParent="true"
                         android:onClick="ClickComponents"
-                        android:text="Components"
+                        android:text=" Components "
                         android:textColor="@color/TextColor"
                         android:textSize="15sp"
                         tools:ignore="UsingOnClickInXml" />
@@ -61,7 +61,7 @@
                         android:layout_alignEnd="@id/Components"
                         android:layout_alignBottom="@id/Components"
                         android:layout_marginBottom="-5dp"
-                        android:src="@drawable/ic_indicator_medium" />
+                        android:src="@drawable/indicator" />
 
                 </RelativeLayout>
 
@@ -74,13 +74,13 @@
                     android:id="@+id/CardAnatomy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="25dp"
                     android:layout_marginBottom="20dp"
-                    android:layout_centerInParent="true"
                     android:fontFamily="@font/opensans"
-                    android:text="Card Anatomy"
+                    android:text=" Card Anatomy "
                     android:textColor="@color/lightGray"
                     android:textSize="15sp"
                     tools:ignore="UsingOnClickInXml" />

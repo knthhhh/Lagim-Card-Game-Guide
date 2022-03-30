@@ -87,15 +87,23 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/TextContent1"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/lusitana"
-                android:text="FOREST CARDS of the same ARCHETYPE automatically stack together, increasing their total ENTITY LEVEL."
-                android:textAlignment="textStart"
+                android:text="            Special Kontra cards can be identified by this symbol, and they can be paired with all Lakas Card Archetypes."
                 android:textColor="@color/TextColor"
                 android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/TextContent2"
+                android:layout_alignTop="@id/TextContent2"
+                android:layout_marginTop="-1dp"
+                android:layout_marginStart="-1dp"
+                android:src="@drawable/ic_special" />
 
             <ImageView
                 android:id="@+id/bg"
@@ -133,7 +141,7 @@
                 android:layout_alignEnd="@id/btn1"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/lusitana"
-                android:text="Witch"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -159,7 +167,7 @@
                 android:layout_alignEnd="@id/btn2"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/lusitana"
-                android:text="Bestial"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -184,7 +192,7 @@
                 android:layout_alignEnd="@id/btn3"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/lusitana"
-                android:text="Ghoul"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -209,7 +217,7 @@
                 android:layout_alignEnd="@id/btn4"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/lusitana"
-                android:text="Giant"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -234,7 +242,7 @@
                 android:layout_alignEnd="@id/btn5"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/lusitana"
-                android:text="Giant"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp" />

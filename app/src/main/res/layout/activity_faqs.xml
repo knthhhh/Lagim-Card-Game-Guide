@@ -124,10 +124,10 @@
                 android:drawableEnd="@drawable/ic_send"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center"
-                android:paddingStart="25dp"
+                android:paddingStart="20dp"
                 android:paddingTop="5dp"
-                android:paddingEnd="25dp"
-                android:text="Send"
+                android:paddingEnd="20dp"
+                android:text="Submit"
                 android:textColor="@color/white"
                 android:textSize="17sp"
                 tools:ignore="UsingOnClickInXml" />
@@ -150,17 +150,17 @@
                 android:id="@+id/question1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/lusitana"
+                android:layout_below="@id/title2"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
                 android:text="01. How does the celestial phase work within the game?"
                 android:textColor="@color/TextColor"
-                android:layout_below="@id/title2"
-                android:layout_toStartOf="@id/button1"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <ImageButton
                 android:id="@+id/button1"
@@ -589,7 +589,7 @@
                 android:layout_marginStart="20dp"
                 android:text="10. What happens to the winning Lakas card after battling a Lagim card from the deck?"
                 android:textColor="@color/TextColor"
-                android:layout_below="@id/answer8"
+                android:layout_below="@id/answer9"
                 android:layout_toStartOf="@id/button1"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"/>
@@ -626,98 +626,940 @@
 
             </RelativeLayout>
 
-<!--            <TextView-->
-<!--                android:id="@+id/title3"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_below="@id/answer2"-->
-<!--                android:layout_alignParentStart="true"-->
-<!--                android:layout_marginStart="20dp"-->
-<!--                android:layout_marginTop="30dp"-->
-<!--                android:fontFamily="@font/oldstyle"-->
-<!--                android:gravity="center_vertical"-->
-<!--                android:text="Card Sleeves"-->
-<!--                android:textColor="@color/cream"-->
-<!--                android:textSize="25sp" />-->
+            <TextView
+                android:id="@+id/question11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="11. If the ability of giants is to disable Amihan, but the opponent has Dante card + Tabak, Bawang at Asin card (which nullifies abilities), will that allow Amihan to be played during that turn?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer10"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
 
-<!--            <TextView-->
-<!--                android:id="@+id/question18"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_below="@id/title3"-->
-<!--                android:layout_alignParentStart="true"-->
-<!--                android:layout_marginStart="20dp"-->
-<!--                android:layout_marginTop="30dp"-->
-<!--                android:layout_marginEnd="10dp"-->
-<!--                android:layout_toStartOf="@id/button1"-->
-<!--                android:fontFamily="@font/lusitana"-->
-<!--                android:text="01. Where can I buy card protectors?"-->
-<!--                android:textColor="@color/TextColor"-->
-<!--                android:textSize="16sp"-->
-<!--                android:textStyle="bold" />-->
+            <ImageButton
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question11"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question11"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/button18"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_alignTop="@id/question18"-->
-<!--                android:layout_alignEnd="@id/send"-->
-<!--                android:layout_alignBottom="@id/question18"-->
-<!--                android:src="@drawable/ic_down"-->
-<!--                android:background="@android:color/transparent"/>-->
+            <RelativeLayout
+                android:id="@+id/answer11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question11"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
 
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/answer18"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_below="@id/question18"-->
-<!--                android:layout_marginTop="15dp"-->
-<!--                android:visibility="gone">-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Yes, that is correct, Tabak, Bawang at Asin card can nullify the skill of the Bungisngis (Giant) card. In this game scenario, Yes you can add Amihan in defending your baryo."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_alignParentStart="true"-->
-<!--                    android:layout_alignParentEnd="true"-->
-<!--                    android:layout_marginStart="20dp"-->
-<!--                    android:layout_marginEnd="20dp"-->
-<!--                    android:fontFamily="@font/lusitana"-->
-<!--                    android:text="Lagim card sleeves are available in our shop, for Php395. Each pack contains 65 sleeves."-->
-<!--                    android:textColor="@color/lightGray"-->
-<!--                    android:textSize="16sp" />-->
+            </RelativeLayout>
 
-<!--            </RelativeLayout>-->
+            <TextView
+                android:id="@+id/question12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="12. Does 2 Sun alignments also summon a Lagim card?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer11"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question12"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question12"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question12"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="No, celestial alignment only works for the Full Moon. Certain Ghoul cards have a Full Moon alignment. When a player has 2 cards with a Full Moon alignment, they gain the special ability to summon 1 Lagim card from the deck. To play, the player declares the action and shows the 2 cards with the Full Moon alignment. The player then draws the top card from the Lagim deck. The 2 cards with the Full Moon alignment then go back to the player’s hand, and the player’s turn ends. Please note that this special ability can only be activated once per game."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="13. Can you play the same 2 Lagim Cards (Ex.: 2 Aswang) and do both Abilities take effect?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer12"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question13"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question13"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question13"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="The Active Player may only play a maximum of 1 Lagim card per attack, unless they are of the same Archetype, in which case they can play a maximum of 2. Both abilities of the 2 Lagim cards with the same Archetype will take effect during an attack."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="14. Do cards that nullify abilities such as Agimat also nullify effects of Hiwaga cards?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer13"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question14"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question14"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question14"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Yes, all cards with nullify skills will take effect even with Hiwaga cards."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="15. Does the Entity level of 2 Tiktik at Buwan Cards add to the Entity Level of the Summoned Ghoul card?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer14"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question15"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question15"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question15"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Yes, Entity level of 2 Tiktik at Buwan cards will be added to the summoned Lagim card."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="16. When you use the Full Moon alignment ability, do you have to show the 2 cards fully?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer15"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question16"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question16"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question16"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Yes, player needs to declare the action and show the 2 cards with the Full Moon alignment."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lusitana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:text="17. Can you still be on the game if you only have a DARK soul coin left?"
+                android:textColor="@color/TextColor"
+                android:layout_below="@id/answer16"
+                android:layout_toStartOf="@id/button1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
+                android:id="@+id/button17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question17"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question17"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_down" />
+
+            <RelativeLayout
+                android:id="@+id/answer17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question17"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="The life indicator of every player is the BARYO soul coins if in any case the player is left without any baryo soul coins though he/she still has the DARK soul coin, the player is still eliminated from the game."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer17"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="Card Sleeves"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/question18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
+                android:text="01. Where can I buy card protectors?"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question18"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question18"
+                android:src="@drawable/ic_down"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/answer18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question18"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Lagim card sleeves are available in our shop, for Php395. Each pack contains 65 sleeves."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer18"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
+                android:text="02. Can I use regular tarot card size sleeves?"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question19"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question19"
+                android:src="@drawable/ic_down"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/answer19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question19"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Lagim card size is 130mm x 70mm. The Lagim card sleeves are exclusively made for Lagim cards. They are available in our shop."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
 
 
-<!--            <TextView-->
-<!--                android:id="@+id/title4"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_below="@id/cardsleeves1"-->
-<!--                android:layout_alignParentStart="true"-->
-<!--                android:layout_marginStart="20dp"-->
-<!--                android:layout_marginTop="30dp"-->
-<!--                android:fontFamily="@font/oldstyle"-->
-<!--                android:gravity="center_vertical"-->
-<!--                android:text="Standard Card Deck"-->
-<!--                android:textColor="@color/cream"-->
-<!--                android:textSize="25sp" />-->
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer19"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="Standard Card Deck"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/question20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
+                android:text="01. How many cards does a standard Lagim game kit has?"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question20"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question20"
+                android:src="@drawable/ic_down"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/answer20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question20"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="The standard Lagim game kit has 61 cards. Consisting of 22 Lagim cards and 39 Baryo cards."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer20"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
+                android:text="02. How many Baryo cards are there in a Baryo card deck?"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question21"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question21"
+                android:src="@drawable/ic_down"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/answer21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question21"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="The Baryo card deck consists of 39 cards. These are the Lakas cards, Kontra and Hiwaga cards:\n\nLAKAS CARDS\n\n\t- Albularyo (Shaman): 4 cards\n\t- Esperitista (Invoker): 4 cards\n\t- Amihan, the light bringer: 4 cards\n\t- Dante, the Woodsman: 4 cards\n\nKONTRA CARDS\n\n\t- Tabak, Asin at Bawang (Blade, Salt and Garlic): 2 cards\n\t- Sibat at Sulo (Spear and Torch): 1 card\n\t- Buntot Pagi (Stingray Tail): 1 card\n\t- Orasyon at Insenso (Prayer and Incense): 2 cards\n\t- Agimat (Amulet): 3 cards\n\nHIWAGA CARDS\n\n\t- Altar ng Kulam (Witch’s altar): 1 card\n\t- Alupihan at Alakdan: 1 card\n\t- Sumpa ng Manika: 1 card\n\t- Puno ng Acacia: 2 cards\n\t- Tiktik at Buwan: 2 cards\n\t- Dugo at Langis: 2 cards\n\t- Bungo at Tungkod: 2 cards\n\nGasera (Gas lamp): 2 cards\n- A Baryo card that is neither a Kontra or a Hiwaga card."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer21"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
+                android:text="03. Is Sigbin card included in the standard card deck as indicated in the game book?"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question22"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question22"
+                android:src="@drawable/ic_down"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/answer22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question22"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="We are upgrading our site and will accommodate orders overseas very soon."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
 
 
-<!--            <TextView-->
-<!--                android:id="@+id/title5"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_below="@id/standardcarddeck1"-->
-<!--                android:layout_alignParentStart="true"-->
-<!--                android:layout_marginStart="20dp"-->
-<!--                android:layout_marginTop="30dp"-->
-<!--                android:fontFamily="@font/oldstyle"-->
-<!--                android:gravity="center_vertical"-->
-<!--                android:text="Shop &amp; Shipping"-->
-<!--                android:textColor="@color/cream"-->
-<!--                android:textSize="25sp" />-->
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer22"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="Shop &amp; Shipping"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
 
+            <TextView
+                android:id="@+id/question23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
+                android:text="01. Where can I buy Lagim Game Set?"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question23"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question23"
+                android:src="@drawable/ic_down"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/answer23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question23"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="Lagim Games sets can only be purchased from our website. Game sets will be available in selected physical stores soon."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer23"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
+                android:text="02. How much is the standard Lagim Game Set?"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question24"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question24"
+                android:src="@drawable/ic_down"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/answer24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question24"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="The first edition standard Lagim Game Set is Php3850 srp."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer24"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
+                android:text="03. Do you ship overseas?"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question25"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question25"
+                android:src="@drawable/ic_down"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/answer25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question25"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="We are upgrading our site and will accommodate orders overseas very soon."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer25"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
+                android:text="04. If the basic game set already has coins and coin bag, do you need to buy more coins?"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question26"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question26"
+                android:src="@drawable/ic_down"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/answer26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question26"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="No need to buy extra coins if you stick with the max game player but with expansion coming out some customers are purchasing additional coin set."
+                    android:textColor="@color/lightGray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer26"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:text="General Information"
+                android:textColor="@color/cream"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/question27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button1"
+                android:fontFamily="@font/lusitana"
+                android:text="01. Social Media Channels"
+                android:textColor="@color/TextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/button27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/question27"
+                android:layout_alignEnd="@id/send"
+                android:layout_alignBottom="@id/question27"
+                android:src="@drawable/ic_down"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/answer27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question27"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/yt"
+                    android:onClick="youtube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="@string/Youtube"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/fb"
+                    android:onClick="facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/yt"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="@string/Facebook"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ig"
+                    android:onClick="instagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fb"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="@string/Instagram"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/kickstarter"
+                    android:onClick="kickstarter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ig"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/lusitana"
+                    android:text="@string/Kickstarter"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/answer27"
+                android:layout_marginTop="50dp"/>
 
         </RelativeLayout>
 

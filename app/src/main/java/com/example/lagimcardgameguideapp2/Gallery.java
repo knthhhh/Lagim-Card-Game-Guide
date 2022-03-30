@@ -1,5 +1,6 @@
 package com.example.lagimcardgameguideapp2;
 
+import androidx.core.app.ActivityCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -7,7 +8,9 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 
@@ -48,16 +51,19 @@ public class Gallery extends System {
     public void ClickHome(View view) {
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);
+        finish();
     }
 
     public void ClickComponents(View view) {
         Intent intent = new Intent(this, Components.class);
         startActivity(intent);
+        finish();
     }
 
     public void ClickMechanics(View view) {
         Intent intent = new Intent(this, Mechanics.class);
         startActivity(intent);
+        finish();
     }
 
     public void ClickCards(View view) {
@@ -73,11 +79,13 @@ public class Gallery extends System {
     public void ClickAboutUs(View view) {
         Intent intent = new Intent(this, AboutUs.class);
         startActivity(intent);
+        finish();
     }
 
     public void ClickFAQs(View view) {
         Intent intent = new Intent(this, FAQs.class);
         startActivity(intent);
+        finish();
     }
 
     @Override
@@ -141,5 +149,6 @@ public class Gallery extends System {
         intent.putExtra("img", R.drawable.img_albularyo);
         startActivity(intent);
     }
+
 
 }

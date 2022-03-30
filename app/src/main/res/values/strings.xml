@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">Lagim Card Game Guide App 2</string>
+    <string name="app_name">Lagim Card Game Guide</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="select">Select Category</string>
+    <string name="Kickstarter"><u>\t\tKickstarter</u></string>
+    <string name="Instagram"><u>\t\tInstagram</u></string>
+    <string name="Facebook"><u>\t\tFacebook</u></string>
+    <string name="Youtube"><u>\t\tYoutube</u></string>
+
 </resources>

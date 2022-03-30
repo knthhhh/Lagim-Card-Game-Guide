@@ -95,12 +95,12 @@ public class Components extends System {
     public void ClickMechanics(View view) {
         Intent intent = new Intent(this, Mechanics.class);
         startActivity(intent);
+        finish();
     }
 
     public void ClickCards(View view) {
         Intent intent = new Intent(this, Cards.class);
         startActivity(intent);
-        finish();
     }
 
     public void ClickGallery(View view) {

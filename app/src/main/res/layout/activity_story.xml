@@ -50,7 +50,7 @@
                         android:layout_marginEnd="25dp"
                         android:layout_marginBottom="20dp"
                         android:fontFamily="@font/opensans"
-                        android:text="Mechanics"
+                        android:text=" Mechanics "
                         android:textColor="@color/lightGray"
                         android:textSize="15sp"
                         tools:ignore="UsingOnClickInXml" />
@@ -71,7 +71,8 @@
                         android:layout_marginEnd="25dp"
                         android:layout_marginBottom="20dp"
                         android:fontFamily="@font/opensans"
-                        android:text="     Story     "
+                        android:gravity="center_horizontal"
+                        android:text="          Story          "
                         android:textColor="@color/TextColor"
                         android:textSize="15sp"
                         tools:ignore="UsingOnClickInXml" />
@@ -84,7 +85,7 @@
                         android:layout_alignEnd="@id/CardAnatomy"
                         android:layout_alignBottom="@id/CardAnatomy"
                         android:layout_marginBottom="-5dp"
-                        android:src="@drawable/ic_indicator_medium" />
+                        android:src="@drawable/story_indicator" />
 
                 </RelativeLayout>
 

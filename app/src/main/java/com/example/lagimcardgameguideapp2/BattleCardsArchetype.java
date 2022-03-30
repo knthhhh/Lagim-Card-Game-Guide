@@ -2,6 +2,9 @@ package com.example.lagimcardgameguideapp2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
+import android.text.style.ImageSpan;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -10,13 +13,15 @@ public class BattleCardsArchetype extends System {
 
     ImageView imageView;
     TextView header, text1, text2, Archetype1, Archetype2, Archetype3, Archetype4, Archetype5;
-    ImageView img1, img2, img3, img4, img5;
+    ImageView img1, img2, img3, img4, img5, icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_battle_cards_archetype);
         hideSystemBars();
+
+        icon = findViewById(R.id.icon);
 
         imageView = findViewById(R.id.bgimg);
         header = findViewById(R.id.Header1);
@@ -39,6 +44,7 @@ public class BattleCardsArchetype extends System {
 
         if(header.getText().equals("LAGIM CARDS")){
             imageView.setImageResource(R.drawable.bg_lagimarchetype);
+            icon.setImageDrawable(null);
         }else{
             imageView.setImageResource(R.drawable.bg_lakasarchetype);
         }

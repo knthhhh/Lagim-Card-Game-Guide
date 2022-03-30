@@ -16,7 +16,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -45,8 +46,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/text1"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
                 android:layout_marginTop="100dp"
+                android:layout_marginEnd="30dp"
                 android:onClick="Raiding"
                 android:src="@drawable/bg_home_btn" />
 
@@ -72,6 +73,8 @@
                 android:layout_height="110dp"
                 android:layout_alignTop="@id/img1"
                 android:layout_alignEnd="@+id/img1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="27dp"
                 android:layout_marginTop="-20dp"
                 android:layout_marginEnd="225dp"
                 android:onClick="Raiding"
@@ -109,6 +112,8 @@
                 android:layout_height="170dp"
                 android:layout_alignTop="@id/img2"
                 android:layout_alignEnd="@+id/img2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
                 android:layout_marginTop="-40dp"
                 android:layout_marginEnd="193dp"
                 android:onClick="Defending"
@@ -145,6 +150,8 @@
                 android:layout_height="155dp"
                 android:layout_alignTop="@id/img3"
                 android:layout_alignEnd="@+id/img3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="-40dp"
                 android:layout_marginEnd="193dp"
                 android:onClick="Dwellers"
@@ -181,6 +188,8 @@
                 android:layout_height="140dp"
                 android:layout_alignTop="@id/img4"
                 android:layout_alignEnd="@+id/img4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="-45dp"
                 android:layout_marginEnd="198dp"
                 android:onClick="LagimLimit"
@@ -218,6 +227,8 @@
                 android:layout_height="150dp"
                 android:layout_alignTop="@id/img5"
                 android:layout_alignEnd="@+id/img5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="14dp"
                 android:layout_marginTop="-40dp"
                 android:layout_marginEnd="198dp"
                 android:onClick="TypesOfRaid"

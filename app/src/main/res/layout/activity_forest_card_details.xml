@@ -165,8 +165,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt3"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_marginStart="120dp"
+                android:layout_toEndOf="@id/txt3"
                 android:src="@drawable/archetype_witch" />
 
             <TextView
@@ -198,9 +198,8 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignStart="@id/witch"
                 android:layout_alignTop="@id/txt5"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
                 android:src="@drawable/archetype_ghoul" />
 
             <TextView
@@ -234,8 +233,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt7"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_alignStart="@id/witch"
                 android:src="@drawable/archetype_giant" />
 
             <TextView
@@ -269,8 +267,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt9"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_alignStart="@id/witch"
                 android:src="@drawable/archetype_dwarf" />
 
             <ImageView
@@ -343,8 +340,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt12"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_alignStart="@id/witch"
                 android:src="@drawable/archetype_witch" />
 
             <TextView
@@ -377,8 +373,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt14"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_alignStart="@id/witch"
                 android:src="@drawable/archetype_ghoul" />
 
             <TextView
@@ -412,8 +407,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt16"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_alignStart="@id/witch"
                 android:src="@drawable/archetype_giant" />
 
             <TextView
@@ -446,8 +440,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt18"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="80dp"
+                android:layout_alignStart="@id/witch"
                 android:src="@drawable/archetype_dwarf" />
 
         </RelativeLayout>
