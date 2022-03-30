@@ -7,5 +7,7 @@
     <string name="Instagram"><u>\t\tInstagram</u></string>
     <string name="Facebook"><u>\t\tFacebook</u></string>
     <string name="Youtube"><u>\t\tYoutube</u></string>
+    <string name="Skip"><u>Skip</u></string>
+    <string name="Next"><u>Next</u></string>
 
 </resources>

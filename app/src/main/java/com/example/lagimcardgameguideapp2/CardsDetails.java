@@ -326,7 +326,7 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_mangkukulam);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
+                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Mangkukulam")) { //done
                     Card.setImageResource(R.drawable.card_altar_ng_kulam);
                     Name.setText("Altar ng Kulam");

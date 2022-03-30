@@ -94,7 +94,7 @@
                 android:layout_alignBaseline="@id/card_name"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="0dp"
-                android:layout_marginEnd="80dp"
+                android:layout_marginEnd="90dp"
                 android:fontFamily="sans-serif"
                 android:text="Entity Level"
                 android:textColor="@color/black"

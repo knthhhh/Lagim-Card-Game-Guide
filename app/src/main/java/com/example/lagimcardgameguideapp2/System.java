@@ -20,6 +20,7 @@ import java.util.Objects;
 public class System extends AppCompatActivity {
 
     public void hideSystemBars() {
+        Objects.requireNonNull(getSupportActionBar()).hide();
         WindowInsetsControllerCompat windowInsetsController =
                 ViewCompat.getWindowInsetsController(getWindow().getDecorView());
         if (windowInsetsController == null) {

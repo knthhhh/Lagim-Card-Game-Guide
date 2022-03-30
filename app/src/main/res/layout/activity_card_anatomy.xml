@@ -570,25 +570,29 @@
                 android:layout_toRightOf="@id/text4"
                 android:src="@drawable/ic_magentabrush" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/text4"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignTop="@id/title3"
-                android:layout_marginTop="80dp"
-                android:src="@drawable/img_hiwagacards1"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="165dp"
-                />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_hiwagacards1"
+                    />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignTop="@id/title3"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="80dp"
-                android:layout_marginEnd="-165dp"
-                android:src="@drawable/img_hiwagacards2" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/img_hiwagacards2" />
+
+
+            </LinearLayout>
+
 
             <TextView
                 android:id="@+id/title4"
@@ -626,24 +630,28 @@
                 android:layout_toRightOf="@id/text5"
                 android:src="@drawable/ic_yelloworangebrush" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignTop="@id/title4"
-                android:layout_marginTop="80dp"
-                android:src="@drawable/img_kontracards1"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="165dp"
-                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/text5"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignTop="@id/title4"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="80dp"
-                android:layout_marginEnd="-165dp"
-                android:src="@drawable/img_kontracards2" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_kontracards1"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/img_kontracards2" />
+
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"

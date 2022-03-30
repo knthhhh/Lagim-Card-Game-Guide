@@ -89,8 +89,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/board"
-                android:layout_marginTop="0dp"
                 android:layout_alignBottom="@id/footer"
+                android:layout_marginTop="-50dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_baryocards_text" />
 
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/board"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="100dp"
                 android:src="@drawable/bg_lakascards_title" />
 
             <TextView
@@ -167,8 +167,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt3"
-                android:layout_marginStart="120dp"
-                android:layout_toEndOf="@id/txt3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
                 android:src="@drawable/archetype_medium" />
 
             <TextView
