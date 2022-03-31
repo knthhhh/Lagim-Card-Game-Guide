@@ -76,7 +76,7 @@ public class EquipCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_mambabarang);
                     intent.putExtra("Pair2", R.drawable.card_mangkukulam);
                     intent.putExtra("Level", R.drawable.level_two_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Medium Archetype")){
                     ArrayList.clear();
@@ -97,7 +97,7 @@ public class EquipCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_espiritista);
                     intent.putExtra("Pair2", R.drawable.card_albularyo);
                     intent.putExtra("Level", R.drawable.level_two_sun);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Ghoul Archetype")){
                     ArrayList.clear();
@@ -118,92 +118,7 @@ public class EquipCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_aswang);
                     intent.putExtra("Pair2", R.drawable.card_manananggal);
                     intent.putExtra("Level", R.drawable.level_two_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
-                    startActivity(intent);
-                }else if (textView.getText().equals("Mortal Archetype")){
-                    ArrayList.clear();
-                    ArrayList.add("Tabak, Bawang, at Asin");
-                    ArrayList.add("(Blade, Garlic, & Salt)");
-                    ArrayList.add("Kontra Card");
-                    ArrayList.add("Mortal");
-                    ArrayList.add("It is said that these items can be used to ward off or attack evil creatures like the Aswangs.");
-                    ArrayList.add("NULLIFY: When equipped with a Mortal, all abilities of opposing cards are nullified and do not take effect. +1 to defense Entity Level.");
-                    Intent intent = new Intent(EquipCardsList.this, CardsDetails.class);
-                    intent.putExtra("CardName",ArrayList.get(0));
-                    intent.putExtra("SubName",ArrayList.get(1));
-                    intent.putExtra("CardType",ArrayList.get(2));
-                    intent.putExtra("Archetype",ArrayList.get(3));
-                    intent.putExtra("Traits",ArrayList.get(4));
-                    intent.putExtra("Ability",ArrayList.get(5));
-                    intent.putExtra("Card", R.drawable.card_tabakbawangatasin);
-                    intent.putExtra("Pair1", R.drawable.card_dante);
-                    intent.putExtra("Pair2", R.drawable.card_amihan);
-                    intent.putExtra("Level", R.drawable.level_two_sun);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
-                    startActivity(intent);
-                }else if (textView.getText().equals("Giant Archetype")){
-                    ArrayList.clear();
-                    ArrayList.add("Puno ng Acacia");
-                    ArrayList.add("(Acacia Tree)");
-                    ArrayList.add("Hiwaga Card");
-                    ArrayList.add("Giant");
-                    ArrayList.add("A strong creepy, gigantic tree to shelter strong, gigantic beings.");
-                    ArrayList.add("IMPALE: Equip to Giant card, reduces defending card/s total entity level by 1.");
-                    Intent intent = new Intent(EquipCardsList.this, CardsDetails.class);
-                    intent.putExtra("CardName",ArrayList.get(0));
-                    intent.putExtra("SubName",ArrayList.get(1));
-                    intent.putExtra("CardType",ArrayList.get(2));
-                    intent.putExtra("Archetype",ArrayList.get(3));
-                    intent.putExtra("Traits",ArrayList.get(4));
-                    intent.putExtra("Ability",ArrayList.get(5));
-                    intent.putExtra("Card", R.drawable.card_punongacacia);
-                    intent.putExtra("Pair1", R.drawable.card_tikbalang);
-                    intent.putExtra("Pair2", R.drawable.card_kapre);
-                    intent.putExtra("Pair3", R.drawable.card_bungisngis);
-                    intent.putExtra("Level", R.drawable.level_two_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
-                    startActivity(intent);
-                }else if (textView.getText().equals("Warrior Archetype")){
-                    ArrayList.clear();
-                    ArrayList.add("Sibat at Sulo");
-                    ArrayList.add("(Spear & Torch)");
-                    ArrayList.add("Kontra Card");
-                    ArrayList.add("Warrior");
-                    ArrayList.add("\"By this torch, I can see in the darkness. By this spear, I can cut through the night.\"");
-                    ArrayList.add("NULLIFY: When equipped with a Warrior, all abilities of opposing cards are nullified and do not take effect  +1 to defense Entity level.");
-                    Intent intent = new Intent(EquipCardsList.this, CardsDetails.class);
-                    intent.putExtra("CardName",ArrayList.get(0));
-                    intent.putExtra("SubName",ArrayList.get(1));
-                    intent.putExtra("CardType",ArrayList.get(2));
-                    intent.putExtra("Archetype",ArrayList.get(3));
-                    intent.putExtra("Traits",ArrayList.get(4));
-                    intent.putExtra("Ability",ArrayList.get(5));
-                    intent.putExtra("Card", R.drawable.card_sibatatsulo);
-                    intent.putExtra("Pair1", R.drawable.card_dante);
-                    intent.putExtra("Pair2", R.drawable.card_amihan);
-                    intent.putExtra("Level", R.drawable.level_two_sun);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
-                    startActivity(intent);
-                }else if (textView.getText().equals("Dwarf Archetype")){
-                    ArrayList.clear();
-                    ArrayList.add("Bungo at Tungkod");
-                    ArrayList.add("(Skull & Staff)");
-                    ArrayList.add("Hiwaga Card");
-                    ArrayList.add("Dwarf");
-                    ArrayList.add("Instruments of magic utilized by elder beings to channel their dark energies. Aged and sturdy.");
-                    ArrayList.add("IMPALE: Equip to dwarf card reduces defending card/s total entity level by 1. REVEAL: Two (2) Bungo at Tungkod cards, player reveals deck on hand.");
-                    Intent intent = new Intent(EquipCardsList.this, CardsDetails.class);
-                    intent.putExtra("CardName",ArrayList.get(0));
-                    intent.putExtra("SubName",ArrayList.get(1));
-                    intent.putExtra("CardType",ArrayList.get(2));
-                    intent.putExtra("Archetype",ArrayList.get(3));
-                    intent.putExtra("Traits",ArrayList.get(4));
-                    intent.putExtra("Ability",ArrayList.get(5));
-                    intent.putExtra("Card", R.drawable.card_bungo_at_tungkod);
-                    intent.putExtra("Pair1", R.drawable.card_nunosapunso);
-                    intent.putExtra("Pair2", R.drawable.card_duwende);
-                    intent.putExtra("Level", R.drawable.level_two_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Special Archetype")){
                     ArrayList.clear();
@@ -254,7 +169,7 @@ public class EquipCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_mambabarang);
                     intent.putExtra("Pair2", R.drawable.card_mangkukulam);
                     intent.putExtra("Level", R.drawable.level_two_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Medium Archetype")){
                     ArrayList.clear();
@@ -275,7 +190,7 @@ public class EquipCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_albularyo);
                     intent.putExtra("Pair2", R.drawable.card_espiritista);
                     intent.putExtra("Level", R.drawable.level_two_sun );
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Ghoul Archetype")){
                     ArrayList.clear();
@@ -296,7 +211,7 @@ public class EquipCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_aswang);
                     intent.putExtra("Pair2", R.drawable.card_manananggal);
                     intent.putExtra("Level", R.drawable.level_two_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Special Archetype")){
                     ArrayList.clear();
@@ -347,7 +262,99 @@ public class EquipCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_mambabarang);
                     intent.putExtra("Pair2", R.drawable.card_mangkukulam);
                     intent.putExtra("Level", R.drawable.level_two_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
+                    startActivity(intent);
+                }
+            }
+        });
+
+        imageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (textView.getText().equals("Giant Archetype")){
+                    ArrayList.clear();
+                    ArrayList.add("Puno ng Acacia");
+                    ArrayList.add("(Acacia Tree)");
+                    ArrayList.add("Hiwaga Card");
+                    ArrayList.add("Giant");
+                    ArrayList.add("A strong creepy, gigantic tree to shelter strong, gigantic beings.");
+                    ArrayList.add("IMPALE: Equip to Giant card, reduces defending card/s total entity level by 1.");
+                    Intent intent = new Intent(EquipCardsList.this, CardsDetails.class);
+                    intent.putExtra("CardName",ArrayList.get(0));
+                    intent.putExtra("SubName",ArrayList.get(1));
+                    intent.putExtra("CardType",ArrayList.get(2));
+                    intent.putExtra("Archetype",ArrayList.get(3));
+                    intent.putExtra("Traits",ArrayList.get(4));
+                    intent.putExtra("Ability",ArrayList.get(5));
+                    intent.putExtra("Card", R.drawable.card_punongacacia);
+                    intent.putExtra("Pair1", R.drawable.card_tikbalang);
+                    intent.putExtra("Pair2", R.drawable.card_kapre);
+                    intent.putExtra("Pair3", R.drawable.card_bungisngis);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_medium);
+                    startActivity(intent);
+                } else if (textView.getText().equals("Dwarf Archetype")){
+                    ArrayList.clear();
+                    ArrayList.add("Bungo at Tungkod");
+                    ArrayList.add("(Skull & Staff)");
+                    ArrayList.add("Hiwaga Card");
+                    ArrayList.add("Dwarf");
+                    ArrayList.add("Instruments of magic utilized by elder beings to channel their dark energies. Aged and sturdy.");
+                    ArrayList.add("IMPALE: Equip to dwarf card reduces defending card/s total entity level by 1. REVEAL: Two (2) Bungo at Tungkod cards, player reveals deck on hand.");
+                    Intent intent = new Intent(EquipCardsList.this, CardsDetails.class);
+                    intent.putExtra("CardName",ArrayList.get(0));
+                    intent.putExtra("SubName",ArrayList.get(1));
+                    intent.putExtra("CardType",ArrayList.get(2));
+                    intent.putExtra("Archetype",ArrayList.get(3));
+                    intent.putExtra("Traits",ArrayList.get(4));
+                    intent.putExtra("Ability",ArrayList.get(5));
+                    intent.putExtra("Card", R.drawable.card_bungo_at_tungkod);
+                    intent.putExtra("Pair1", R.drawable.card_nunosapunso);
+                    intent.putExtra("Pair2", R.drawable.card_duwende);
+                    intent.putExtra("Level", R.drawable.level_two_moon);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
+                    startActivity(intent);
+                } else if (textView.getText().equals("Mortal Archetype")){
+                    ArrayList.clear();
+                    ArrayList.add("Tabak, Bawang, at Asin");
+                    ArrayList.add("(Blade, Garlic, & Salt)");
+                    ArrayList.add("Kontra Card");
+                    ArrayList.add("Mortal");
+                    ArrayList.add("It is said that these items can be used to ward off or attack evil creatures like the Aswangs.");
+                    ArrayList.add("NULLIFY: When equipped with a Mortal, all abilities of opposing cards are nullified and do not take effect. +1 to defense Entity Level.");
+                    Intent intent = new Intent(EquipCardsList.this, CardsDetails.class);
+                    intent.putExtra("CardName",ArrayList.get(0));
+                    intent.putExtra("SubName",ArrayList.get(1));
+                    intent.putExtra("CardType",ArrayList.get(2));
+                    intent.putExtra("Archetype",ArrayList.get(3));
+                    intent.putExtra("Traits",ArrayList.get(4));
+                    intent.putExtra("Ability",ArrayList.get(5));
+                    intent.putExtra("Card", R.drawable.card_tabakbawangatasin);
+                    intent.putExtra("Pair1", R.drawable.card_dante);
+                    intent.putExtra("Pair2", R.drawable.card_amihan);
+                    intent.putExtra("Level", R.drawable.level_two_sun);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
+                    startActivity(intent);
+                } else if (textView.getText().equals("Warrior Archetype")){
+                    ArrayList.clear();
+                    ArrayList.add("Sibat at Sulo");
+                    ArrayList.add("(Spear & Torch)");
+                    ArrayList.add("Kontra Card");
+                    ArrayList.add("Warrior");
+                    ArrayList.add("\"By this torch, I can see in the darkness. By this spear, I can cut through the night.\"");
+                    ArrayList.add("NULLIFY: When equipped with a Warrior, all abilities of opposing cards are nullified and do not take effect  +1 to defense Entity level.");
+                    Intent intent = new Intent(EquipCardsList.this, CardsDetails.class);
+                    intent.putExtra("CardName",ArrayList.get(0));
+                    intent.putExtra("SubName",ArrayList.get(1));
+                    intent.putExtra("CardType",ArrayList.get(2));
+                    intent.putExtra("Archetype",ArrayList.get(3));
+                    intent.putExtra("Traits",ArrayList.get(4));
+                    intent.putExtra("Ability",ArrayList.get(5));
+                    intent.putExtra("Card", R.drawable.card_sibatatsulo);
+                    intent.putExtra("Pair1", R.drawable.card_dante);
+                    intent.putExtra("Pair2", R.drawable.card_amihan);
+                    intent.putExtra("Level", R.drawable.level_two_sun);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }
             }

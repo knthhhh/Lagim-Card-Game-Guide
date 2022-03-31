@@ -15,9 +15,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="-30dp"
         android:scaleType="fitXY"
-        android:src="@drawable/bg_boardingscreen1"
-        />
+        android:src="@drawable/bg_boardingscreen1" />
 
     <ImageView
         android:id="@+id/img"
@@ -29,16 +29,16 @@
         android:layout_alignBottom="@id/imageView"
         android:layout_marginTop="50dp"
         android:scaleType="fitXY"
-        android:src="@drawable/img_boardingscreen1"/>
+        android:src="@drawable/img_boardingscreen1" />
 
     <ImageView
         android:id="@+id/indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:src="@drawable/ic_boardingscreen1_indicator"/>
+        android:src="@drawable/ic_boardingscreen1_indicator" />
 
     <TextView
         android:id="@+id/textView"
@@ -52,7 +52,6 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="@font/lusitana"
-        android:lineSpacingExtra="5sp"
         android:text="LagimTM is an original collectible card game based on Filipino folklore and myths. Inspired by the traditional beliefs and customs of our Filipino ancestors, LagimTM aims to bolster original Filipino content and storytelling. Players are introduced to en-chanting worlds and mystical characters as  they traverse and unravel this thrilling game of strategy and luck."
         android:textColor="@color/TextColor"
         android:textSize="16sp" />

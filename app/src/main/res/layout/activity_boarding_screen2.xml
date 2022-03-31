@@ -15,6 +15,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="-30dp"
         android:scaleType="fitXY"
         android:src="@drawable/bg_boardingscreen2"
         />
@@ -23,9 +24,9 @@
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@id/imageView4"
-        android:layout_alignTop="@id/imageView4"
         android:layout_alignStart="@id/imageView4"
+        android:layout_alignTop="@id/imageView4"
+        android:layout_alignEnd="@id/imageView4"
         android:scaleType="fitXY"
         android:src="@drawable/img_boardingscreen2" />
 
@@ -49,18 +50,16 @@
         android:src="@drawable/ic_boardinscreen2_indicator" />
 
     <TextView
-        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView2"
-        android:layout_below="@+id/indicator"
+        android:layout_below="@id/indicator"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_above="@id/GetStarted"
         android:fontFamily="@font/lusitana"
-        android:lineSpacingExtra="5sp"
         android:text="LagimTM was created by a group of illustrators and designers that share a great interest and passion for storytelling and artistry. The group seeks to create platforms using local narratives and evocative illus-trations that encourage human connection and reinforce relationships."
         android:textColor="@color/TextColor"
         android:textSize="16sp" />
@@ -73,10 +72,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginBottom="50dp"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/bg_boardingscreen2_btn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:src="@drawable/bg_boardingscreen2_btn"/>
 
     <TextView
         android:id="@+id/GetStarted"

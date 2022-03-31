@@ -10,7 +10,7 @@ public class EquipCardsArchetype extends System {
 
     ImageView imageView;
     TextView header, Archetype1, Archetype2, Archetype3, Archetype4, Archetype5;
-    ImageView img1, img2, img3, img4, img5;
+    ImageView img1, img2, img3, img4, img5, bg1, bg2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,8 @@ public class EquipCardsArchetype extends System {
         Archetype3 = findViewById(R.id.archetype3);
         Archetype4 = findViewById(R.id.archetype4);
         Archetype5 = findViewById(R.id.archetype5);
+        bg1 = findViewById(R.id.bg);
+        bg2 = findViewById(R.id.bg2);
 
         imageView = findViewById(R.id.bgimg);
         header = findViewById(R.id.Header1);
@@ -36,8 +38,10 @@ public class EquipCardsArchetype extends System {
 
         if(header.getText().equals("HIWAGA CARDS")){
             imageView.setImageResource(R.drawable.bg_hiwagaarchetype);
+            bg2.setImageDrawable(null);
         }else{
             imageView.setImageResource(R.drawable.bg_kontraarchetype);
+            bg1.setImageDrawable(null);
         }
 
         if (header.getText().equals("HIWAGA CARDS")){

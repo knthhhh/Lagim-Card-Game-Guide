@@ -65,17 +65,17 @@
                 android:id="@+id/Header1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/titlebg"
-                android:layout_alignBottom="@id/titlebg"
-                android:layout_alignEnd="@id/titlebg"
                 android:layout_alignStart="@id/titlebg"
-                android:paddingBottom="5dp"
+                android:layout_alignTop="@+id/titlebg"
+                android:layout_alignEnd="@id/titlebg"
+                android:layout_alignBottom="@id/titlebg"
                 android:layout_marginStart="25dp"
-                android:gravity="center_vertical"
                 android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
                 android:text="Witch Archetype"
                 android:textColor="@color/TextColor"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:id="@+id/set1"
@@ -125,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="30dp"
-                android:layout_alignStart="@id/set1"
+                android:layout_alignStart="@id/Header1"
                 android:layout_below="@id/Header1">
 
                 <ImageView
@@ -133,7 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/card_mambabarang" />
+                    />
 
             </LinearLayout>
 

@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class CardsDetails extends System {
 
-    ImageView Card, Pair1, Pair2, Pair3, Pair4, Pair5, bgImg, Level, bgText;
+    ImageView Card, Pair1, Pair2, Pair3, Pair4, Pair5, bgImg, Level, bgText, bgText2, bgText3, sigbinbg;
     TextView Name, SubName, CardType, Archetype, Traits, Ability, Sub4, Sub5;
 
 
@@ -28,6 +28,9 @@ public class CardsDetails extends System {
         Pair5 = findViewById(R.id.pair5);
         bgImg = findViewById(R.id.bgimg);
         bgText = findViewById(R.id.bgtext);
+        bgText2 = findViewById(R.id.bgtext2);
+        bgText3 = findViewById(R.id.bgtext3);
+        sigbinbg = findViewById(R.id.bgtext4);
         Level = findViewById(R.id.level);
         Name = findViewById(R.id.card_name);
         SubName = findViewById(R.id.sub_name);
@@ -46,6 +49,9 @@ public class CardsDetails extends System {
         Ability.setText(getIntent().getStringExtra("Ability"));
 
         int bgtext = bundle.getInt("bgtext");
+        int bgtext2 = bundle.getInt("bgtext2");
+        int bgtext3 = bundle.getInt("bgtext3");
+        int bgtext4 = bundle.getInt("bgtext4");
         int card = bundle.getInt("Card");
         int pair1 = bundle.getInt("Pair1");
         int pair2 = bundle.getInt("Pair2");
@@ -55,6 +61,9 @@ public class CardsDetails extends System {
         int level = bundle.getInt("Level");
 
         bgText.setImageResource(bgtext);
+        bgText2.setImageResource(bgtext2);
+        bgText3.setImageResource(bgtext3);
+        sigbinbg.setImageResource(bgtext4);
         Card.setImageResource(card);
         Pair1.setImageResource(pair1);
         Pair2.setImageResource(pair2);
@@ -104,7 +113,9 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_mangkukulam);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Mangkukulam")){ //done
                     Card.setImageResource(R.drawable.card_sumpangmanika);
                     Name.setText("Sumpa ng Manika");
@@ -120,7 +131,9 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_mangkukulam);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Alakdan at Alupihan") || (Name.getText().equals("Sumpa ng Manika") || (Name.getText().equals("Altar ng Kulam")))){ //done
                     Card.setImageResource(R.drawable.card_mambabarang);
                     Name.setText("Mambabarang");
@@ -136,6 +149,8 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_alakdan_at_alupihan);
                     Pair3.setImageResource(R.drawable.card_sumpangmanika);
                     bgImg.setImageResource(R.drawable.bg_lagimcards);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
                 } else if (Name.getText().equals("Aswang")){ //done
                     Card.setImageResource(R.drawable.card_dugo_at_langis);
@@ -151,7 +166,9 @@ public class CardsDetails extends System {
                     Pair1.setImageResource(R.drawable.card_aswang);
                     Pair2.setImageResource(R.drawable.card_manananggal);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Manananggal")){ //done
                     Card.setImageResource(R.drawable.card_tiktikatbuwan);
                     Name.setText("Tiktik at Buwan");
@@ -166,7 +183,9 @@ public class CardsDetails extends System {
                     Pair1.setImageResource(R.drawable.card_aswang);
                     Pair2.setImageResource(R.drawable.card_manananggal);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Dugo at Langis") || (Name.getText().equals("Tiktik at Buwan"))){ //done
                     Card.setImageResource(R.drawable.card_aswang);
                     Name.setText("Aswang");
@@ -181,7 +200,9 @@ public class CardsDetails extends System {
                     Pair1.setImageResource(R.drawable.card_dugo_at_langis);
                     Pair2.setImageResource(R.drawable.card_tiktikatbuwan);
                     bgImg.setImageResource(R.drawable.bg_lagimcards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Puno ng Acacia")){ //done
                     Card.setImageResource(R.drawable.card_tikbalang);
                     Name.setText("Tikbalang");
@@ -198,7 +219,9 @@ public class CardsDetails extends System {
                     Pair2.setImageDrawable(null);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_lagimcards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Bungo at Tungkod")){ //done
                     Card.setImageResource(R.drawable.card_nunosapunso);
                     Name.setText("Nuno Sa Punso");
@@ -215,7 +238,9 @@ public class CardsDetails extends System {
                     Pair2.setImageDrawable(null);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_lagimcards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Albularyo") || (Name.getText().equals("Espiritista"))){ //done
                     Card.setImageResource(R.drawable.card_orasyonatinsenso);
                     Name.setText("Orasyon at Insenso");
@@ -232,7 +257,9 @@ public class CardsDetails extends System {
                     Pair3.setImageDrawable(null);
                     Pair4.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Orasyon at Insenso") || (Name.getText().equals("Buntot Pagi"))){ //done
                     Card.setImageResource(R.drawable.card_espiritista);
                     Name.setText("Espiritista");
@@ -249,6 +276,8 @@ public class CardsDetails extends System {
                     Pair3.setImageResource(R.drawable.card_gasera);
                     Pair4.setImageResource(R.drawable.card_agimat);
                     bgImg.setImageResource(R.drawable.bg_lakascards);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
                 } else if (Name.getText().equals("Amihan")){ //done
                     Card.setImageResource(R.drawable.card_tabakbawangatasin);
@@ -266,7 +295,9 @@ public class CardsDetails extends System {
                     Pair3.setImageDrawable(null);
                     Pair4.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Tabak, Bawang, at Asin") || (Name.getText().equals("Sibat at Sulo") || (Name.getText().equals("Agimat") || (Name.getText().equals("Gasera"))))){ //done
                     Card.setImageResource(R.drawable.card_dante);
                     Name.setText("Dante");
@@ -283,6 +314,8 @@ public class CardsDetails extends System {
                     Pair3.setImageResource(R.drawable.card_gasera);
                     Pair4.setImageResource(R.drawable.card_agimat);
                     bgImg.setImageResource(R.drawable.bg_lakascards);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
                 } else if (Name.getText().equals("Dante")){ //done
                     Card.setImageResource(R.drawable.card_sibatatsulo);
@@ -300,7 +333,9 @@ public class CardsDetails extends System {
                     Pair3.setImageDrawable(null);
                     Pair4.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 }
 
 
@@ -326,7 +361,9 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_mangkukulam);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Mangkukulam")) { //done
                     Card.setImageResource(R.drawable.card_altar_ng_kulam);
                     Name.setText("Altar ng Kulam");
@@ -342,7 +379,9 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_mangkukulam);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Sumpa ng Manika") || (Name.getText().equals("Alakdan at Alupihan")) || (Name.getText().equals("Altar ng Kulam"))) { //done
                     Card.setImageResource(R.drawable.card_mangkukulam);
                     Name.setText("Mangkukulam");
@@ -358,6 +397,8 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_altar_ng_kulam);
                     Pair3.setImageResource(R.drawable.card_alakdan_at_alupihan);
                     bgImg.setImageResource(R.drawable.bg_lagimcards);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
                 } else if(Name.getText().equals("Aswang")){ //done
                     Card.setImageResource(R.drawable.card_tiktikatbuwan);
@@ -373,7 +414,9 @@ public class CardsDetails extends System {
                     Pair1.setImageResource(R.drawable.card_aswang);
                     Pair2.setImageResource(R.drawable.card_manananggal);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Manananggal")){ //done
                     Card.setImageResource(R.drawable.card_dugo_at_langis);
                     Name.setText("Dugo at Langis");
@@ -388,7 +431,9 @@ public class CardsDetails extends System {
                     Pair1.setImageResource(R.drawable.card_aswang);
                     Pair2.setImageResource(R.drawable.card_manananggal);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Tiktik at Buwan") || (Name.getText().equals("Dugo at Langis"))){ //done
                     Card.setImageResource(R.drawable.card_manananggal);
                     Name.setText("Manananggal");
@@ -403,7 +448,9 @@ public class CardsDetails extends System {
                     Pair1.setImageResource(R.drawable.card_tiktikatbuwan);
                     Pair2.setImageResource(R.drawable.card_dugo_at_langis);
                     bgImg.setImageResource(R.drawable.bg_lagimcards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Puno ng Acacia")){ //done
                     Card.setImageResource(R.drawable.card_kapre);
                     Name.setText("Kapre");
@@ -420,7 +467,9 @@ public class CardsDetails extends System {
                     Pair2.setImageDrawable(null);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_lagimcards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText2.setImageDrawable(null);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Bungo at Tungkod")){ //done
                     Card.setImageResource(R.drawable.card_nunosapunso);
                     Name.setText("Duwende");
@@ -437,7 +486,9 @@ public class CardsDetails extends System {
                     Pair2.setImageDrawable(null);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_lagimcards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText3.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText2.setImageDrawable(null);
+                    bgText.setImageDrawable(null);
                 } else if (Name.getText().equals("Albularyo") || (Name.getText().equals("Espiritista"))){ //done
                     Card.setImageResource(R.drawable.card_buntot_pagi);
                     Name.setText("Buntot Pagi");
@@ -454,7 +505,9 @@ public class CardsDetails extends System {
                     Pair3.setImageDrawable(null);
                     Pair4.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Orasyon at Insenso") || (Name.getText().equals("Buntot Pagi"))){ //done
                     Card.setImageResource(R.drawable.card_albularyo);
                     Name.setText("Albularyo");
@@ -471,6 +524,8 @@ public class CardsDetails extends System {
                     Pair3.setImageResource(R.drawable.card_agimat);
                     Pair4.setImageResource(R.drawable.card_gasera);
                     bgImg.setImageResource(R.drawable.bg_lakascards);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
                 } else if (Name.getText().equals("Amihan")){ //done
                     Card.setImageResource(R.drawable.card_sibatatsulo);
@@ -488,7 +543,9 @@ public class CardsDetails extends System {
                     Pair3.setImageDrawable(null);
                     Pair4.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 } else if (Name.getText().equals("Tabak, Bawang, at Asin") || (Name.getText().equals("Sibat at Sulo") || (Name.getText().equals("Agimat") || (Name.getText().equals("Gasera"))))){ //done
                     Card.setImageResource(R.drawable.card_amihan);
                     Name.setText("Amihan");
@@ -505,6 +562,8 @@ public class CardsDetails extends System {
                     Pair3.setImageResource(R.drawable.card_agimat);
                     Pair4.setImageResource(R.drawable.card_gasera);
                     bgImg.setImageResource(R.drawable.bg_lakascards);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
                 } else if (Name.getText().equals("Dante")){ //done
                     Card.setImageResource(R.drawable.card_tabakbawangatasin);
@@ -522,7 +581,9 @@ public class CardsDetails extends System {
                     Pair3.setImageDrawable(null);
                     Pair4.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
                 }
             }
         });
@@ -545,7 +606,9 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_mangkukulam);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 } else if (Name.getText().equals("Mangkukulam")) { //done
                     Card.setImageResource(R.drawable.card_alakdan_at_alupihan);
                     Name.setText("Alakdan at Alupihan");
@@ -561,7 +624,9 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_mangkukulam);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 } else if (Name.getText().equals("Puno ng Acacia")){ //done
                     Card.setImageResource(R.drawable.card_bungisngis);
                     Name.setText("Bungisngis");
@@ -578,7 +643,9 @@ public class CardsDetails extends System {
                     Pair2.setImageDrawable(null);
                     Pair3.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_lagimcards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText3.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText2.setImageDrawable(null);
+                    bgText.setImageDrawable(null);
                 } else if (Name.getText().equals("Albularyo")){ //done
                     Card.setImageResource(R.drawable.card_agimat);
                     Name.setText("Agimat");
@@ -596,6 +663,8 @@ public class CardsDetails extends System {
                     Pair4.setImageResource(R.drawable.card_albularyo);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 } else if (Name.getText().equals("Espiritista") || (Name.getText().equals("Dante"))){ //done
                     Card.setImageResource(R.drawable.card_gasera);
                     Name.setText("Gasera");
@@ -613,6 +682,8 @@ public class CardsDetails extends System {
                     Pair4.setImageResource(R.drawable.card_albularyo);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 } else if (Name.getText().equals("Amihan")){ //done
                     Card.setImageResource(R.drawable.card_agimat);
                     Name.setText("Agimat");
@@ -630,6 +701,8 @@ public class CardsDetails extends System {
                     Pair4.setImageResource(R.drawable.card_albularyo);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 } else if (Name.getText().equals("Agimat") || (Name.getText().equals("Gasera"))){ //done
                     Card.setImageResource(R.drawable.card_espiritista);
                     Name.setText("Espiritista");
@@ -647,6 +720,8 @@ public class CardsDetails extends System {
                     Pair4.setImageResource(R.drawable.card_agimat);
                     bgImg.setImageResource(R.drawable.bg_lakascards);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 }
             }
         });
@@ -671,6 +746,8 @@ public class CardsDetails extends System {
                     Pair4.setImageResource(R.drawable.card_albularyo);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 } else if (Name.getText().equals("Espiritista") || (Name.getText().equals("Dante"))){ //done
                     Card.setImageResource(R.drawable.card_agimat);
                     Name.setText("Agimat");
@@ -688,6 +765,8 @@ public class CardsDetails extends System {
                     Pair4.setImageResource(R.drawable.card_albularyo);
                     bgImg.setImageResource(R.drawable.bg_kontracards);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 } else if (Name.getText().equals("Gasera") || (Name.getText().equals("Agimat"))){
                     Card.setImageResource(R.drawable.card_albularyo);
                     Name.setText("Albularyo");
@@ -705,6 +784,8 @@ public class CardsDetails extends System {
                     Pair4.setImageResource(R.drawable.card_gasera);
                     bgImg.setImageResource(R.drawable.bg_lakascards);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 }
             }
         });
@@ -729,6 +810,8 @@ public class CardsDetails extends System {
                     Pair5.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
                     bgText.setImageResource(R.drawable.bg_carddetails_text_medium);
+                    bgText2.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 } else if (Name.getText().equals("Duwende") || (Name.getText().equals("Nuno Sa Punso"))){ //done
                     Card.setImageResource(R.drawable.card_bungo_at_tungkod);
                     Name.setText("Bungo at Tungkod");
@@ -744,7 +827,9 @@ public class CardsDetails extends System {
                     Pair2.setImageResource(R.drawable.card_duwende);
                     Pair5.setImageDrawable(null);
                     bgImg.setImageResource(R.drawable.bg_hiwagacards);
-                    bgText.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText2.setImageResource(R.drawable.bg_carddetails_text_small);
+                    bgText.setImageDrawable(null);
+                    bgText3.setImageDrawable(null);
                 }
             }
         });

@@ -123,7 +123,7 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_tiktikatbuwan);
                     intent.putExtra("Pair2", R.drawable.card_dugo_at_langis);
                     intent.putExtra("Level", R.drawable.level_four_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Giant Archetype")){
                     ArrayList.clear();
@@ -143,7 +143,7 @@ public class BattleCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_kapre);
                     intent.putExtra("Pair5", R.drawable.card_punongacacia);
                     intent.putExtra("Level", R.drawable.level_three_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext3", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Dwarf Archetype")){
                     ArrayList.clear();
@@ -163,7 +163,7 @@ public class BattleCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_duwende);
                     intent.putExtra("Pair5", R.drawable.card_bungo_at_tungkod);
                     intent.putExtra("Level", R.drawable.level_two_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext3", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }
             }
@@ -236,7 +236,7 @@ public class BattleCardsList extends System {
                     intent.putExtra("Pair1", R.drawable.card_dugo_at_langis);
                     intent.putExtra("Pair2", R.drawable.card_tiktikatbuwan);
                     intent.putExtra("Level", R.drawable.level_four_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext2", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Giant Archetype")){
                     ArrayList.clear();
@@ -256,7 +256,7 @@ public class BattleCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_tikbalang);
                     intent.putExtra("Pair5", R.drawable.card_punongacacia);
                     intent.putExtra("Level", R.drawable.level_three_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext3", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }else if (textView.getText().equals("Dwarf Archetype")){
                     ArrayList.clear();
@@ -276,7 +276,7 @@ public class BattleCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_nunosapunso);
                     intent.putExtra("Pair5", R.drawable.card_bungo_at_tungkod);
                     intent.putExtra("Level", R.drawable.level_two_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext3", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }
             }
@@ -303,7 +303,7 @@ public class BattleCardsList extends System {
                     intent.putExtra("Card", R.drawable.card_bungisngis);
                     intent.putExtra("Pair5", R.drawable.card_punongacacia);
                     intent.putExtra("Level", R.drawable.level_three_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_carddetails_text_small);
+                    intent.putExtra("bgtext3", R.drawable.bg_carddetails_text_small);
                     startActivity(intent);
                 }
             }
@@ -329,7 +329,7 @@ public class BattleCardsList extends System {
                     intent.putExtra("Ability",ArrayList.get(5));
                     intent.putExtra("Card", R.drawable.card_sigbin);
                     intent.putExtra("Level", R.drawable.level_five_moon);
-                    intent.putExtra("bgtext", R.drawable.bg_sigbin_text);
+                    intent.putExtra("bgtext4", R.drawable.bg_sigbin_text);
                     startActivity(intent);
                 } else if (textView.getText().equals("Mortal Archetype")){
                     ArrayList.clear();

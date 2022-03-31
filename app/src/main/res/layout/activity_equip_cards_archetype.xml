@@ -8,214 +8,239 @@
     tools:context=".EquipCardsArchetype"
     android:background="@color/black">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/bgimg"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/bg_lagimarchetype" />
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/titlebg"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="80dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/bg_title" />
+            <ImageView
+                android:id="@+id/bgimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_lagimarchetype" />
 
-        <TextView
-            android:id="@+id/Header1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@id/titlebg"
-            android:layout_alignTop="@id/titlebg"
-            android:layout_alignEnd="@id/titlebg"
-            android:layout_alignBottom="@id/titlebg"
-            android:layout_marginStart="20dp"
-            android:fontFamily="@font/oldstyle"
-            android:gravity="center_vertical"
-            android:paddingBottom="5dp"
-            android:text="LAGIM CARDS"
-            android:textColor="@color/cream"
-            android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/titlebg"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_title" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@android:color/transparent"
-            android:onClick="Back"
-            android:src="@drawable/ic_back" />
+            <TextView
+                android:id="@+id/Header1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/titlebg"
+                android:layout_alignTop="@id/titlebg"
+                android:layout_alignEnd="@id/titlebg"
+                android:layout_alignBottom="@id/titlebg"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/oldstyle"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:text="LAGIM CARDS"
+                android:textColor="@color/cream"
+                android:textSize="20sp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_lagim_white" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:onClick="Back"
+                android:src="@drawable/ic_back" />
 
-        <TextView
-            android:id="@+id/Header2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Header1"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
-            android:fontFamily="@font/lusitana"
-            android:text="Card Archetype"
-            android:textColor="@color/TextColor"
-            android:textSize="20sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_lagim_white" />
 
-        <ImageView
-            android:id="@+id/bg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Header2"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="20dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/bg_archetype" />
+            <TextView
+                android:id="@+id/Header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Header1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/lusitana"
+                android:text="Card Archetype"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@id/bg"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="100dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/hiwaga_witch" />
+            <ImageView
+                android:id="@+id/bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/Header2"
+                android:layout_alignBottom="@id/footer"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_archetype2" />
 
-        <TextView
-            android:id="@+id/archetype1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn1"
-            android:layout_alignStart="@id/btn1"
-            android:layout_alignEnd="@id/btn1"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/lusitana"
-            android:text=""
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/bg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/Header2"
+                android:layout_alignBottom="@id/footer1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_archetype2" />
 
-        <ImageView
-            android:id="@+id/btn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@id/bg"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="60dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/lagim_bestial" />
+            <ImageView
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Header2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="120dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/hiwaga_witch" />
 
-        <TextView
-            android:id="@+id/archetype2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn2"
-            android:layout_alignStart="@id/btn2"
-            android:layout_alignEnd="@id/btn2"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/lusitana"
-            android:text=""
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/archetype1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn1"
+                android:layout_alignStart="@id/btn1"
+                android:layout_alignEnd="@id/btn1"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
-        <ImageView
-            android:id="@+id/btn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn1"
-            android:layout_alignStart="@+id/btn1"
-            android:layout_marginTop="100dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/hiwaga_ghoul" />
+            <ImageView
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Header2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="55dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/lagim_bestial" />
 
-        <TextView
-            android:id="@+id/archetype3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn3"
-            android:layout_alignStart="@id/btn3"
-            android:layout_alignEnd="@id/btn3"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/lusitana"
-            android:text=""
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/archetype2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn2"
+                android:layout_alignStart="@id/btn2"
+                android:layout_alignEnd="@id/btn2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
-        <ImageView
-            android:id="@+id/btn4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn2"
-            android:layout_alignEnd="@+id/btn2"
-            android:layout_marginTop="100dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/hiwaga_giant" />
+            <ImageView
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn1"
+                android:layout_alignStart="@+id/btn1"
+                android:layout_marginTop="100dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/hiwaga_ghoul" />
 
-        <TextView
-            android:id="@+id/archetype4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn4"
-            android:layout_alignStart="@id/btn4"
-            android:layout_alignEnd="@id/btn4"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/lusitana"
-            android:text=""
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/archetype3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn3"
+                android:layout_alignStart="@id/btn3"
+                android:layout_alignEnd="@id/btn3"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
-        <ImageView
-            android:id="@+id/btn5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/hiwaga_dwarf" />
+            <ImageView
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn2"
+                android:layout_alignEnd="@+id/btn2"
+                android:layout_marginTop="100dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/hiwaga_giant" />
 
-        <TextView
-            android:id="@+id/archetype5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn5"
-            android:layout_alignStart="@id/btn5"
-            android:layout_alignEnd="@id/btn5"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/lusitana"
-            android:text=""
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/archetype4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn4"
+                android:layout_alignStart="@id/btn4"
+                android:layout_alignEnd="@id/btn4"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
-    </RelativeLayout>
-<!--    </ScrollView>-->
+            <ImageView
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/hiwaga_dwarf" />
+
+            <TextView
+                android:id="@+id/archetype5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn5"
+                android:layout_alignStart="@id/btn5"
+                android:layout_alignEnd="@id/btn5"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lusitana"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/archetype3"
+                android:layout_marginTop="230dp"/>
+
+            <TextView
+                android:id="@+id/footer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/archetype5"
+                android:layout_marginTop="50dp"/>
+
+        </RelativeLayout>
 
 </RelativeLayout>
