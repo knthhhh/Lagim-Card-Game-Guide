@@ -91,7 +91,7 @@
 
             <ImageView
                 android:id="@+id/titlebg"
-                android:layout_width="185dp"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/buttons"
                 android:layout_alignParentStart="true"
@@ -113,7 +113,7 @@
                 android:paddingBottom="5dp"
                 android:text="GAME BOARD"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/textview"
@@ -168,7 +168,7 @@
 
             <ImageView
                 android:id="@+id/silabbg"
-                android:layout_width="105dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/Details"
                 android:layout_marginTop="50dp"
@@ -189,7 +189,7 @@
                 android:paddingBottom="5dp"
                 android:text="SILAB"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/text3"
@@ -217,7 +217,7 @@
 
             <ImageView
                 android:id="@+id/gamesheetbg"
-                android:layout_width="185dp"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/silabImage"
                 android:layout_marginTop="-20dp"
@@ -238,7 +238,7 @@
                 android:paddingBottom="5dp"
                 android:text="GAME SHEET"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/text5"
@@ -267,7 +267,7 @@
 
             <ImageView
                 android:id="@+id/soulcoinsbg"
-                android:layout_width="170dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/gameSheetImage"
                 android:layout_marginTop="70dp"
@@ -288,7 +288,7 @@
                 android:paddingBottom="5dp"
                 android:text="SOUL COINS"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/text7"
@@ -317,7 +317,7 @@
 
             <ImageView
                 android:id="@+id/darksoulcoinsbg"
-                android:layout_width="240dp"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/CoinImage"
                 android:layout_marginTop="-20dp"
@@ -338,7 +338,7 @@
                 android:paddingBottom="5dp"
                 android:text="DARK SOUL COINS"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/text9"
@@ -368,7 +368,7 @@
 
             <ImageView
                 android:id="@+id/agimatbg"
-                android:layout_width="125dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/DarkCoinImage"
                 android:layout_marginTop="25dp"
@@ -389,7 +389,7 @@
                 android:paddingBottom="5dp"
                 android:text="AGIMAT"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/text11"
@@ -419,7 +419,7 @@
 
             <ImageView
                 android:id="@+id/baryocardsbg"
-                android:layout_width="215dp"
+                android:layout_width="255dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/AgimatImage"
                 android:layout_marginTop="20dp"
@@ -440,7 +440,7 @@
                 android:paddingBottom="5dp"
                 android:text="31 BARYO CARDS"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/text13"
@@ -495,7 +495,7 @@
 
             <ImageView
                 android:id="@+id/forestcardbg"
-                android:layout_width="220dp"
+                android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/Details2"
                 android:layout_marginTop="50dp"
@@ -511,12 +511,12 @@
                 android:layout_alignEnd="@+id/forestcardbg"
                 android:layout_alignBottom="@id/forestcardbg"
                 android:layout_marginStart="20dp"
+                android:fontFamily="@font/oldstyle"
                 android:gravity="center_vertical"
                 android:paddingBottom="5dp"
-                android:fontFamily="@font/oldstyle"
                 android:text="31 FOREST CARDS"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/text17"

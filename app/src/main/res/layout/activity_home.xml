@@ -24,6 +24,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-2dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/bg_home" />
 
@@ -38,7 +40,7 @@
                 android:text="UNDERSTAND THE BATTLE\nMECHANICS TO SURVIVE"
                 android:textAlignment="center"
                 android:textColor="@color/cream"
-                android:textSize="17sp" />
+                android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/img1"
@@ -59,7 +61,7 @@
                 android:layout_alignTop="@id/img1"
                 android:layout_alignEnd="@id/img1"
                 android:layout_alignBottom="@id/img1"
-                android:layout_marginStart="70dp"
+                android:layout_marginStart="85dp"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center_vertical"
                 android:onClick="Raiding"
@@ -75,7 +77,7 @@
                 android:layout_alignEnd="@+id/img1"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="27dp"
-                android:layout_marginTop="-20dp"
+                android:layout_marginTop="-30dp"
                 android:layout_marginEnd="225dp"
                 android:onClick="Raiding"
                 android:src="@drawable/img_home_raiding" />
@@ -87,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img1"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginEnd="30dp"
                 android:onClick="Defending"
                 android:src="@drawable/bg_home_btn" />
@@ -99,7 +101,7 @@
                 android:layout_alignTop="@id/img2"
                 android:layout_alignEnd="@id/img2"
                 android:layout_alignBottom="@id/img2"
-                android:layout_marginStart="70dp"
+                android:layout_marginStart="85dp"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center_vertical"
                 android:onClick="Defending"
@@ -114,7 +116,7 @@
                 android:layout_alignEnd="@+id/img2"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="0dp"
-                android:layout_marginTop="-40dp"
+                android:layout_marginTop="-50dp"
                 android:layout_marginEnd="193dp"
                 android:onClick="Defending"
                 android:src="@drawable/img_home_defending" />
@@ -125,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img2"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginEnd="30dp"
                 android:onClick="Dwellers"
                 android:src="@drawable/bg_home_btn" />
@@ -137,7 +139,7 @@
                 android:layout_alignTop="@id/img3"
                 android:layout_alignEnd="@id/img3"
                 android:layout_alignBottom="@id/img3"
-                android:layout_marginStart="70dp"
+                android:layout_marginStart="85dp"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center_vertical"
                 android:onClick="Dwellers"
@@ -152,7 +154,7 @@
                 android:layout_alignEnd="@+id/img3"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="-40dp"
+                android:layout_marginTop="-50dp"
                 android:layout_marginEnd="193dp"
                 android:onClick="Dwellers"
                 android:src="@drawable/img_home_dwellers" />
@@ -163,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img3"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginEnd="30dp"
                 android:onClick="LagimLimit"
                 android:src="@drawable/bg_home_btn" />
@@ -175,7 +177,7 @@
                 android:layout_alignTop="@id/img4"
                 android:layout_alignEnd="@id/img4"
                 android:layout_alignBottom="@id/img4"
-                android:layout_marginStart="70dp"
+                android:layout_marginStart="85dp"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center_vertical"
                 android:onClick="LagimLimit"
@@ -190,7 +192,7 @@
                 android:layout_alignEnd="@+id/img4"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="-45dp"
+                android:layout_marginTop="-55dp"
                 android:layout_marginEnd="198dp"
                 android:onClick="LagimLimit"
                 android:src="@drawable/img_home_lagimlimit" />
@@ -201,7 +203,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img4"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginEnd="30dp"
                 android:onClick="TypesOfRaid"
                 android:src="@drawable/bg_home_btn" />
@@ -213,7 +215,7 @@
                 android:layout_alignTop="@id/img5"
                 android:layout_alignEnd="@id/img5"
                 android:layout_alignBottom="@id/img5"
-                android:layout_marginStart="70dp"
+                android:layout_marginStart="85dp"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center_vertical"
                 android:onClick="TypesOfRaid"
@@ -229,7 +231,7 @@
                 android:layout_alignEnd="@+id/img5"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="14dp"
-                android:layout_marginTop="-40dp"
+                android:layout_marginTop="-50dp"
                 android:layout_marginEnd="198dp"
                 android:onClick="TypesOfRaid"
                 android:src="@drawable/img_home_typesofraid" />
@@ -241,7 +243,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img5"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginEnd="30dp"
                 android:onClick="TypesOfDefense"
                 android:src="@drawable/bg_home_btn" />
@@ -253,7 +255,7 @@
                 android:layout_alignTop="@id/img6"
                 android:layout_alignEnd="@id/img6"
                 android:layout_alignBottom="@id/img6"
-                android:layout_marginStart="70dp"
+                android:layout_marginStart="85dp"
                 android:fontFamily="@font/lusitana"
                 android:gravity="center_vertical"
                 android:onClick="TypesOfDefense"
@@ -267,7 +269,7 @@
                 android:layout_height="140dp"
                 android:layout_alignTop="@id/img6"
                 android:layout_alignEnd="@+id/img6"
-                android:layout_marginTop="-35dp"
+                android:layout_marginTop="-45dp"
                 android:layout_marginEnd="208dp"
                 android:onClick="TypesOfDefense"
                 android:src="@drawable/img_home_typesofdefense" />

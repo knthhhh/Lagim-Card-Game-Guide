@@ -353,25 +353,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/copyrights"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="COPYRIGHT © 2022 LAGIM CARD GAME. \nAll Rights Reserved. Developed by \nFICTIONSMINDS"
-        android:textColor="@color/white"
-        android:textSize="8sp"
-        android:textAlignment="center"
-        android:fontFamily="@font/opensans"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        />
+        <TextView
+            android:id="@+id/copyrights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/opensans"
+            android:text="COPYRIGHT © 2022 LAGIM CARD GAME. \nAll Rights Reserved. Developed by \nFICTIONSMINDS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_fictionminds_white"
-        android:layout_below="@id/copyrights"
-        android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/copyrights"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_fictionminds_white" />
 
     </RelativeLayout>
 

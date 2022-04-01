@@ -58,7 +58,7 @@
             android:fontFamily="@font/lusitana"
             android:text="DWELLERS"
             android:textColor="@color/cream"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/text2"

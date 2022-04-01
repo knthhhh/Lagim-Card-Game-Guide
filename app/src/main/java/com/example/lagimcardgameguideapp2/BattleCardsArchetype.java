@@ -65,12 +65,12 @@ public class BattleCardsArchetype extends System {
             img2.setImageResource(R.drawable.lakas_mortal);
             img3.setImageResource(R.drawable.lakas_warrior);
             img4.setImageResource(R.drawable.lakas_halfmortal);
-            img5.setImageResource(R.drawable.lakas_special);
             Archetype1.setText("Medium");
             Archetype2.setText("Mortal");
             Archetype3.setText("Warrior");
             Archetype4.setText("Half Mortal");
-            Archetype5.setText("Special");
+            Archetype5.setText("");
+            img5.setImageDrawable(null);
         }
 
         img1.setOnClickListener(new View.OnClickListener() {

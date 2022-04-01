@@ -41,7 +41,7 @@
             android:fontFamily="@font/lusitana"
             android:text="TYPES OF RAID"
             android:textColor="@color/cream"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
         <ImageView
             android:id="@+id/bg1"

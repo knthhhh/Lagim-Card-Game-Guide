@@ -93,7 +93,7 @@
 
             <ImageView
                 android:id="@+id/premisebg"
-                android:layout_width="150dp"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/buttons"
                 android:layout_alignParentStart="true"
@@ -114,7 +114,7 @@
                 android:gravity="center_vertical"
                 android:text="The Premise"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/premisetext1"
@@ -158,7 +158,7 @@
 
             <ImageView
                 android:id="@+id/gamebg"
-                android:layout_width="130dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img2"
                 android:layout_alignParentStart="true"
@@ -179,7 +179,7 @@
                 android:gravity="center_vertical"
                 android:text="The Game"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/gametext"
@@ -209,7 +209,7 @@
 
             <ImageView
                 android:id="@+id/goalbg"
-                android:layout_width="130dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img3"
                 android:layout_alignParentStart="true"
@@ -230,7 +230,7 @@
                 android:gravity="center_vertical"
                 android:text="The Goal"
                 android:textColor="@color/cream"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/goaltext"
