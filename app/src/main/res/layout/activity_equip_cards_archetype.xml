@@ -8,6 +8,11 @@
     tools:context=".EquipCardsArchetype"
     android:background="@color/black">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -232,15 +237,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/archetype3"
-                android:layout_marginTop="230dp"/>
+                android:layout_marginTop="250dp"/>
 
             <TextView
                 android:id="@+id/footer1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/archetype5"
-                android:layout_marginTop="50dp"/>
+                android:layout_marginTop="100dp"/>
 
         </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

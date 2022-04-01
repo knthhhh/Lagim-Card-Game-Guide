@@ -44,6 +44,13 @@ public class EquipCardsList extends System {
 
         if (textView.getText().equals("Witch Archetype") ||
                 (textView.getText().equals("Ghoul Archetype") ||
+                        (textView.getText().equals("Medium Archetype") ||
+                                (textView.getText().equals("Special Archetype"))))){
+            imageView4.setImageDrawable(null);
+        }
+
+        if (textView.getText().equals("Witch Archetype") ||
+                (textView.getText().equals("Ghoul Archetype") ||
                         (textView.getText().equals("Bestial Archetype") ||
                                 (textView.getText().equals("Giant Archetype") ||
                                         (textView.getText().equals("Dwarf Archetype")))))){
