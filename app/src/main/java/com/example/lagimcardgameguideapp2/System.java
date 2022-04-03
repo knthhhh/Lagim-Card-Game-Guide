@@ -20,7 +20,7 @@ import java.util.Objects;
 public class System extends AppCompatActivity {
 
     public void hideSystemBars() {
-        Objects.requireNonNull(getSupportActionBar()).hide();
+//        Objects.requireNonNull(getSupportActionBar()).hide();
         WindowInsetsControllerCompat windowInsetsController =
                 ViewCompat.getWindowInsetsController(getWindow().getDecorView());
         if (windowInsetsController == null) {
@@ -33,7 +33,7 @@ public class System extends AppCompatActivity {
         // Hide both the status bar and the navigation bar
         windowInsetsController.hide(WindowInsetsCompat.Type.systemBars());
         Objects.requireNonNull(getSupportActionBar()).hide();
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
     //Global

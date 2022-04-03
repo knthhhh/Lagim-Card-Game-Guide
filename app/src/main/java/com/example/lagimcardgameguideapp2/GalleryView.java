@@ -34,7 +34,7 @@ import java.io.OutputStream;
 
 public class GalleryView extends System {
 
-    ImageView imageView, button, Download;
+    ImageView imageView, button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,14 +47,6 @@ public class GalleryView extends System {
         int img = bundle.getInt("img");
         imageView.setImageResource(img);
         button = findViewById(R.id.share);
-        Download = findViewById(R.id.download);
-
-        Download.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
-        });
-
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
